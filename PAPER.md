@@ -98,9 +98,9 @@ All code, mined seeds, and batch‑sweep logs are available at the repository li
 
 ## Data Availability
 
-- Repository: https://github.com/grisuno/laderman_transformer_prospector  
-- DOI: [pending]
-- Checkpoints: `prospecting_runs/seed_66/`, `batch_sweep/`
+- Repository: https://github.com/grisuno/Laderman  
+- DOI: 10.5281/zenodo.18942839
+
 
 
 ### Seed Mining
