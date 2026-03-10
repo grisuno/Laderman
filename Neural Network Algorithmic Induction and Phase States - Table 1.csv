@@ -1,0 +1,7 @@
+Target Task,Architecture,δ (Discretization Margin),κ (Gradient Covariance),T_eff (Effective Temperature),Purity Index (α),Phase State,Success Rate / N,Topological/Structural Invariants,Source
+Strassen Matrix Multiplication,Bilinear model (8 slots pruned to 7),$0.0000$,$1.000$,$< 10^{-16}$,$20.0$,Perfect Crystal (Optical Crystal),68% (133/195),Permutation test (Identity unique); Zero-shot expansion (2x2 to 64x64),1
+Strassen Matrix Multiplication,Bilinear model,$\approx 0.49$,$\infty$,$10^{-09}$  to  $8 \times 10^{-05}$,$\approx 0.7$,Amorphous Glass,32% (62/195),"High feature entanglement ( $\psi \approx 1.92$ ,  $F \approx 15.4$ )",1
+Hamiltonian Dynamics (HPU-Core),SpectralLayers (complex kernels),$0.3687$,$\infty$  (singular),$0.00 \times 10^{00}$,$1.00$  (normalized),Topological Insulator (Hamiltonian Crystal),$N=1$  (Seed 32),Berry phases  $\pm 10.26$  rad; Winding numbers  $\pm 2$ ; Lyapunov  $\lambda_{max} = +0.00175$,1
+Strassen Matrix Multiplication (Pruned),Bilinear model (50% sparsity),$0.1514$,$1.000$,$1.00 \times 10^{-07}$,$1.89$,Polycrystalline,$N=1$  (strassen_robust.pt),Stable up to 50% sparsity;  $\psi = 1.071$ ;  $\hbar_{eff} = 1.46$,1
+Binary Parity ( $k=3$  bits),Two-layer MLP,$\approx 0.00015$,$\infty$,Not in source,Not in source,Cold Glass,100% (100/100),High feature overlap ( $\psi \approx 2.48$ );  $LC \approx 899$,1
+Laderman 3x3 Multiplication,Transformer,$0.255$,$2$ – $400$  (well-cond.),Not in source,Not in source,Functional Glass (Low-temp Glass),0% (200 seeds),$LC > 0.8$ ; resists discretization,1

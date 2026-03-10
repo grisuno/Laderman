@@ -1,0 +1,1319 @@
+
+Starting complex transformer seed prospecting with 100 attempts
+Target: delta < 0.1, Acc > 0.95, kappa < 2.0
+Batch size: 384
+Device: cpu
+
+============================================================
+[*] MINING SEED 1 (1/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2526) ***
+     Epoch    25: delta=0.0946 Acc=0.0000 kappa=     inf S=1.386 C_v=2.31e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2526 Interf=0.0444 |W|=93.14 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0946@25)
+     Epoch    50: delta=0.1046 Acc=0.0118 kappa=124775.21 S=1.385 C_v=5.54e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2551 Interf=0.0297 |W|=96.73 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0946@25)
+     Epoch    75: delta=0.1165 Acc=0.0207 kappa=124775.21 S=1.385 C_v=9.10e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2794 Interf=0.0113 |W|=99.57 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0946@25)
+     Epoch   100: delta=0.1233 Acc=0.0503 kappa=108777.59 S=1.385 C_v=1.53e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2651 Interf=0.0229 |W|=101.78 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0946@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0311)
+     Best delta was 0.0946 at epoch 25
+  [-] Seed 1 vitrified (glass)
+
+============================================================
+[*] MINING SEED 2 (2/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.3676) ***
+     Epoch    25: delta=0.0933 Acc=0.0000 kappa=     inf S=1.386 C_v=2.10e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3676 Interf=0.1084 |W|=93.10 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0933@25)
+     Epoch    50: delta=0.1019 Acc=0.0030 kappa=127903.41 S=1.386 C_v=4.55e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3310 Interf=0.0960 |W|=96.53 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0933@25)
+     Epoch    75: delta=0.1136 Acc=0.0089 kappa=127903.41 S=1.385 C_v=7.86e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3057 Interf=0.0734 |W|=99.04 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0933@25)
+     Epoch   100: delta=0.1265 Acc=0.0000 kappa=116779.04 S=1.385 C_v=1.41e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2928 Interf=0.0494 |W|=101.42 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0933@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0015)
+     Best delta was 0.0933 at epoch 25
+  [-] Seed 2 vitrified (glass)
+
+============================================================
+[*] MINING SEED 3 (3/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2519) ***
+     Epoch    25: delta=0.0969 Acc=0.0000 kappa=     inf S=1.386 C_v=3.08e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2519 Interf=0.0712 |W|=93.19 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0969@25)
+     Epoch    50: delta=0.1093 Acc=0.0030 kappa=144662.08 S=1.385 C_v=6.16e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2573 Interf=0.0595 |W|=96.73 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0969@25)
+     Epoch    75: delta=0.1102 Acc=0.0059 kappa=144662.08 S=1.385 C_v=1.07e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2469 Interf=0.0540 |W|=99.49 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0969@25)
+     Epoch   100: delta=0.1157 Acc=0.0059 kappa=104538.36 S=1.384 C_v=1.74e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2524 Interf=0.0589 |W|=101.93 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0969@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0044)
+     Best delta was 0.0969 at epoch 25
+  [-] Seed 3 vitrified (glass)
+
+============================================================
+[*] MINING SEED 4 (4/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2528) ***
+     Epoch    25: delta=0.0970 Acc=0.0000 kappa=     inf S=1.386 C_v=1.93e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2528 Interf=0.0417 |W|=93.39 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0970@25)
+     Epoch    50: delta=0.1135 Acc=0.0030 kappa=90994.56 S=1.386 C_v=4.22e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2270 Interf=0.0246 |W|=97.29 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0970@25)
+     Epoch    75: delta=0.1172 Acc=0.0000 kappa=90994.56 S=1.385 C_v=7.40e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2407 Interf=0.0327 |W|=100.25 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0970@25)
+     Epoch   100: delta=0.1200 Acc=0.0178 kappa=78365.53 S=1.385 C_v=1.37e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2357 Interf=0.0290 |W|=102.60 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0970@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0104)
+     Best delta was 0.0970 at epoch 25
+  [-] Seed 4 vitrified (glass)
+
+============================================================
+[*] MINING SEED 5 (5/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2326) ***
+     Epoch    25: delta=0.0886 Acc=0.0030 kappa=     inf S=1.386 C_v=3.82e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2326 Interf=0.0611 |W|=93.19 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0886@25)
+     Epoch    50: delta=0.1036 Acc=0.0059 kappa=111995.75 S=1.385 C_v=6.41e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2022 Interf=0.0603 |W|=96.91 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0886@25)
+     Epoch    75: delta=0.1038 Acc=0.0118 kappa=111995.75 S=1.385 C_v=1.17e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2144 Interf=0.0625 |W|=99.65 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0886@25)
+     Epoch   100: delta=0.1065 Acc=0.0148 kappa=117715.24 S=1.384 C_v=1.78e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2044 Interf=0.0504 |W|=101.83 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0886@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0104)
+     Best delta was 0.0886 at epoch 25
+  [-] Seed 5 vitrified (glass)
+
+============================================================
+[*] MINING SEED 6 (6/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2779) ***
+     Epoch    25: delta=0.0903 Acc=0.0000 kappa=     inf S=1.386 C_v=1.81e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2779 Interf=0.0784 |W|=93.34 |g|=8.34e-01 WD=1.0e-02 phase=gas (best_d=0.0903@25)
+     Epoch    50: delta=0.1052 Acc=0.0030 kappa=132881.59 S=1.386 C_v=4.45e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2261 Interf=0.0190 |W|=96.91 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0903@25)
+     Epoch    75: delta=0.1182 Acc=0.0089 kappa=132881.59 S=1.385 C_v=7.79e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2300 Interf=0.0452 |W|=99.38 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0903@25)
+     Epoch   100: delta=0.1230 Acc=0.0059 kappa=161698.44 S=1.385 C_v=1.32e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2174 Interf=0.0461 |W|=101.69 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0903@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0044)
+     Best delta was 0.0903 at epoch 25
+  [-] Seed 6 vitrified (glass)
+
+============================================================
+[*] MINING SEED 7 (7/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2295) ***
+     Epoch    25: delta=0.0890 Acc=0.0000 kappa=     inf S=1.386 C_v=2.32e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2295 Interf=0.0573 |W|=93.22 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0890@25)
+     Epoch    50: delta=0.1012 Acc=0.0000 kappa=162897.25 S=1.385 C_v=4.97e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2502 Interf=0.0429 |W|=96.78 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0890@25)
+     Epoch    75: delta=0.1078 Acc=0.0089 kappa=162897.25 S=1.385 C_v=9.25e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2682 Interf=0.0389 |W|=99.55 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0890@25)
+     Epoch   100: delta=0.1151 Acc=0.0000 kappa=131081.72 S=1.385 C_v=1.40e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2565 Interf=0.0324 |W|=101.76 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0890@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0000)
+     Best delta was 0.0890 at epoch 25
+  [-] Seed 7 vitrified (glass)
+
+============================================================
+[*] MINING SEED 8 (8/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1887) ***
+     Epoch    25: delta=0.1038 Acc=0.0030 kappa=     inf S=1.386 C_v=2.02e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1887 Interf=0.0619 |W|=93.27 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1038@25)
+     Epoch    50: delta=0.1121 Acc=0.0059 kappa=121155.09 S=1.385 C_v=5.26e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1872 Interf=0.0491 |W|=96.82 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1038@25)
+     Epoch    75: delta=0.1165 Acc=0.0148 kappa=121155.09 S=1.385 C_v=9.37e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1913 Interf=0.0452 |W|=99.49 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1038@25)
+     Epoch   100: delta=0.1234 Acc=0.0296 kappa=117857.86 S=1.384 C_v=1.58e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2019 Interf=0.0606 |W|=101.73 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1038@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0178)
+     Best delta was 0.1038 at epoch 25
+  [-] Seed 8 vitrified (glass)
+
+============================================================
+[*] MINING SEED 9 (9/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2384) ***
+     Epoch    25: delta=0.0975 Acc=0.0030 kappa=     inf S=1.386 C_v=2.30e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2384 Interf=0.0590 |W|=93.35 |g|=9.03e-01 WD=1.0e-02 phase=gas (best_d=0.0975@25)
+     Epoch    50: delta=0.0997 Acc=0.0030 kappa=106304.78 S=1.385 C_v=5.57e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2417 Interf=0.0588 |W|=96.82 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0975@25)
+     Epoch    75: delta=0.1032 Acc=0.0059 kappa=106304.78 S=1.385 C_v=9.01e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2484 Interf=0.0426 |W|=99.42 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0975@25)
+     Epoch   100: delta=0.1128 Acc=0.0118 kappa=126289.35 S=1.385 C_v=1.41e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2361 Interf=0.0282 |W|=101.74 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0975@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0074)
+     Best delta was 0.0975 at epoch 25
+  [-] Seed 9 vitrified (glass)
+
+============================================================
+[*] MINING SEED 10 (10/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2278) ***
+     Epoch    25: delta=0.0894 Acc=0.0000 kappa=     inf S=1.386 C_v=2.16e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2278 Interf=0.0882 |W|=93.26 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0894@25)
+     Epoch    50: delta=0.1030 Acc=0.0089 kappa=105963.52 S=1.385 C_v=5.17e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2138 Interf=0.0590 |W|=96.69 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0894@25)
+     Epoch    75: delta=0.1027 Acc=0.0148 kappa=105963.52 S=1.385 C_v=1.05e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2303 Interf=0.0750 |W|=99.38 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0894@25)
+     Epoch   100: delta=0.1091 Acc=0.0148 kappa=80140.31 S=1.385 C_v=1.53e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2313 Interf=0.0891 |W|=101.73 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0894@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0118)
+     Best delta was 0.0894 at epoch 25
+  [-] Seed 10 vitrified (glass)
+
+============================================================
+[*] MINING SEED 11 (11/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1830) ***
+     Epoch    25: delta=0.0917 Acc=0.0000 kappa=     inf S=1.386 C_v=1.86e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1830 Interf=0.0461 |W|=93.09 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0917@25)
+     Epoch    50: delta=0.1061 Acc=0.0030 kappa=112014.91 S=1.386 C_v=4.53e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1835 Interf=0.0624 |W|=96.79 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0917@25)
+     Epoch    75: delta=0.1160 Acc=0.0000 kappa=112014.91 S=1.385 C_v=9.02e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1789 Interf=0.0615 |W|=99.47 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0917@25)
+     Epoch   100: delta=0.1162 Acc=0.0178 kappa=98072.59 S=1.384 C_v=1.65e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1824 Interf=0.0606 |W|=101.94 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0917@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0104)
+     Best delta was 0.0917 at epoch 25
+  [-] Seed 11 vitrified (glass)
+
+============================================================
+[*] MINING SEED 12 (12/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2844) ***
+     Epoch    25: delta=0.0921 Acc=0.0000 kappa=     inf S=1.386 C_v=1.86e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2844 Interf=0.0556 |W|=93.25 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0921@25)
+     Epoch    50: delta=0.0997 Acc=0.0030 kappa=108178.98 S=1.386 C_v=3.89e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2505 Interf=0.0687 |W|=96.75 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0921@25)
+     Epoch    75: delta=0.1101 Acc=0.0030 kappa=108178.98 S=1.385 C_v=7.58e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2654 Interf=0.0645 |W|=99.53 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0921@25)
+     Epoch   100: delta=0.1135 Acc=0.0059 kappa=72043.52 S=1.385 C_v=1.26e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2729 Interf=0.0390 |W|=101.91 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0921@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0044)
+     Best delta was 0.0921 at epoch 25
+  [-] Seed 12 vitrified (glass)
+
+============================================================
+[*] MINING SEED 13 (13/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2024) ***
+     Epoch    25: delta=0.0877 Acc=0.0000 kappa=     inf S=1.386 C_v=2.11e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2024 Interf=0.1214 |W|=93.17 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0877@25)
+     Epoch    50: delta=0.1067 Acc=0.0000 kappa=101649.92 S=1.386 C_v=4.65e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1747 Interf=0.1074 |W|=96.83 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0877@25)
+     Epoch    75: delta=0.1087 Acc=0.0030 kappa=101649.92 S=1.385 C_v=8.48e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1726 Interf=0.0853 |W|=99.59 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0877@25)
+     Epoch   100: delta=0.1090 Acc=0.0118 kappa=100243.45 S=1.385 C_v=1.41e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1654 Interf=0.0880 |W|=102.00 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0877@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0059)
+     Best delta was 0.0877 at epoch 25
+  [-] Seed 13 vitrified (glass)
+
+============================================================
+[*] MINING SEED 14 (14/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2815) ***
+     Epoch    25: delta=0.0944 Acc=0.0000 kappa=     inf S=1.386 C_v=2.44e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2815 Interf=0.0529 |W|=93.09 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0944@25)
+     Epoch    50: delta=0.1100 Acc=0.0000 kappa=118894.97 S=1.386 C_v=4.46e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2405 Interf=0.0113 |W|=96.60 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0944@25)
+     Epoch    75: delta=0.1207 Acc=0.0148 kappa=118894.97 S=1.385 C_v=8.47e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2329 Interf=0.0197 |W|=99.17 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0944@25)
+     Epoch   100: delta=0.1230 Acc=0.0207 kappa=100837.41 S=1.385 C_v=1.38e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2200 Interf=0.0188 |W|=101.36 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0944@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0104)
+     Best delta was 0.0944 at epoch 25
+  [-] Seed 14 vitrified (glass)
+
+============================================================
+[*] MINING SEED 15 (15/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2641) ***
+     Epoch    25: delta=0.1005 Acc=0.0000 kappa=     inf S=1.386 C_v=1.80e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2641 Interf=0.0129 |W|=93.02 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1005@25)
+     Epoch    50: delta=0.1045 Acc=0.0000 kappa=143456.39 S=1.386 C_v=4.45e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2218 Interf=0.0258 |W|=96.50 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1005@25)
+     Epoch    75: delta=0.1105 Acc=0.0118 kappa=143456.39 S=1.385 C_v=8.96e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2328 Interf=0.0351 |W|=99.36 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1005@25)
+     Epoch   100: delta=0.1141 Acc=0.0059 kappa=105739.44 S=1.384 C_v=1.60e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2142 Interf=0.0391 |W|=101.68 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1005@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0030)
+     Best delta was 0.1005 at epoch 25
+  [-] Seed 15 vitrified (glass)
+
+============================================================
+[*] MINING SEED 16 (16/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2771) ***
+     Epoch    25: delta=0.0892 Acc=0.0000 kappa=     inf S=1.386 C_v=2.12e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2771 Interf=0.0745 |W|=93.27 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0892@25)
+     Epoch    50: delta=0.1038 Acc=0.0089 kappa=108316.62 S=1.385 C_v=5.13e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2929 Interf=0.0622 |W|=97.04 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0892@25)
+     Epoch    75: delta=0.1108 Acc=0.0030 kappa=108316.62 S=1.385 C_v=9.29e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2689 Interf=0.0388 |W|=99.61 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0892@25)
+     Epoch   100: delta=0.1184 Acc=0.0118 kappa=126805.02 S=1.385 C_v=1.48e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2767 Interf=0.0396 |W|=101.97 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0892@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0104)
+     Best delta was 0.0892 at epoch 25
+  [-] Seed 16 vitrified (glass)
+
+============================================================
+[*] MINING SEED 17 (17/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1824) ***
+     Epoch    25: delta=0.0960 Acc=0.0030 kappa=     inf S=1.386 C_v=2.27e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1824 Interf=0.0511 |W|=93.34 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0960@25)
+     Epoch    50: delta=0.1030 Acc=0.0000 kappa=102088.59 S=1.385 C_v=5.36e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1834 Interf=0.0494 |W|=96.45 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0960@25)
+     Epoch    75: delta=0.1066 Acc=0.0089 kappa=102088.59 S=1.385 C_v=8.87e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1680 Interf=0.0393 |W|=98.91 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0960@25)
+     Epoch   100: delta=0.1095 Acc=0.0118 kappa=94922.27 S=1.385 C_v=1.45e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1786 Interf=0.0409 |W|=101.08 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0960@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0059)
+     Best delta was 0.0960 at epoch 25
+  [-] Seed 17 vitrified (glass)
+
+============================================================
+[*] MINING SEED 18 (18/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2784) ***
+     Epoch    25: delta=0.0949 Acc=0.0000 kappa=     inf S=1.386 C_v=1.60e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2784 Interf=0.0508 |W|=93.08 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0949@25)
+     Epoch    50: delta=0.1059 Acc=0.0059 kappa=110397.59 S=1.386 C_v=4.45e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3005 Interf=0.0576 |W|=96.76 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0949@25)
+     Epoch    75: delta=0.1177 Acc=0.0089 kappa=110397.59 S=1.385 C_v=8.70e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2787 Interf=0.0532 |W|=99.54 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0949@25)
+     Epoch   100: delta=0.1246 Acc=0.0118 kappa=88925.69 S=1.385 C_v=1.43e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2732 Interf=0.0595 |W|=101.98 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0949@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0089)
+     Best delta was 0.0949 at epoch 25
+  [-] Seed 18 vitrified (glass)
+
+============================================================
+[*] MINING SEED 19 (19/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2287) ***
+     Epoch    25: delta=0.0935 Acc=0.0000 kappa=     inf S=1.386 C_v=1.70e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2287 Interf=0.0609 |W|=93.29 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0935@25)
+     Epoch    50: delta=0.0919 Acc=0.0030 kappa=118307.72 S=1.385 C_v=4.98e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2044 Interf=0.0843 |W|=96.52 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0919@50)
+     Epoch    75: delta=0.0989 Acc=0.0030 kappa=118307.72 S=1.385 C_v=8.77e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1991 Interf=0.0703 |W|=99.08 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0919@50)
+     Epoch   100: delta=0.1090 Acc=0.0030 kappa=82181.15 S=1.384 C_v=1.67e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1782 Interf=0.0589 |W|=101.27 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0919@50)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0030)
+     Best delta was 0.0919 at epoch 50
+  [-] Seed 19 vitrified (glass)
+
+============================================================
+[*] MINING SEED 20 (20/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2340) ***
+     Epoch    25: delta=0.0900 Acc=0.0030 kappa=     inf S=1.386 C_v=2.14e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2340 Interf=0.0187 |W|=93.23 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0900@25)
+     Epoch    50: delta=0.0999 Acc=0.0030 kappa=98150.04 S=1.385 C_v=4.92e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2292 Interf=0.0253 |W|=96.58 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0900@25)
+     Epoch    75: delta=0.1022 Acc=0.0118 kappa=98150.04 S=1.385 C_v=9.04e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2370 Interf=0.0191 |W|=98.97 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0900@25)
+     Epoch   100: delta=0.1109 Acc=0.0059 kappa=97828.41 S=1.385 C_v=1.41e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2333 Interf=0.0224 |W|=101.17 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0900@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0044)
+     Best delta was 0.0900 at epoch 25
+  [-] Seed 20 vitrified (glass)
+
+============================================================
+[*] MINING SEED 21 (21/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.3031) ***
+     Epoch    25: delta=0.0955 Acc=0.0030 kappa=     inf S=1.386 C_v=1.91e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3031 Interf=0.1179 |W|=93.35 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0955@25)
+     Epoch    50: delta=0.1106 Acc=0.0000 kappa=113723.09 S=1.386 C_v=4.55e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3366 Interf=0.1018 |W|=96.75 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0955@25)
+     Epoch    75: delta=0.1111 Acc=0.0000 kappa=113723.09 S=1.385 C_v=8.17e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3122 Interf=0.0965 |W|=99.37 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0955@25)
+     Epoch   100: delta=0.1189 Acc=0.0178 kappa=77361.22 S=1.385 C_v=1.31e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3211 Interf=0.0825 |W|=101.78 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0955@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0089)
+     Best delta was 0.0955 at epoch 25
+  [-] Seed 21 vitrified (glass)
+
+============================================================
+[*] MINING SEED 22 (22/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2090) ***
+     Epoch    25: delta=0.0910 Acc=0.0000 kappa=     inf S=1.386 C_v=2.16e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2090 Interf=0.0327 |W|=93.22 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0910@25)
+     Epoch    50: delta=0.0923 Acc=0.0030 kappa=120181.23 S=1.385 C_v=5.60e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2206 Interf=0.0493 |W|=96.80 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0910@25)
+     Epoch    75: delta=0.1048 Acc=0.0000 kappa=120181.23 S=1.385 C_v=9.96e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2155 Interf=0.0392 |W|=99.42 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0910@25)
+     Epoch   100: delta=0.1124 Acc=0.0000 kappa=126008.34 S=1.384 C_v=1.56e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2174 Interf=0.0427 |W|=101.48 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0910@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0015)
+     Best delta was 0.0910 at epoch 25
+  [-] Seed 22 vitrified (glass)
+
+============================================================
+[*] MINING SEED 23 (23/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1620) ***
+     Epoch    25: delta=0.0992 Acc=0.0059 kappa=     inf S=1.386 C_v=1.90e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1620 Interf=0.0630 |W|=93.14 |g|=8.58e-01 WD=1.0e-02 phase=gas (best_d=0.0992@25)
+     Epoch    50: delta=0.0992 Acc=0.0059 kappa=104559.81 S=1.386 C_v=4.69e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1820 Interf=0.0492 |W|=96.95 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0992@50)
+     Epoch    75: delta=0.1057 Acc=0.0059 kappa=104559.81 S=1.385 C_v=8.98e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2047 Interf=0.0444 |W|=99.82 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0992@50)
+     Epoch   100: delta=0.1159 Acc=0.0178 kappa=97445.69 S=1.384 C_v=1.60e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1940 Interf=0.0459 |W|=102.40 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0992@50)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0118)
+     Best delta was 0.0992 at epoch 50
+  [-] Seed 23 vitrified (glass)
+
+============================================================
+[*] MINING SEED 24 (24/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2192) ***
+     Epoch    25: delta=0.1010 Acc=0.0000 kappa=     inf S=1.386 C_v=2.02e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2192 Interf=0.0920 |W|=93.19 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1010@25)
+     Epoch    50: delta=0.0986 Acc=0.0000 kappa=142282.78 S=1.386 C_v=4.76e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2393 Interf=0.1192 |W|=96.77 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0986@50)
+     Epoch    75: delta=0.1120 Acc=0.0059 kappa=142282.78 S=1.385 C_v=8.48e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2295 Interf=0.1002 |W|=99.48 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0986@50)
+     Epoch   100: delta=0.1241 Acc=0.0118 kappa=90532.30 S=1.385 C_v=1.46e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2414 Interf=0.0881 |W|=101.87 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0986@50)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0059)
+     Best delta was 0.0986 at epoch 50
+  [-] Seed 24 vitrified (glass)
+
+============================================================
+[*] MINING SEED 25 (25/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1896) ***
+     Epoch    25: delta=0.0918 Acc=0.0000 kappa=     inf S=1.386 C_v=2.74e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1896 Interf=0.0777 |W|=93.23 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0918@25)
+     Epoch    50: delta=0.0970 Acc=0.0030 kappa=116754.93 S=1.385 C_v=5.43e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1608 Interf=0.0746 |W|=96.71 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0918@25)
+     Epoch    75: delta=0.1028 Acc=0.0030 kappa=116754.93 S=1.385 C_v=9.31e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1632 Interf=0.0673 |W|=99.39 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0918@25)
+     Epoch   100: delta=0.1129 Acc=0.0148 kappa=106672.39 S=1.385 C_v=1.48e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1549 Interf=0.0704 |W|=101.66 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0918@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0089)
+     Best delta was 0.0918 at epoch 25
+  [-] Seed 25 vitrified (glass)
+
+============================================================
+[*] MINING SEED 26 (26/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2340) ***
+     Epoch    25: delta=0.0932 Acc=0.0030 kappa=     inf S=1.386 C_v=1.83e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2340 Interf=0.0504 |W|=93.13 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0932@25)
+     Epoch    50: delta=0.1009 Acc=0.0059 kappa=87941.44 S=1.386 C_v=4.44e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2427 Interf=0.0640 |W|=96.76 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0932@25)
+     Epoch    75: delta=0.1106 Acc=0.0089 kappa=87941.44 S=1.385 C_v=8.73e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2549 Interf=0.0673 |W|=99.32 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0932@25)
+     Epoch   100: delta=0.1179 Acc=0.0089 kappa=97323.31 S=1.384 C_v=1.56e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2426 Interf=0.0653 |W|=101.54 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0932@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0074)
+     Best delta was 0.0932 at epoch 25
+  [-] Seed 26 vitrified (glass)
+
+============================================================
+[*] MINING SEED 27 (27/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2074) ***
+     Epoch    25: delta=0.1003 Acc=0.0030 kappa=     inf S=1.386 C_v=2.05e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2074 Interf=0.0352 |W|=93.31 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1003@25)
+     Epoch    50: delta=0.1013 Acc=0.0000 kappa=90878.71 S=1.385 C_v=4.93e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1671 Interf=0.0348 |W|=96.95 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1003@25)
+     Epoch    75: delta=0.1065 Acc=0.0000 kappa=90878.71 S=1.385 C_v=9.50e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1789 Interf=0.0294 |W|=99.54 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1003@25)
+     Epoch   100: delta=0.1120 Acc=0.0030 kappa=132268.80 S=1.385 C_v=1.51e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1675 Interf=0.0336 |W|=101.65 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1003@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0015)
+     Best delta was 0.1003 at epoch 25
+  [-] Seed 27 vitrified (glass)
+
+============================================================
+[*] MINING SEED 28 (28/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2419) ***
+     Epoch    25: delta=0.0888 Acc=0.0000 kappa=     inf S=1.386 C_v=3.04e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2419 Interf=0.0386 |W|=93.38 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0888@25)
+     Epoch    50: delta=0.1021 Acc=0.0030 kappa=128339.47 S=1.385 C_v=5.36e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2395 Interf=0.0400 |W|=96.95 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0888@25)
+     Epoch    75: delta=0.1057 Acc=0.0059 kappa=128339.47 S=1.385 C_v=8.49e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2377 Interf=0.0424 |W|=99.85 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0888@25)
+     Epoch   100: delta=0.1091 Acc=0.0089 kappa=114484.20 S=1.385 C_v=1.44e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2347 Interf=0.0590 |W|=102.37 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0888@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0059)
+     Best delta was 0.0888 at epoch 25
+  [-] Seed 28 vitrified (glass)
+
+============================================================
+[*] MINING SEED 29 (29/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1874) ***
+     Epoch    25: delta=0.1050 Acc=0.0000 kappa=     inf S=1.386 C_v=1.96e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1874 Interf=0.0131 |W|=93.18 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1050@25)
+     Epoch    50: delta=0.1210 Acc=0.0030 kappa=85460.99 S=1.386 C_v=3.97e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1941 Interf=0.0250 |W|=96.94 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1050@25)
+     Epoch    75: delta=0.1270 Acc=0.0118 kappa=85460.99 S=1.385 C_v=7.26e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1900 Interf=0.0389 |W|=99.84 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1050@25)
+     Epoch   100: delta=0.1266 Acc=0.0148 kappa=98319.09 S=1.385 C_v=1.14e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1902 Interf=0.0457 |W|=102.05 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1050@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0089)
+     Best delta was 0.1050 at epoch 25
+  [-] Seed 29 vitrified (glass)
+
+============================================================
+[*] MINING SEED 30 (30/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1746) ***
+     Epoch    25: delta=0.0955 Acc=0.0000 kappa=     inf S=1.386 C_v=2.00e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1746 Interf=0.0868 |W|=93.19 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0955@25)
+     Epoch    50: delta=0.1004 Acc=0.0000 kappa=105622.12 S=1.385 C_v=4.85e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1898 Interf=0.0910 |W|=96.78 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0955@25)
+     Epoch    75: delta=0.1060 Acc=0.0030 kappa=105622.12 S=1.385 C_v=8.22e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2071 Interf=0.0621 |W|=99.63 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0955@25)
+     Epoch   100: delta=0.1183 Acc=0.0089 kappa=81868.20 S=1.385 C_v=1.38e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1851 Interf=0.0773 |W|=101.98 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0955@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0044)
+     Best delta was 0.0955 at epoch 25
+  [-] Seed 30 vitrified (glass)
+
+============================================================
+[*] MINING SEED 31 (31/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2653) ***
+     Epoch    25: delta=0.0938 Acc=0.0000 kappa=     inf S=1.386 C_v=2.47e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2653 Interf=0.0491 |W|=93.27 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0938@25)
+     Epoch    50: delta=0.1032 Acc=0.0059 kappa=118986.88 S=1.386 C_v=4.55e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2744 Interf=0.0667 |W|=96.54 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0938@25)
+     Epoch    75: delta=0.1120 Acc=0.0118 kappa=118986.88 S=1.385 C_v=8.19e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2897 Interf=0.0661 |W|=98.69 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0938@25)
+     Epoch   100: delta=0.1185 Acc=0.0178 kappa=108642.73 S=1.385 C_v=1.30e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2781 Interf=0.0635 |W|=100.88 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0938@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0118)
+     Best delta was 0.0938 at epoch 25
+  [-] Seed 31 vitrified (glass)
+
+============================================================
+[*] MINING SEED 32 (32/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1654) ***
+     Epoch    25: delta=0.0970 Acc=0.0000 kappa=     inf S=1.386 C_v=2.26e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1654 Interf=0.0777 |W|=93.20 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0970@25)
+     Epoch    50: delta=0.1061 Acc=0.0118 kappa=112591.09 S=1.386 C_v=4.49e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1837 Interf=0.0845 |W|=96.85 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0970@25)
+     Epoch    75: delta=0.1149 Acc=0.0237 kappa=112591.09 S=1.385 C_v=7.84e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1734 Interf=0.0902 |W|=99.66 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0970@25)
+     Epoch   100: delta=0.1201 Acc=0.0266 kappa=89627.18 S=1.385 C_v=1.35e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1705 Interf=0.0781 |W|=102.23 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0970@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0192)
+     Best delta was 0.0970 at epoch 25
+  [-] Seed 32 vitrified (glass)
+
+============================================================
+[*] MINING SEED 33 (33/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1496) ***
+     Epoch    25: delta=0.0921 Acc=0.0000 kappa=     inf S=1.386 C_v=1.65e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1496 Interf=0.0358 |W|=93.19 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0921@25)
+     Epoch    50: delta=0.0989 Acc=0.0000 kappa=126647.23 S=1.386 C_v=4.13e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1680 Interf=0.0331 |W|=96.63 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0921@25)
+     Epoch    75: delta=0.1065 Acc=0.0089 kappa=126647.23 S=1.385 C_v=7.72e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1606 Interf=0.0188 |W|=99.42 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0921@25)
+     Epoch   100: delta=0.1074 Acc=0.0059 kappa=86122.42 S=1.385 C_v=1.35e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1735 Interf=0.0240 |W|=101.54 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0921@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0030)
+     Best delta was 0.0921 at epoch 25
+  [-] Seed 33 vitrified (glass)
+
+============================================================
+[*] MINING SEED 34 (34/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2382) ***
+     Epoch    25: delta=0.0926 Acc=0.0000 kappa=     inf S=1.386 C_v=2.23e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2382 Interf=0.0411 |W|=93.34 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0926@25)
+     Epoch    50: delta=0.1022 Acc=0.0000 kappa=160022.03 S=1.385 C_v=5.15e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2304 Interf=0.0425 |W|=96.83 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0926@25)
+     Epoch    75: delta=0.1102 Acc=0.0059 kappa=160022.03 S=1.385 C_v=9.66e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2161 Interf=0.0391 |W|=99.53 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0926@25)
+     Epoch   100: delta=0.1139 Acc=0.0148 kappa=103783.90 S=1.384 C_v=1.67e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2339 Interf=0.0374 |W|=101.88 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0926@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0074)
+     Best delta was 0.0926 at epoch 25
+  [-] Seed 34 vitrified (glass)
+
+============================================================
+[*] MINING SEED 35 (35/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2165) ***
+     Epoch    25: delta=0.0844 Acc=0.0000 kappa=     inf S=1.386 C_v=2.07e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2165 Interf=0.0103 |W|=93.08 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0844@25)
+     Epoch    50: delta=0.1047 Acc=0.0059 kappa=124764.22 S=1.385 C_v=4.92e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1905 Interf=0.0074 |W|=96.79 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0844@25)
+     Epoch    75: delta=0.1211 Acc=0.0000 kappa=124764.22 S=1.385 C_v=8.64e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2036 Interf=0.0160 |W|=99.60 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0844@25)
+     Epoch   100: delta=0.1325 Acc=0.0059 kappa=165760.23 S=1.385 C_v=1.40e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2101 Interf=0.0163 |W|=101.74 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0844@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0059)
+     Best delta was 0.0844 at epoch 25
+  [-] Seed 35 vitrified (glass)
+
+============================================================
+[*] MINING SEED 36 (36/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2506) ***
+     Epoch    25: delta=0.0926 Acc=0.0000 kappa=     inf S=1.386 C_v=1.72e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2506 Interf=0.0781 |W|=93.19 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0926@25)
+     Epoch    50: delta=0.1024 Acc=0.0000 kappa=137725.95 S=1.386 C_v=3.88e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2246 Interf=0.0422 |W|=96.84 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0926@25)
+     Epoch    75: delta=0.1128 Acc=0.0059 kappa=137725.95 S=1.385 C_v=7.39e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2330 Interf=0.0423 |W|=99.59 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0926@25)
+     Epoch   100: delta=0.1184 Acc=0.0118 kappa=145587.17 S=1.385 C_v=1.19e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2290 Interf=0.0384 |W|=102.10 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0926@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0059)
+     Best delta was 0.0926 at epoch 25
+  [-] Seed 36 vitrified (glass)
+
+============================================================
+[*] MINING SEED 37 (37/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2136) ***
+     Epoch    25: delta=0.0956 Acc=0.0000 kappa=     inf S=1.386 C_v=1.93e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2136 Interf=0.0499 |W|=93.00 |g|=9.43e-01 WD=1.0e-02 phase=gas (best_d=0.0956@25)
+     Epoch    50: delta=0.1039 Acc=0.0059 kappa=131437.92 S=1.385 C_v=5.49e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2248 Interf=0.0594 |W|=96.82 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0956@25)
+     Epoch    75: delta=0.1093 Acc=0.0030 kappa=131437.92 S=1.385 C_v=9.96e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2312 Interf=0.0557 |W|=99.55 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0956@25)
+     Epoch   100: delta=0.1136 Acc=0.0030 kappa=134608.89 S=1.384 C_v=1.69e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2402 Interf=0.0475 |W|=101.94 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0956@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0044)
+     Best delta was 0.0956 at epoch 25
+  [-] Seed 37 vitrified (glass)
+
+============================================================
+[*] MINING SEED 38 (38/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1934) ***
+     Epoch    25: delta=0.0989 Acc=0.0000 kappa=     inf S=1.386 C_v=2.02e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1934 Interf=0.0440 |W|=93.17 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0989@25)
+     Epoch    50: delta=0.1035 Acc=0.0030 kappa=90574.27 S=1.386 C_v=4.35e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2084 Interf=0.0197 |W|=96.29 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0989@25)
+     Epoch    75: delta=0.1069 Acc=0.0059 kappa=90574.27 S=1.385 C_v=7.80e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2153 Interf=0.0279 |W|=98.80 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0989@25)
+     Epoch   100: delta=0.1085 Acc=0.0089 kappa=108225.29 S=1.385 C_v=1.34e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2051 Interf=0.0269 |W|=100.99 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0989@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0059)
+     Best delta was 0.0989 at epoch 25
+  [-] Seed 38 vitrified (glass)
+
+============================================================
+[*] MINING SEED 39 (39/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2924) ***
+     Epoch    25: delta=0.0991 Acc=0.0000 kappa=     inf S=1.386 C_v=1.72e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2924 Interf=0.0261 |W|=93.14 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0991@25)
+     Epoch    50: delta=0.1027 Acc=0.0059 kappa=114570.95 S=1.386 C_v=3.68e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2824 Interf=0.0585 |W|=96.55 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0991@25)
+     Epoch    75: delta=0.1075 Acc=0.0059 kappa=114570.95 S=1.385 C_v=7.37e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2940 Interf=0.0700 |W|=99.26 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0991@25)
+     Epoch   100: delta=0.1159 Acc=0.0059 kappa=93263.02 S=1.385 C_v=1.20e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2733 Interf=0.0610 |W|=101.93 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0991@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0059)
+     Best delta was 0.0991 at epoch 25
+  [-] Seed 39 vitrified (glass)
+
+============================================================
+[*] MINING SEED 40 (40/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2717) ***
+     Epoch    25: delta=0.0929 Acc=0.0000 kappa=     inf S=1.386 C_v=1.48e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2717 Interf=0.0814 |W|=93.30 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0929@25)
+     Epoch    50: delta=0.0995 Acc=0.0059 kappa=111127.56 S=1.386 C_v=4.09e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2519 Interf=0.0492 |W|=96.83 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0929@25)
+     Epoch    75: delta=0.1082 Acc=0.0089 kappa=111127.56 S=1.385 C_v=7.29e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2348 Interf=0.0612 |W|=99.58 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0929@25)
+     Epoch   100: delta=0.1116 Acc=0.0030 kappa=75978.54 S=1.385 C_v=1.37e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2435 Interf=0.0606 |W|=101.92 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0929@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0044)
+     Best delta was 0.0929 at epoch 25
+  [-] Seed 40 vitrified (glass)
+
+============================================================
+[*] MINING SEED 41 (41/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2177) ***
+     Epoch    25: delta=0.0959 Acc=0.0030 kappa=     inf S=1.386 C_v=2.25e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2177 Interf=0.0821 |W|=93.35 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0959@25)
+     Epoch    50: delta=0.1008 Acc=0.0059 kappa=125800.53 S=1.385 C_v=5.75e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1900 Interf=0.0725 |W|=96.94 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0959@25)
+     Epoch    75: delta=0.1140 Acc=0.0059 kappa=125800.53 S=1.385 C_v=1.08e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1826 Interf=0.0514 |W|=99.51 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0959@25)
+     Epoch   100: delta=0.1209 Acc=0.0089 kappa=79047.92 S=1.384 C_v=1.77e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1847 Interf=0.0431 |W|=101.91 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0959@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0074)
+     Best delta was 0.0959 at epoch 25
+  [-] Seed 41 vitrified (glass)
+
+============================================================
+[*] MINING SEED 42 (42/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2112) ***
+     Epoch    25: delta=0.0970 Acc=0.0030 kappa=     inf S=1.386 C_v=2.93e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2112 Interf=0.0132 |W|=93.25 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0970@25)
+     Epoch    50: delta=0.1104 Acc=0.0000 kappa=129952.46 S=1.385 C_v=5.39e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2014 Interf=0.0137 |W|=96.67 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0970@25)
+     Epoch    75: delta=0.1177 Acc=0.0000 kappa=129952.46 S=1.385 C_v=9.34e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1903 Interf=0.0184 |W|=99.26 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0970@25)
+     Epoch   100: delta=0.1218 Acc=0.0030 kappa=115584.85 S=1.385 C_v=1.44e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1818 Interf=0.0337 |W|=101.46 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0970@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0015)
+     Best delta was 0.0970 at epoch 25
+  [-] Seed 42 vitrified (glass)
+
+============================================================
+[*] MINING SEED 43 (43/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1740) ***
+     Epoch    25: delta=0.0926 Acc=0.0000 kappa=     inf S=1.386 C_v=2.51e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1740 Interf=0.0501 |W|=93.36 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0926@25)
+     Epoch    50: delta=0.0967 Acc=0.0030 kappa=109575.05 S=1.385 C_v=5.62e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1703 Interf=0.0283 |W|=96.93 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0926@25)
+     Epoch    75: delta=0.1029 Acc=0.0207 kappa=109575.05 S=1.385 C_v=9.26e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1571 Interf=0.0320 |W|=99.52 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0926@25)
+     Epoch   100: delta=0.1175 Acc=0.0296 kappa=86096.12 S=1.385 C_v=1.44e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1630 Interf=0.0253 |W|=101.81 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0926@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0163)
+     Best delta was 0.0926 at epoch 25
+  [-] Seed 43 vitrified (glass)
+
+============================================================
+[*] MINING SEED 44 (44/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2270) ***
+     Epoch    25: delta=0.1089 Acc=0.0000 kappa=     inf S=1.386 C_v=1.88e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2270 Interf=0.0547 |W|=93.28 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1089@25)
+     Epoch    50: delta=0.1087 Acc=0.0000 kappa=133943.19 S=1.386 C_v=4.25e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2278 Interf=0.0523 |W|=96.86 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1087@50)
+     Epoch    75: delta=0.1089 Acc=0.0089 kappa=133943.19 S=1.385 C_v=7.73e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2476 Interf=0.0463 |W|=99.51 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1087@50)
+     Epoch   100: delta=0.1090 Acc=0.0089 kappa=115964.68 S=1.385 C_v=1.26e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2315 Interf=0.0567 |W|=101.80 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1087@50)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0044)
+     Best delta was 0.1087 at epoch 50
+  [-] Seed 44 vitrified (glass)
+
+============================================================
+[*] MINING SEED 45 (45/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2124) ***
+     Epoch    25: delta=0.0888 Acc=0.0030 kappa=     inf S=1.386 C_v=2.61e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2124 Interf=0.0703 |W|=93.11 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0888@25)
+     Epoch    50: delta=0.0970 Acc=0.0089 kappa=135815.78 S=1.385 C_v=5.16e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2215 Interf=0.0783 |W|=96.82 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0888@25)
+     Epoch    75: delta=0.1043 Acc=0.0089 kappa=135815.78 S=1.385 C_v=9.07e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1980 Interf=0.0775 |W|=99.74 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0888@25)
+     Epoch   100: delta=0.1161 Acc=0.0148 kappa=91064.30 S=1.385 C_v=1.51e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1991 Interf=0.0625 |W|=102.19 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0888@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0118)
+     Best delta was 0.0888 at epoch 25
+  [-] Seed 45 vitrified (glass)
+
+============================================================
+[*] MINING SEED 46 (46/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2257) ***
+     Epoch    25: delta=0.0870 Acc=0.0030 kappa=     inf S=1.386 C_v=2.17e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2257 Interf=0.0161 |W|=93.09 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0870@25)
+     Epoch    50: delta=0.0966 Acc=0.0030 kappa=101438.16 S=1.385 C_v=5.02e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2521 Interf=0.0252 |W|=96.56 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0870@25)
+     Epoch    75: delta=0.1028 Acc=0.0118 kappa=101438.16 S=1.385 C_v=9.29e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2578 Interf=0.0300 |W|=99.26 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0870@25)
+     Epoch   100: delta=0.1130 Acc=0.0059 kappa=127396.62 S=1.385 C_v=1.49e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2527 Interf=0.0296 |W|=101.51 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0870@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0044)
+     Best delta was 0.0870 at epoch 25
+  [-] Seed 46 vitrified (glass)
+
+============================================================
+[*] MINING SEED 47 (47/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2532) ***
+     Epoch    25: delta=0.0915 Acc=0.0000 kappa=     inf S=1.386 C_v=2.35e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2532 Interf=0.0599 |W|=93.35 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0915@25)
+     Epoch    50: delta=0.1084 Acc=0.0030 kappa=93942.23 S=1.385 C_v=5.28e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2690 Interf=0.0616 |W|=96.91 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0915@25)
+     Epoch    75: delta=0.1100 Acc=0.0000 kappa=93942.23 S=1.385 C_v=9.71e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2683 Interf=0.0678 |W|=99.50 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0915@25)
+     Epoch   100: delta=0.1125 Acc=0.0089 kappa=70890.28 S=1.385 C_v=1.54e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2754 Interf=0.0651 |W|=101.75 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0915@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0059)
+     Best delta was 0.0915 at epoch 25
+  [-] Seed 47 vitrified (glass)
+
+============================================================
+[*] MINING SEED 48 (48/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2073) ***
+     Epoch    25: delta=0.0861 Acc=0.0030 kappa=     inf S=1.386 C_v=2.11e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2073 Interf=0.0239 |W|=93.12 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0861@25)
+     Epoch    50: delta=0.0997 Acc=0.0059 kappa=97217.18 S=1.385 C_v=5.39e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2436 Interf=0.0093 |W|=96.62 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0861@25)
+     Epoch    75: delta=0.1129 Acc=0.0030 kappa=97217.18 S=1.385 C_v=9.02e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2537 Interf=0.0160 |W|=99.14 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0861@25)
+     Epoch   100: delta=0.1208 Acc=0.0148 kappa=114067.38 S=1.385 C_v=1.52e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2367 Interf=0.0215 |W|=101.25 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0861@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0104)
+     Best delta was 0.0861 at epoch 25
+  [-] Seed 48 vitrified (glass)
+
+============================================================
+[*] MINING SEED 49 (49/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2202) ***
+     Epoch    25: delta=0.0849 Acc=0.0000 kappa=     inf S=1.386 C_v=2.24e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2202 Interf=0.0227 |W|=93.14 |g|=8.94e-01 WD=1.0e-02 phase=gas (best_d=0.0849@25)
+     Epoch    50: delta=0.1009 Acc=0.0000 kappa=103078.20 S=1.385 C_v=5.71e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2420 Interf=0.0174 |W|=96.98 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0849@25)
+     Epoch    75: delta=0.1047 Acc=0.0148 kappa=103078.20 S=1.385 C_v=1.03e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2419 Interf=0.0175 |W|=99.80 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0849@25)
+     Epoch   100: delta=0.1120 Acc=0.0030 kappa=78614.70 S=1.384 C_v=1.66e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2213 Interf=0.0268 |W|=102.34 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0849@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0015)
+     Best delta was 0.0849 at epoch 25
+  [-] Seed 49 vitrified (glass)
+
+============================================================
+[*] MINING SEED 50 (50/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2915) ***
+     Epoch    25: delta=0.0890 Acc=0.0000 kappa=     inf S=1.386 C_v=2.16e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2915 Interf=0.0154 |W|=92.99 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0890@25)
+     Epoch    50: delta=0.0955 Acc=0.0059 kappa=134415.27 S=1.386 C_v=4.83e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2976 Interf=0.0413 |W|=96.58 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0890@25)
+     Epoch    75: delta=0.1046 Acc=0.0089 kappa=134415.27 S=1.385 C_v=9.66e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2718 Interf=0.0193 |W|=99.30 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0890@25)
+     Epoch   100: delta=0.1063 Acc=0.0089 kappa=124825.77 S=1.384 C_v=1.58e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2725 Interf=0.0051 |W|=101.64 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0890@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0074)
+     Best delta was 0.0890 at epoch 25
+  [-] Seed 50 vitrified (glass)
+
+============================================================
+[*] MINING SEED 51 (51/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.3063) ***
+     Epoch    25: delta=0.0979 Acc=0.0000 kappa=     inf S=1.386 C_v=2.04e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3063 Interf=0.0637 |W|=93.32 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0979@25)
+     Epoch    50: delta=0.1038 Acc=0.0000 kappa=164374.64 S=1.385 C_v=4.98e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2994 Interf=0.0727 |W|=96.70 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0979@25)
+     Epoch    75: delta=0.1076 Acc=0.0118 kappa=164374.64 S=1.385 C_v=9.46e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2915 Interf=0.0600 |W|=99.21 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0979@25)
+     Epoch   100: delta=0.1081 Acc=0.0178 kappa=131470.02 S=1.385 C_v=1.43e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2867 Interf=0.0599 |W|=101.32 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0979@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0089)
+     Best delta was 0.0979 at epoch 25
+  [-] Seed 51 vitrified (glass)
+
+============================================================
+[*] MINING SEED 52 (52/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2301) ***
+     Epoch    25: delta=0.0891 Acc=0.0000 kappa=     inf S=1.386 C_v=1.60e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2301 Interf=0.0308 |W|=93.16 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0891@25)
+     Epoch    50: delta=0.1051 Acc=0.0030 kappa=128157.10 S=1.386 C_v=4.20e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2357 Interf=0.0287 |W|=96.78 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0891@25)
+     Epoch    75: delta=0.1170 Acc=0.0118 kappa=128157.10 S=1.385 C_v=7.73e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2430 Interf=0.0514 |W|=99.55 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0891@25)
+     Epoch   100: delta=0.1250 Acc=0.0148 kappa=95355.42 S=1.385 C_v=1.33e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2348 Interf=0.0455 |W|=101.93 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0891@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0089)
+     Best delta was 0.0891 at epoch 25
+  [-] Seed 52 vitrified (glass)
+
+============================================================
+[*] MINING SEED 53 (53/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2239) ***
+     Epoch    25: delta=0.1013 Acc=0.0000 kappa=     inf S=1.386 C_v=2.27e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2239 Interf=0.1108 |W|=93.43 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1013@25)
+     Epoch    50: delta=0.1105 Acc=0.0030 kappa=107224.38 S=1.385 C_v=5.68e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2121 Interf=0.0915 |W|=96.95 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1013@25)
+     Epoch    75: delta=0.1138 Acc=0.0030 kappa=107224.38 S=1.385 C_v=1.01e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2100 Interf=0.0883 |W|=99.75 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1013@25)
+     Epoch   100: delta=0.1280 Acc=0.0118 kappa=96371.55 S=1.384 C_v=1.64e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2079 Interf=0.0861 |W|=102.17 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1013@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0074)
+     Best delta was 0.1013 at epoch 25
+  [-] Seed 53 vitrified (glass)
+
+============================================================
+[*] MINING SEED 54 (54/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2129) ***
+     Epoch    25: delta=0.0881 Acc=0.0000 kappa=     inf S=1.386 C_v=1.57e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2129 Interf=0.0349 |W|=93.27 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0881@25)
+     Epoch    50: delta=0.0987 Acc=0.0030 kappa=101188.93 S=1.386 C_v=4.32e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1943 Interf=0.0570 |W|=96.91 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0881@25)
+     Epoch    75: delta=0.1197 Acc=0.0059 kappa=101188.93 S=1.385 C_v=8.64e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2128 Interf=0.0384 |W|=99.72 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0881@25)
+     Epoch   100: delta=0.1243 Acc=0.0118 kappa=97014.33 S=1.385 C_v=1.53e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2252 Interf=0.0470 |W|=102.15 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0881@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0074)
+     Best delta was 0.0881 at epoch 25
+  [-] Seed 54 vitrified (glass)
+
+============================================================
+[*] MINING SEED 55 (55/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1686) ***
+     Epoch    25: delta=0.0958 Acc=0.0000 kappa=     inf S=1.386 C_v=1.77e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1686 Interf=0.0599 |W|=93.11 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0958@25)
+     Epoch    50: delta=0.0990 Acc=0.0059 kappa=159191.95 S=1.386 C_v=4.39e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1809 Interf=0.0615 |W|=96.77 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0958@25)
+     Epoch    75: delta=0.1133 Acc=0.0148 kappa=159191.95 S=1.385 C_v=7.88e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1570 Interf=0.0662 |W|=99.78 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0958@25)
+     Epoch   100: delta=0.1196 Acc=0.0059 kappa=110229.02 S=1.385 C_v=1.33e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1807 Interf=0.0606 |W|=102.30 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0958@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0059)
+     Best delta was 0.0958 at epoch 25
+  [-] Seed 55 vitrified (glass)
+
+============================================================
+[*] MINING SEED 56 (56/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2038) ***
+     Epoch    25: delta=0.0882 Acc=0.0000 kappa=     inf S=1.386 C_v=2.32e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2038 Interf=0.0149 |W|=93.11 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0882@25)
+     Epoch    50: delta=0.1022 Acc=0.0059 kappa=95061.36 S=1.386 C_v=4.66e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2108 Interf=0.0120 |W|=96.76 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0882@25)
+     Epoch    75: delta=0.1114 Acc=0.0059 kappa=95061.36 S=1.385 C_v=8.45e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2276 Interf=0.0313 |W|=99.42 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0882@25)
+     Epoch   100: delta=0.1231 Acc=0.0178 kappa=112317.99 S=1.385 C_v=1.39e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2117 Interf=0.0229 |W|=101.65 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0882@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0118)
+     Best delta was 0.0882 at epoch 25
+  [-] Seed 56 vitrified (glass)
+
+============================================================
+[*] MINING SEED 57 (57/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2120) ***
+     Epoch    25: delta=0.0993 Acc=0.0030 kappa=     inf S=1.386 C_v=2.22e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2120 Interf=0.0498 |W|=93.06 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0993@25)
+     Epoch    50: delta=0.1057 Acc=0.0030 kappa=126450.09 S=1.385 C_v=4.93e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2042 Interf=0.0235 |W|=96.58 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0993@25)
+     Epoch    75: delta=0.1107 Acc=0.0030 kappa=126450.09 S=1.385 C_v=8.82e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2014 Interf=0.0251 |W|=99.16 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0993@25)
+     Epoch   100: delta=0.1152 Acc=0.0118 kappa=96396.82 S=1.385 C_v=1.47e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2006 Interf=0.0236 |W|=101.50 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0993@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0074)
+     Best delta was 0.0993 at epoch 25
+  [-] Seed 57 vitrified (glass)
+
+============================================================
+[*] MINING SEED 58 (58/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2466) ***
+     Epoch    25: delta=0.0974 Acc=0.0000 kappa=     inf S=1.386 C_v=2.25e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2466 Interf=0.0810 |W|=93.26 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0974@25)
+     Epoch    50: delta=0.1090 Acc=0.0030 kappa=151382.73 S=1.386 C_v=4.35e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2049 Interf=0.0658 |W|=96.77 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0974@25)
+     Epoch    75: delta=0.1146 Acc=0.0118 kappa=151382.73 S=1.385 C_v=7.81e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2012 Interf=0.0558 |W|=99.44 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0974@25)
+     Epoch   100: delta=0.1214 Acc=0.0148 kappa=107879.76 S=1.385 C_v=1.35e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2005 Interf=0.0554 |W|=101.72 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0974@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0089)
+     Best delta was 0.0974 at epoch 25
+  [-] Seed 58 vitrified (glass)
+
+============================================================
+[*] MINING SEED 59 (59/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1747) ***
+     Epoch    25: delta=0.0961 Acc=0.0000 kappa=     inf S=1.386 C_v=1.71e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1747 Interf=0.0364 |W|=93.27 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0961@25)
+     Epoch    50: delta=0.0961 Acc=0.0059 kappa=122564.80 S=1.386 C_v=3.77e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1679 Interf=0.0418 |W|=96.72 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0961@50)
+     Epoch    75: delta=0.1074 Acc=0.0059 kappa=122564.80 S=1.385 C_v=7.43e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1690 Interf=0.0380 |W|=99.61 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0961@50)
+     Epoch   100: delta=0.1123 Acc=0.0148 kappa=112451.46 S=1.385 C_v=1.24e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1630 Interf=0.0474 |W|=102.08 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0961@50)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0104)
+     Best delta was 0.0961 at epoch 50
+  [-] Seed 59 vitrified (glass)
+
+============================================================
+[*] MINING SEED 60 (60/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2811) ***
+     Epoch    25: delta=0.0927 Acc=0.0000 kappa=     inf S=1.386 C_v=2.10e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2811 Interf=0.0984 |W|=93.22 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0927@25)
+     Epoch    50: delta=0.1130 Acc=0.0030 kappa=122861.08 S=1.385 C_v=4.87e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2871 Interf=0.0833 |W|=96.73 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0927@25)
+     Epoch    75: delta=0.1248 Acc=0.0030 kappa=122861.08 S=1.385 C_v=8.07e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2855 Interf=0.0727 |W|=99.53 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0927@25)
+     Epoch   100: delta=0.1305 Acc=0.0118 kappa=93637.98 S=1.385 C_v=1.40e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2909 Interf=0.0880 |W|=101.85 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0927@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0074)
+     Best delta was 0.0927 at epoch 25
+  [-] Seed 60 vitrified (glass)
+
+============================================================
+[*] MINING SEED 61 (61/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1914) ***
+     Epoch    25: delta=0.0901 Acc=0.0000 kappa=     inf S=1.386 C_v=2.06e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1914 Interf=0.1267 |W|=93.38 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0901@25)
+     Epoch    50: delta=0.0989 Acc=0.0000 kappa=99476.55 S=1.386 C_v=4.78e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2027 Interf=0.0779 |W|=96.93 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0901@25)
+     Epoch    75: delta=0.1049 Acc=0.0089 kappa=99476.55 S=1.385 C_v=7.85e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1901 Interf=0.0766 |W|=99.66 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0901@25)
+     Epoch   100: delta=0.1064 Acc=0.0089 kappa=101972.55 S=1.385 C_v=1.38e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1901 Interf=0.0775 |W|=102.06 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0901@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0044)
+     Best delta was 0.0901 at epoch 25
+  [-] Seed 61 vitrified (glass)
+
+============================================================
+[*] MINING SEED 62 (62/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2915) ***
+     Epoch    25: delta=0.1072 Acc=0.0000 kappa=     inf S=1.386 C_v=2.14e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2915 Interf=0.0236 |W|=93.29 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1072@25)
+     Epoch    50: delta=0.1082 Acc=0.0030 kappa=126120.29 S=1.386 C_v=4.55e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2647 Interf=0.0505 |W|=96.66 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1072@25)
+     Epoch    75: delta=0.1099 Acc=0.0089 kappa=126120.29 S=1.385 C_v=8.00e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2622 Interf=0.0722 |W|=99.20 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1072@25)
+     Epoch   100: delta=0.1112 Acc=0.0148 kappa=117193.24 S=1.385 C_v=1.28e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2601 Interf=0.0767 |W|=101.32 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1072@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0089)
+     Best delta was 0.1072 at epoch 25
+  [-] Seed 62 vitrified (glass)
+
+============================================================
+[*] MINING SEED 63 (63/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2704) ***
+     Epoch    25: delta=0.0936 Acc=0.0030 kappa=     inf S=1.386 C_v=2.44e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2704 Interf=0.0354 |W|=93.25 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0936@25)
+     Epoch    50: delta=0.1051 Acc=0.0030 kappa=116991.17 S=1.385 C_v=5.50e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2555 Interf=0.0415 |W|=96.99 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0936@25)
+     Epoch    75: delta=0.1116 Acc=0.0118 kappa=116991.17 S=1.385 C_v=9.25e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2577 Interf=0.0455 |W|=99.58 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0936@25)
+     Epoch   100: delta=0.1197 Acc=0.0148 kappa=102277.07 S=1.385 C_v=1.52e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2486 Interf=0.0242 |W|=101.90 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0936@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0089)
+     Best delta was 0.0936 at epoch 25
+  [-] Seed 63 vitrified (glass)
+
+============================================================
+[*] MINING SEED 64 (64/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2383) ***
+     Epoch    25: delta=0.0959 Acc=0.0000 kappa=     inf S=1.386 C_v=1.79e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2383 Interf=0.0701 |W|=93.18 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0959@25)
+     Epoch    50: delta=0.1035 Acc=0.0000 kappa=112548.84 S=1.386 C_v=4.61e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2495 Interf=0.0326 |W|=96.87 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0959@25)
+     Epoch    75: delta=0.1148 Acc=0.0089 kappa=112548.84 S=1.385 C_v=9.07e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2501 Interf=0.0307 |W|=99.63 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0959@25)
+     Epoch   100: delta=0.1190 Acc=0.0089 kappa=115834.20 S=1.385 C_v=1.48e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2412 Interf=0.0390 |W|=101.98 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0959@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0044)
+     Best delta was 0.0959 at epoch 25
+  [-] Seed 64 vitrified (glass)
+
+============================================================
+[*] MINING SEED 65 (65/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2484) ***
+     Epoch    25: delta=0.0967 Acc=0.0030 kappa=     inf S=1.386 C_v=1.71e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2484 Interf=0.0779 |W|=93.18 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0967@25)
+     Epoch    50: delta=0.1006 Acc=0.0030 kappa=191638.52 S=1.386 C_v=4.69e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2320 Interf=0.0701 |W|=96.54 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0967@25)
+     Epoch    75: delta=0.1013 Acc=0.0089 kappa=191638.52 S=1.385 C_v=1.02e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2294 Interf=0.0651 |W|=99.21 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0967@25)
+     Epoch   100: delta=0.1155 Acc=0.0148 kappa=121896.55 S=1.384 C_v=1.61e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2247 Interf=0.0602 |W|=101.62 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0967@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0089)
+     Best delta was 0.0967 at epoch 25
+  [-] Seed 65 vitrified (glass)
+
+============================================================
+[*] MINING SEED 66 (66/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.3765) ***
+     Epoch    25: delta=0.0914 Acc=0.0000 kappa=     inf S=1.386 C_v=1.60e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3765 Interf=0.0789 |W|=93.17 |g|=8.96e-01 WD=1.0e-02 phase=gas (best_d=0.0914@25)
+     Epoch    50: delta=0.1025 Acc=0.0030 kappa=85105.43 S=1.386 C_v=4.58e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3752 Interf=0.0728 |W|=97.06 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0914@25)
+     Epoch    75: delta=0.1132 Acc=0.0030 kappa=85105.43 S=1.385 C_v=8.85e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3441 Interf=0.0539 |W|=99.89 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0914@25)
+     Epoch   100: delta=0.1246 Acc=0.0148 kappa=84471.16 S=1.385 C_v=1.49e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3398 Interf=0.0446 |W|=102.08 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0914@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0089)
+     Best delta was 0.0914 at epoch 25
+  [-] Seed 66 vitrified (glass)
+
+============================================================
+[*] MINING SEED 67 (67/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1743) ***
+     Epoch    25: delta=0.0919 Acc=0.0000 kappa=     inf S=1.386 C_v=2.18e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1743 Interf=0.0532 |W|=93.29 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0919@25)
+     Epoch    50: delta=0.0988 Acc=0.0059 kappa=95310.89 S=1.385 C_v=4.89e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2091 Interf=0.0596 |W|=96.90 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0919@25)
+     Epoch    75: delta=0.1051 Acc=0.0059 kappa=95310.89 S=1.385 C_v=8.69e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2084 Interf=0.0679 |W|=99.50 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0919@25)
+     Epoch   100: delta=0.1095 Acc=0.0178 kappa=104190.91 S=1.385 C_v=1.43e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2163 Interf=0.0548 |W|=101.95 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0919@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0118)
+     Best delta was 0.0919 at epoch 25
+  [-] Seed 67 vitrified (glass)
+
+============================================================
+[*] MINING SEED 68 (68/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2536) ***
+     Epoch    25: delta=0.0898 Acc=0.0000 kappa=     inf S=1.386 C_v=1.86e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2536 Interf=0.0253 |W|=92.94 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0898@25)
+     Epoch    50: delta=0.1019 Acc=0.0059 kappa=94628.25 S=1.386 C_v=4.56e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2726 Interf=0.0410 |W|=96.60 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0898@25)
+     Epoch    75: delta=0.1037 Acc=0.0030 kappa=94628.25 S=1.385 C_v=9.29e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2450 Interf=0.0285 |W|=99.37 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0898@25)
+     Epoch   100: delta=0.1121 Acc=0.0059 kappa=106148.77 S=1.384 C_v=1.56e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2373 Interf=0.0255 |W|=101.75 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0898@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0059)
+     Best delta was 0.0898 at epoch 25
+  [-] Seed 68 vitrified (glass)
+
+============================================================
+[*] MINING SEED 69 (69/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1898) ***
+     Epoch    25: delta=0.0840 Acc=0.0000 kappa=     inf S=1.386 C_v=3.27e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1898 Interf=0.0218 |W|=93.27 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0840@25)
+     Epoch    50: delta=0.0920 Acc=0.0000 kappa=154045.53 S=1.385 C_v=5.27e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1983 Interf=0.0214 |W|=96.73 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0840@25)
+     Epoch    75: delta=0.1017 Acc=0.0059 kappa=154045.53 S=1.385 C_v=8.74e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2369 Interf=0.0266 |W|=99.32 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0840@25)
+     Epoch   100: delta=0.1048 Acc=0.0148 kappa=123542.81 S=1.385 C_v=1.32e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2674 Interf=0.0077 |W|=101.71 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0840@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0074)
+     Best delta was 0.0840 at epoch 25
+  [-] Seed 69 vitrified (glass)
+
+============================================================
+[*] MINING SEED 70 (70/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2760) ***
+     Epoch    25: delta=0.0924 Acc=0.0000 kappa=     inf S=1.386 C_v=2.13e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2760 Interf=0.0083 |W|=93.13 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0924@25)
+     Epoch    50: delta=0.0929 Acc=0.0000 kappa=150186.31 S=1.386 C_v=4.73e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0001 PhCoh=0.2627 Interf=0.0130 |W|=96.39 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0924@25)
+     Epoch    75: delta=0.1007 Acc=0.0089 kappa=150186.31 S=1.385 C_v=8.32e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2531 Interf=0.0029 |W|=98.90 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0924@25)
+     Epoch   100: delta=0.1105 Acc=0.0118 kappa=105020.74 S=1.385 C_v=1.35e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2432 Interf=0.0144 |W|=101.19 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0924@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0059)
+     Best delta was 0.0924 at epoch 25
+  [-] Seed 70 vitrified (glass)
+
+============================================================
+[*] MINING SEED 71 (71/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2240) ***
+     Epoch    25: delta=0.1017 Acc=0.0000 kappa=     inf S=1.386 C_v=2.06e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2240 Interf=0.0778 |W|=93.25 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1017@25)
+     Epoch    50: delta=0.1078 Acc=0.0000 kappa=85014.59 S=1.386 C_v=4.80e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2302 Interf=0.0388 |W|=96.80 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1017@25)
+     Epoch    75: delta=0.1162 Acc=0.0089 kappa=85014.59 S=1.385 C_v=8.42e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2299 Interf=0.0379 |W|=99.39 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1017@25)
+     Epoch   100: delta=0.1187 Acc=0.0059 kappa=108952.31 S=1.385 C_v=1.33e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2330 Interf=0.0254 |W|=101.54 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1017@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0030)
+     Best delta was 0.1017 at epoch 25
+  [-] Seed 71 vitrified (glass)
+
+============================================================
+[*] MINING SEED 72 (72/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2180) ***
+     Epoch    25: delta=0.0938 Acc=0.0000 kappa=     inf S=1.386 C_v=1.73e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2180 Interf=0.0401 |W|=93.05 |g|=9.38e-01 WD=1.0e-02 phase=gas (best_d=0.0938@25)
+     Epoch    50: delta=0.1111 Acc=0.0000 kappa=129891.95 S=1.386 C_v=4.28e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2358 Interf=0.0324 |W|=96.71 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0938@25)
+     Epoch    75: delta=0.1254 Acc=0.0030 kappa=129891.95 S=1.385 C_v=8.37e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2002 Interf=0.0220 |W|=99.51 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0938@25)
+     Epoch   100: delta=0.1296 Acc=0.0030 kappa=107010.88 S=1.385 C_v=1.45e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2238 Interf=0.0098 |W|=101.67 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0938@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0015)
+     Best delta was 0.0938 at epoch 25
+  [-] Seed 72 vitrified (glass)
+
+============================================================
+[*] MINING SEED 73 (73/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2225) ***
+     Epoch    25: delta=0.0943 Acc=0.0000 kappa=     inf S=1.386 C_v=2.36e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2225 Interf=0.0432 |W|=93.14 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0943@25)
+     Epoch    50: delta=0.1007 Acc=0.0089 kappa=115140.38 S=1.386 C_v=4.69e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2501 Interf=0.0284 |W|=96.61 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0943@25)
+     Epoch    75: delta=0.1059 Acc=0.0178 kappa=115140.38 S=1.385 C_v=8.94e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2453 Interf=0.0273 |W|=99.30 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0943@25)
+     Epoch   100: delta=0.1141 Acc=0.0089 kappa=95650.39 S=1.385 C_v=1.42e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2420 Interf=0.0322 |W|=101.47 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0943@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0089)
+     Best delta was 0.0943 at epoch 25
+  [-] Seed 73 vitrified (glass)
+
+============================================================
+[*] MINING SEED 74 (74/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2416) ***
+     Epoch    25: delta=0.0903 Acc=0.0000 kappa=     inf S=1.386 C_v=2.58e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2416 Interf=0.0759 |W|=93.17 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0903@25)
+     Epoch    50: delta=0.1052 Acc=0.0089 kappa=105102.62 S=1.385 C_v=5.86e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2219 Interf=0.0817 |W|=96.78 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0903@25)
+     Epoch    75: delta=0.1109 Acc=0.0118 kappa=105102.62 S=1.385 C_v=1.04e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2089 Interf=0.0733 |W|=99.43 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0903@25)
+     Epoch   100: delta=0.1185 Acc=0.0118 kappa=91407.72 S=1.384 C_v=1.75e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2043 Interf=0.0687 |W|=101.64 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0903@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0104)
+     Best delta was 0.0903 at epoch 25
+  [-] Seed 74 vitrified (glass)
+
+============================================================
+[*] MINING SEED 75 (75/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1872) ***
+     Epoch    25: delta=0.1051 Acc=0.0000 kappa=     inf S=1.386 C_v=2.08e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1872 Interf=0.0530 |W|=93.21 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1051@25)
+     Epoch    50: delta=0.1184 Acc=0.0000 kappa=101700.62 S=1.385 C_v=4.85e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1985 Interf=0.0387 |W|=96.96 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1051@25)
+     Epoch    75: delta=0.1262 Acc=0.0059 kappa=101700.62 S=1.385 C_v=9.07e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2047 Interf=0.0328 |W|=99.71 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1051@25)
+     Epoch   100: delta=0.1317 Acc=0.0089 kappa=83409.16 S=1.385 C_v=1.50e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2123 Interf=0.0304 |W|=101.97 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1051@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0044)
+     Best delta was 0.1051 at epoch 25
+  [-] Seed 75 vitrified (glass)
+
+============================================================
+[*] MINING SEED 76 (76/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2448) ***
+     Epoch    25: delta=0.0858 Acc=0.0000 kappa=     inf S=1.386 C_v=1.81e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2448 Interf=0.0548 |W|=93.29 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0858@25)
+     Epoch    50: delta=0.0966 Acc=0.0000 kappa=110304.58 S=1.386 C_v=4.02e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2486 Interf=0.0348 |W|=96.67 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0858@25)
+     Epoch    75: delta=0.1122 Acc=0.0030 kappa=110304.58 S=1.385 C_v=7.74e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2399 Interf=0.0252 |W|=99.18 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0858@25)
+     Epoch   100: delta=0.1226 Acc=0.0030 kappa=116788.84 S=1.385 C_v=1.24e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2410 Interf=0.0189 |W|=101.33 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0858@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0015)
+     Best delta was 0.0858 at epoch 25
+  [-] Seed 76 vitrified (glass)
+
+============================================================
+[*] MINING SEED 77 (77/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.3032) ***
+     Epoch    25: delta=0.0940 Acc=0.0030 kappa=     inf S=1.386 C_v=2.23e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3032 Interf=0.0813 |W|=93.30 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0940@25)
+     Epoch    50: delta=0.0940 Acc=0.0030 kappa=103542.31 S=1.385 C_v=4.98e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2863 Interf=0.0668 |W|=96.88 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0940@50)
+     Epoch    75: delta=0.1048 Acc=0.0000 kappa=103542.31 S=1.385 C_v=8.80e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2832 Interf=0.0568 |W|=99.56 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0940@50)
+     Epoch   100: delta=0.1065 Acc=0.0030 kappa=113539.12 S=1.385 C_v=1.41e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2783 Interf=0.0696 |W|=101.84 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0940@50)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0030)
+     Best delta was 0.0940 at epoch 50
+  [-] Seed 77 vitrified (glass)
+
+============================================================
+[*] MINING SEED 78 (78/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2994) ***
+     Epoch    25: delta=0.0931 Acc=0.0000 kappa=     inf S=1.386 C_v=1.74e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2994 Interf=0.0676 |W|=93.08 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0931@25)
+     Epoch    50: delta=0.1012 Acc=0.0030 kappa=96483.95 S=1.386 C_v=3.76e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2321 Interf=0.0541 |W|=96.78 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0931@25)
+     Epoch    75: delta=0.1017 Acc=0.0089 kappa=96483.95 S=1.385 C_v=7.48e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2281 Interf=0.0470 |W|=99.48 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0931@25)
+     Epoch   100: delta=0.1120 Acc=0.0000 kappa=95854.12 S=1.385 C_v=1.21e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2104 Interf=0.0422 |W|=101.80 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0931@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0015)
+     Best delta was 0.0931 at epoch 25
+  [-] Seed 78 vitrified (glass)
+
+============================================================
+[*] MINING SEED 79 (79/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1792) ***
+     Epoch    25: delta=0.0887 Acc=0.0000 kappa=     inf S=1.386 C_v=1.75e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1792 Interf=0.0204 |W|=92.98 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0887@25)
+     Epoch    50: delta=0.0962 Acc=0.0000 kappa=152424.80 S=1.386 C_v=4.21e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1681 Interf=0.0324 |W|=96.43 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0887@25)
+     Epoch    75: delta=0.1109 Acc=0.0000 kappa=152424.80 S=1.385 C_v=7.92e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1462 Interf=0.0408 |W|=99.04 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0887@25)
+     Epoch   100: delta=0.1242 Acc=0.0030 kappa=105536.55 S=1.385 C_v=1.36e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1513 Interf=0.0424 |W|=101.45 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0887@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0015)
+     Best delta was 0.0887 at epoch 25
+  [-] Seed 79 vitrified (glass)
+
+============================================================
+[*] MINING SEED 80 (80/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2443) ***
+     Epoch    25: delta=0.0856 Acc=0.0000 kappa=     inf S=1.386 C_v=2.08e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2443 Interf=0.0234 |W|=93.50 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0856@25)
+     Epoch    50: delta=0.0976 Acc=0.0000 kappa=117354.43 S=1.385 C_v=5.12e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2346 Interf=0.0250 |W|=97.23 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0856@25)
+     Epoch    75: delta=0.1079 Acc=0.0059 kappa=117354.43 S=1.385 C_v=9.48e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2400 Interf=0.0230 |W|=99.92 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0856@25)
+     Epoch   100: delta=0.1176 Acc=0.0237 kappa=111592.76 S=1.384 C_v=1.59e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2310 Interf=0.0291 |W|=102.21 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0856@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0118)
+     Best delta was 0.0856 at epoch 25
+  [-] Seed 80 vitrified (glass)
+
+============================================================
+[*] MINING SEED 81 (81/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2865) ***
+     Epoch    25: delta=0.0938 Acc=0.0000 kappa=     inf S=1.386 C_v=1.98e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2865 Interf=0.0585 |W|=93.25 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0938@25)
+     Epoch    50: delta=0.1101 Acc=0.0178 kappa=109747.51 S=1.385 C_v=5.12e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2491 Interf=0.0727 |W|=96.66 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0938@25)
+     Epoch    75: delta=0.1139 Acc=0.0266 kappa=109747.51 S=1.385 C_v=1.01e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2568 Interf=0.0735 |W|=99.19 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0938@25)
+     Epoch   100: delta=0.1113 Acc=0.0355 kappa=90503.97 S=1.384 C_v=1.57e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2603 Interf=0.0829 |W|=101.47 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0938@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0266)
+     Best delta was 0.0938 at epoch 25
+  [-] Seed 81 vitrified (glass)
+
+============================================================
+[*] MINING SEED 82 (82/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1661) ***
+     Epoch    25: delta=0.0901 Acc=0.0000 kappa=     inf S=1.386 C_v=1.96e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1661 Interf=0.0611 |W|=93.19 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0901@25)
+     Epoch    50: delta=0.1027 Acc=0.0030 kappa=103977.59 S=1.386 C_v=4.31e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1282 Interf=0.1004 |W|=96.71 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0901@25)
+     Epoch    75: delta=0.1114 Acc=0.0059 kappa=103977.59 S=1.385 C_v=8.45e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1459 Interf=0.0894 |W|=99.40 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0901@25)
+     Epoch   100: delta=0.1166 Acc=0.0089 kappa=99255.69 S=1.385 C_v=1.39e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1574 Interf=0.0983 |W|=101.54 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0901@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0059)
+     Best delta was 0.0901 at epoch 25
+  [-] Seed 82 vitrified (glass)
+
+============================================================
+[*] MINING SEED 83 (83/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2580) ***
+     Epoch    25: delta=0.0879 Acc=0.0000 kappa=     inf S=1.386 C_v=2.49e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2580 Interf=0.0023 |W|=93.03 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0879@25)
+     Epoch    50: delta=0.0986 Acc=0.0030 kappa=104765.81 S=1.385 C_v=5.38e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2690 Interf=0.0308 |W|=96.69 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0879@25)
+     Epoch    75: delta=0.1082 Acc=0.0030 kappa=104765.81 S=1.385 C_v=9.72e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2631 Interf=0.0332 |W|=99.50 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0879@25)
+     Epoch   100: delta=0.1193 Acc=0.0089 kappa=99305.13 S=1.384 C_v=1.59e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2535 Interf=0.0314 |W|=101.89 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0879@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0059)
+     Best delta was 0.0879 at epoch 25
+  [-] Seed 83 vitrified (glass)
+
+============================================================
+[*] MINING SEED 84 (84/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1911) ***
+     Epoch    25: delta=0.0873 Acc=0.0000 kappa=     inf S=1.386 C_v=1.89e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1911 Interf=0.0505 |W|=93.02 |g|=8.89e-01 WD=1.0e-02 phase=gas (best_d=0.0873@25)
+     Epoch    50: delta=0.0936 Acc=0.0030 kappa=106281.68 S=1.385 C_v=4.85e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2355 Interf=0.0105 |W|=96.73 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0873@25)
+     Epoch    75: delta=0.1012 Acc=0.0089 kappa=106281.68 S=1.385 C_v=8.90e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2219 Interf=0.0096 |W|=99.56 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0873@25)
+     Epoch   100: delta=0.1099 Acc=0.0118 kappa=95847.80 S=1.385 C_v=1.43e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2155 Interf=0.0143 |W|=102.02 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0873@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0074)
+     Best delta was 0.0873 at epoch 25
+  [-] Seed 84 vitrified (glass)
+
+============================================================
+[*] MINING SEED 85 (85/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2495) ***
+     Epoch    25: delta=0.0917 Acc=0.0030 kappa=     inf S=1.386 C_v=2.31e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2495 Interf=0.0659 |W|=93.28 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0917@25)
+     Epoch    50: delta=0.0976 Acc=0.0000 kappa=113561.45 S=1.386 C_v=4.12e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2173 Interf=0.0317 |W|=96.77 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0917@25)
+     Epoch    75: delta=0.1052 Acc=0.0030 kappa=113561.45 S=1.385 C_v=6.98e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2159 Interf=0.0336 |W|=99.26 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0917@25)
+     Epoch   100: delta=0.1087 Acc=0.0030 kappa=112604.80 S=1.385 C_v=1.16e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2139 Interf=0.0359 |W|=101.53 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0917@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0015)
+     Best delta was 0.0917 at epoch 25
+  [-] Seed 85 vitrified (glass)
+
+============================================================
+[*] MINING SEED 86 (86/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2578) ***
+     Epoch    25: delta=0.0936 Acc=0.0000 kappa=     inf S=1.386 C_v=2.84e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2578 Interf=0.0448 |W|=93.17 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0936@25)
+     Epoch    50: delta=0.1099 Acc=0.0000 kappa=114304.51 S=1.385 C_v=5.45e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2424 Interf=0.0365 |W|=96.95 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0936@25)
+     Epoch    75: delta=0.1164 Acc=0.0118 kappa=114304.51 S=1.385 C_v=9.32e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2410 Interf=0.0464 |W|=99.78 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0936@25)
+     Epoch   100: delta=0.1205 Acc=0.0118 kappa=96413.58 S=1.385 C_v=1.39e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2404 Interf=0.0470 |W|=102.22 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0936@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0059)
+     Best delta was 0.0936 at epoch 25
+  [-] Seed 86 vitrified (glass)
+
+============================================================
+[*] MINING SEED 87 (87/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2445) ***
+     Epoch    25: delta=0.0867 Acc=0.0000 kappa=     inf S=1.386 C_v=1.85e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2445 Interf=0.0510 |W|=93.12 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0867@25)
+     Epoch    50: delta=0.0951 Acc=0.0089 kappa=148670.91 S=1.386 C_v=4.70e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2404 Interf=0.0495 |W|=96.63 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0867@25)
+     Epoch    75: delta=0.1052 Acc=0.0089 kappa=148670.91 S=1.385 C_v=7.85e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2286 Interf=0.0627 |W|=99.29 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0867@25)
+     Epoch   100: delta=0.1162 Acc=0.0148 kappa=106443.90 S=1.385 C_v=1.37e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2311 Interf=0.0623 |W|=101.54 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0867@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0118)
+     Best delta was 0.0867 at epoch 25
+  [-] Seed 87 vitrified (glass)
+
+============================================================
+[*] MINING SEED 88 (88/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2004) ***
+     Epoch    25: delta=0.0912 Acc=0.0000 kappa=     inf S=1.386 C_v=2.04e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2004 Interf=0.0350 |W|=92.88 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0912@25)
+     Epoch    50: delta=0.1012 Acc=0.0030 kappa=152434.45 S=1.385 C_v=5.03e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1883 Interf=0.0331 |W|=96.38 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0912@25)
+     Epoch    75: delta=0.1033 Acc=0.0030 kappa=152434.45 S=1.385 C_v=9.41e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1859 Interf=0.0475 |W|=98.80 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0912@25)
+     Epoch   100: delta=0.1101 Acc=0.0059 kappa=131225.89 S=1.384 C_v=1.59e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1702 Interf=0.0469 |W|=100.98 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0912@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0044)
+     Best delta was 0.0912 at epoch 25
+  [-] Seed 88 vitrified (glass)
+
+============================================================
+[*] MINING SEED 89 (89/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1876) ***
+     Epoch    25: delta=0.0878 Acc=0.0000 kappa=     inf S=1.386 C_v=2.01e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1876 Interf=0.1006 |W|=93.26 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0878@25)
+     Epoch    50: delta=0.0969 Acc=0.0030 kappa=106751.51 S=1.386 C_v=4.62e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2157 Interf=0.1205 |W|=96.56 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0878@25)
+     Epoch    75: delta=0.1044 Acc=0.0118 kappa=106751.51 S=1.385 C_v=7.63e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1828 Interf=0.0855 |W|=99.29 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0878@25)
+     Epoch   100: delta=0.1101 Acc=0.0178 kappa=89189.59 S=1.385 C_v=1.24e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1946 Interf=0.0908 |W|=101.55 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0878@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0104)
+     Best delta was 0.0878 at epoch 25
+  [-] Seed 89 vitrified (glass)
+
+============================================================
+[*] MINING SEED 90 (90/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2169) ***
+     Epoch    25: delta=0.0935 Acc=0.0059 kappa=     inf S=1.386 C_v=2.60e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2169 Interf=0.0452 |W|=93.33 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0935@25)
+     Epoch    50: delta=0.0983 Acc=0.0030 kappa=139650.27 S=1.385 C_v=5.27e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2215 Interf=0.0331 |W|=96.84 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0935@25)
+     Epoch    75: delta=0.1017 Acc=0.0118 kappa=139650.27 S=1.385 C_v=8.73e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2104 Interf=0.0235 |W|=99.51 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0935@25)
+     Epoch   100: delta=0.1045 Acc=0.0178 kappa=140308.17 S=1.385 C_v=1.41e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2044 Interf=0.0466 |W|=101.78 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0935@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0104)
+     Best delta was 0.0935 at epoch 25
+  [-] Seed 90 vitrified (glass)
+
+============================================================
+[*] MINING SEED 91 (91/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2419) ***
+     Epoch    25: delta=0.0962 Acc=0.0000 kappa=     inf S=1.386 C_v=1.79e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2419 Interf=0.0385 |W|=93.22 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0962@25)
+     Epoch    50: delta=0.1048 Acc=0.0000 kappa=117257.30 S=1.386 C_v=4.00e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1992 Interf=0.0247 |W|=96.79 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0962@25)
+     Epoch    75: delta=0.1077 Acc=0.0059 kappa=117257.30 S=1.385 C_v=7.42e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2126 Interf=0.0206 |W|=99.27 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0962@25)
+     Epoch   100: delta=0.1136 Acc=0.0148 kappa=100102.42 S=1.385 C_v=1.28e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2519 Interf=0.0213 |W|=101.32 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0962@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0074)
+     Best delta was 0.0962 at epoch 25
+  [-] Seed 91 vitrified (glass)
+
+============================================================
+[*] MINING SEED 92 (92/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.3131) ***
+     Epoch    25: delta=0.0887 Acc=0.0030 kappa=     inf S=1.386 C_v=2.09e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3131 Interf=0.0427 |W|=93.38 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0887@25)
+     Epoch    50: delta=0.1042 Acc=0.0030 kappa=121179.31 S=1.385 C_v=5.20e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2975 Interf=0.0100 |W|=96.79 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0887@25)
+     Epoch    75: delta=0.1121 Acc=0.0059 kappa=121179.31 S=1.385 C_v=9.27e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2994 Interf=0.0273 |W|=99.63 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0887@25)
+     Epoch   100: delta=0.1184 Acc=0.0059 kappa=92525.14 S=1.385 C_v=1.53e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2944 Interf=0.0253 |W|=102.11 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0887@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0044)
+     Best delta was 0.0887 at epoch 25
+  [-] Seed 92 vitrified (glass)
+
+============================================================
+[*] MINING SEED 93 (93/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1845) ***
+     Epoch    25: delta=0.0922 Acc=0.0000 kappa=     inf S=1.386 C_v=1.95e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1845 Interf=0.0331 |W|=93.15 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0922@25)
+     Epoch    50: delta=0.1008 Acc=0.0059 kappa=94656.95 S=1.386 C_v=4.26e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1989 Interf=0.0255 |W|=96.66 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0922@25)
+     Epoch    75: delta=0.1115 Acc=0.0089 kappa=94656.95 S=1.385 C_v=7.89e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2032 Interf=0.0075 |W|=99.48 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0922@25)
+     Epoch   100: delta=0.1163 Acc=0.0089 kappa=94744.40 S=1.385 C_v=1.37e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2007 Interf=0.0190 |W|=101.82 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0922@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0074)
+     Best delta was 0.0922 at epoch 25
+  [-] Seed 93 vitrified (glass)
+
+============================================================
+[*] MINING SEED 94 (94/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2277) ***
+     Epoch    25: delta=0.0938 Acc=0.0030 kappa=     inf S=1.386 C_v=2.01e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2277 Interf=0.0846 |W|=93.15 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0938@25)
+     Epoch    50: delta=0.1110 Acc=0.0000 kappa=99579.69 S=1.385 C_v=5.18e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1877 Interf=0.0665 |W|=96.63 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0938@25)
+     Epoch    75: delta=0.1176 Acc=0.0030 kappa=99579.69 S=1.385 C_v=9.63e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2001 Interf=0.0683 |W|=99.23 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0938@25)
+     Epoch   100: delta=0.1239 Acc=0.0030 kappa=113313.70 S=1.384 C_v=1.63e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1979 Interf=0.0741 |W|=101.63 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0938@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0015)
+     Best delta was 0.0938 at epoch 25
+  [-] Seed 94 vitrified (glass)
+
+============================================================
+[*] MINING SEED 95 (95/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.3141) ***
+     Epoch    25: delta=0.0910 Acc=0.0000 kappa=     inf S=1.386 C_v=2.77e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3141 Interf=0.0941 |W|=93.33 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0910@25)
+     Epoch    50: delta=0.1001 Acc=0.0000 kappa=189201.45 S=1.386 C_v=4.71e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3127 Interf=0.0930 |W|=96.86 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0910@25)
+     Epoch    75: delta=0.1089 Acc=0.0118 kappa=189201.45 S=1.385 C_v=8.53e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.3105 Interf=0.0879 |W|=99.43 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0910@25)
+     Epoch   100: delta=0.1140 Acc=0.0059 kappa=134967.59 S=1.385 C_v=1.34e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2974 Interf=0.1088 |W|=101.71 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0910@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0030)
+     Best delta was 0.0910 at epoch 25
+  [-] Seed 95 vitrified (glass)
+
+============================================================
+[*] MINING SEED 96 (96/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2017) ***
+     Epoch    25: delta=0.1070 Acc=0.0000 kappa=     inf S=1.386 C_v=2.01e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2017 Interf=0.0355 |W|=93.07 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1070@25)
+     Epoch    50: delta=0.1092 Acc=0.0000 kappa=123329.77 S=1.386 C_v=4.65e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1685 Interf=0.0614 |W|=96.76 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1070@25)
+     Epoch    75: delta=0.1162 Acc=0.0089 kappa=123329.77 S=1.385 C_v=9.90e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1875 Interf=0.0626 |W|=99.54 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1070@25)
+     Epoch   100: delta=0.1160 Acc=0.0030 kappa=99557.72 S=1.384 C_v=1.62e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1818 Interf=0.0630 |W|=101.91 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.1070@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0015)
+     Best delta was 0.1070 at epoch 25
+  [-] Seed 96 vitrified (glass)
+
+============================================================
+[*] MINING SEED 97 (97/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.1682) ***
+     Epoch    25: delta=0.0947 Acc=0.0000 kappa=     inf S=1.386 C_v=1.69e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1682 Interf=0.0283 |W|=93.30 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0947@25)
+     Epoch    50: delta=0.1072 Acc=0.0030 kappa=89463.12 S=1.386 C_v=4.82e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1853 Interf=0.0384 |W|=97.27 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0947@25)
+     Epoch    75: delta=0.1106 Acc=0.0030 kappa=89463.12 S=1.385 C_v=9.98e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1988 Interf=0.0310 |W|=99.97 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0947@25)
+     Epoch   100: delta=0.1133 Acc=0.0118 kappa=85818.20 S=1.384 C_v=1.56e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.1933 Interf=0.0486 |W|=102.34 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0947@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0074)
+     Best delta was 0.0947 at epoch 25
+  [-] Seed 97 vitrified (glass)
+
+============================================================
+[*] MINING SEED 98 (98/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2419) ***
+     Epoch    25: delta=0.0930 Acc=0.0000 kappa=     inf S=1.386 C_v=1.75e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2419 Interf=0.0505 |W|=93.16 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0930@25)
+     Epoch    50: delta=0.1000 Acc=0.0059 kappa=144029.25 S=1.386 C_v=4.82e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2521 Interf=0.0273 |W|=96.84 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0930@25)
+     Epoch    75: delta=0.1104 Acc=0.0059 kappa=144029.25 S=1.385 C_v=9.64e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2318 Interf=0.0169 |W|=99.60 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0930@25)
+     Epoch   100: delta=0.1180 Acc=0.0089 kappa=121867.72 S=1.384 C_v=1.71e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2301 Interf=0.0234 |W|=101.94 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0930@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0074)
+     Best delta was 0.0930 at epoch 25
+  [-] Seed 98 vitrified (glass)
+
+============================================================
+[*] MINING SEED 99 (99/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2799) ***
+     Epoch    25: delta=0.0894 Acc=0.0000 kappa=     inf S=1.386 C_v=1.94e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2799 Interf=0.0734 |W|=93.35 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0894@25)
+     Epoch    50: delta=0.1042 Acc=0.0030 kappa=96298.43 S=1.386 C_v=4.43e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2829 Interf=0.0570 |W|=96.92 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0894@25)
+     Epoch    75: delta=0.1108 Acc=0.0059 kappa=96298.43 S=1.385 C_v=8.04e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2800 Interf=0.0253 |W|=99.55 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0894@25)
+     Epoch   100: delta=0.1199 Acc=0.0059 kappa=124717.75 S=1.385 C_v=1.31e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2846 Interf=0.0221 |W|=101.76 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0894@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0044)
+     Best delta was 0.0894 at epoch 25
+  [-] Seed 99 vitrified (glass)
+
+============================================================
+[*] MINING SEED 100 (100/100)
+============================================================
+  Parameters: 207,418
+*** PHASE TRANSITION at epoch 25: unknown -> gas (phase_coh=0.2338) ***
+     Epoch    25: delta=0.0904 Acc=0.0000 kappa=     inf S=1.386 C_v=2.42e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2338 Interf=0.0829 |W|=93.32 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0904@25)
+     Epoch    50: delta=0.0992 Acc=0.0030 kappa=132127.56 S=1.385 C_v=5.13e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2241 Interf=0.0682 |W|=96.78 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0904@25)
+     Epoch    75: delta=0.1068 Acc=0.0030 kappa=132127.56 S=1.385 C_v=9.59e-04 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2249 Interf=0.0712 |W|=99.32 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0904@25)
+     Epoch   100: delta=0.1084 Acc=0.0118 kappa=148910.16 S=1.384 C_v=1.59e-03 T_eff=0.00e+00 h_bar=0.00e+00 G_alg=0.0000 PhCoh=0.2300 Interf=0.0680 |W|=101.65 |g|=1.00e+00 WD=1.0e-02 phase=gas (best_d=0.0904@25)
+ [-] GLASS DETECTED: accuracy_stuck_low (0.0074)
+     Best delta was 0.0904 at epoch 25
+  [-] Seed 100 vitrified (glass)
+
+============================================================
+MINING COMPLETE
+============================================================
+Total attempts: 100
+Crystals found: 0
+Success rate: 0.0%
+
+Top 5 seeds by delta:
+  Seed    69: delta=0.084013 crystal= NO
+  Seed    35: delta=0.084433 crystal= NO
+  Seed    49: delta=0.084927 crystal= NO
+  Seed    80: delta=0.085624 crystal= NO
+  Seed    76: delta=0.085788 crystal= NO
