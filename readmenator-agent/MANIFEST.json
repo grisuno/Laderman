@@ -1,0 +1,22 @@
+{
+  "tool": "readmenator",
+  "generated_at": "2026-09-11T05:52:59Z",
+  "project_root": "/tmp/push_Laderman_20260911_012907",
+  "files": 12,
+  "symbols": 709,
+  "imports": 5166,
+  "resolved_imports": 2,
+  "security_findings": 0,
+  "languages": {
+    "py": 11,
+    "sh": 1
+  },
+  "entrypoints": [],
+  "start_here": "INDEX.md",
+  "workflow": [
+    "grep -n '<keyword>' INDEX.md",
+    "cat KB_<subsystem>.md",
+    "grep -n '<file>' ARCHITECTURE.md SYMBOLS.md"
+  ],
+  "regenerate": "readmenator . --rebuild"
+}
