@@ -1,0 +1,771 @@
+# Subsystem: root
+
+## app.py
+- Layer: utility
+- Doc: _*_ coding: utf8 _*_
+- Language: py
+
+## complex_leibler_transformer.py
+- Layer: data_access
+- Language: py
+- Symbols:
+  - `ExecutionMode` (class, line 59) `class ExecutionMode(Enum)`
+  - `ProspectorConfig` (class, line 69) `class ProspectorConfig`
+  - `IMetricCalculator` (class, line 197) `class IMetricCalculator(ABC)`
+  - `ILossComponent` (class, line 203) `class ILossComponent(ABC)`
+  - `ICheckpointManager` (class, line 210) `class ICheckpointManager(ABC)`
+  - `ITrainingPhase` (class, line 224) `class ITrainingPhase(ABC)`
+  - `IPhaseDetector` (class, line 230) `class IPhaseDetector(ABC)`
+  - `IGlassDetector` (class, line 236) `class IGlassDetector(ABC)`
+  - `IGrokkinDetector` (class, line 242) `class IGrokkinDetector(ABC)`
+  - `SeedManager` (class, line 252) `class SeedManager`
+  - `ComplexOperations` (class, line 268) `class ComplexOperations`
+  - `ComplexLinear` (class, line 337) `class ComplexLinear(Module)`
+  - `ComplexLayerNorm` (class, line 364) `class ComplexLayerNorm(Module)`
+  - `ComplexLeiblerAttention` (class, line 379) `class ComplexLeiblerAttention(Module)`
+  - `ComplexLeiblerTransformerLayer` (class, line 485) `class ComplexLeiblerTransformerLayer(Module)`
+  - `ComplexLeiblerTransformer` (class, line 529) `class ComplexLeiblerTransformer(Module)`
+  - `ModularAdditionDatasetFactory` (class, line 653) `class ModularAdditionDatasetFactory`
+  - `TrainingPrimitives` (class, line 688) `class TrainingPrimitives`
+  - `DeltaCalculator` (class, line 754) `class DeltaCalculator(IMetricCalculator)`
+  - `KappaCalculator` (class, line 772) `class KappaCalculator`
+  - `ThermodynamicMetricsCalculator` (class, line 841) `class ThermodynamicMetricsCalculator(IMetricCalculator)`
+  - `LocalComplexityCalculator` (class, line 894) `class LocalComplexityCalculator(IMetricCalculator)`
+  - `SuperpositionCalculator` (class, line 949) `class SuperpositionCalculator(IMetricCalculator)`
+  - `GravitationalConstantCalculator` (class, line 988) `class GravitationalConstantCalculator(IMetricCalculator)`
+  - `ComplexPhaseMetricsCalculator` (class, line 1003) `class ComplexPhaseMetricsCalculator(IMetricCalculator)`
+  - `PhaseDetector` (class, line 1015) `class PhaseDetector(IPhaseDetector)`
+  - `AdaptiveAnnealingScheduler` (class, line 1058) `class AdaptiveAnnealingScheduler`
+  - `GlassDetector` (class, line 1130) `class GlassDetector(IGlassDetector)`
+  - `GrokkinDetector` (class, line 1169) `class GrokkinDetector(IGrokkinDetector)`
+  - `CheckpointManager` (class, line 1205) `class CheckpointManager(ICheckpointManager)`
+  - `ModelPruner` (class, line 1241) `class ModelPruner`
+  - `ModelDiscretizer` (class, line 1261) `class ModelDiscretizer`
+  - `ComplexPhaseLoss` (class, line 1296) `class ComplexPhaseLoss(ILossComponent)`
+  - `ComprehensiveMetricsAggregator` (class, line 1335) `class ComprehensiveMetricsAggregator`
+  - `DisplayFormatter` (class, line 1444) `class DisplayFormatter`
+  - `ProspectorPhase` (class, line 1464) `class ProspectorPhase(ITrainingPhase)`
+  - `LongTrainingPhase` (class, line 1651) `class LongTrainingPhase(ITrainingPhase)`
+  - `SeedProspector` (class, line 1877) `class SeedProspector`
+  - `LongTrainingPipeline` (class, line 2020) `class LongTrainingPipeline`
+  - `Application` (class, line 2151) `class Application`
+  - `main` (method, line 2238) `def main()`
+  - `calculate` (method, line 199) `def calculate(self)`
+  - `compute` (method, line 205) `def compute(self, model, loss_ce, epoch)`
+  - `save` (method, line 212) `def save(self, state, path)`
+  - `load` (method, line 216) `def load(self, path)`
+  - `should_checkpoint` (method, line 220) `def should_checkpoint(self)`
+  - `execute` (method, line 226) `def execute(self, model)`
+  - `detect` (method, line 232) `def detect(self, metrics)`
+  - `should_stop` (method, line 238) `def should_stop(self, epoch, metrics)`
+  - `update` (method, line 244) `def update(self, metrics)`
+  - `set_seed` (method, line 254) `def set_seed(seed, device)`
+  - `complex_linear` (method, line 271) `def complex_linear(input_real, input_imag, weight_real, weight_imag, bias_real, bias_imag)`
+  - `complex_gelu` (method, line 288) `def complex_gelu(real, imag)`
+  - `complex_layer_norm` (method, line 295) `def complex_layer_norm(real, imag, weight, bias, eps)`
+  - `compute_phase` (method, line 311) `def compute_phase(real, imag)`
+  - `compute_magnitude` (method, line 315) `def compute_magnitude(real, imag)`
+  - `complex_softmax` (method, line 319) `def complex_softmax(real, imag, temperature, dim)`
+  - `__init__` (method, line 338) `def __init__(self, in_features, out_features, bias, init_std)`
+  - `forward` (method, line 352) `def forward(self, real, imag)`
+  - `__init__` (method, line 365) `def __init__(self, normalized_shape, eps)`
+  - `forward` (method, line 371) `def forward(self, real, imag)`
+  - `__init__` (method, line 380) `def __init__(self, config)`
+  - `forward` (method, line 404) `def forward(self, real, imag, mask)`
+  - `_update_thermodynamic_state` (method, line 450) `def _update_thermodynamic_state(self, attn_real, attn_imag)`
+  - `__init__` (method, line 486) `def __init__(self, config)`
+  - `forward` (method, line 498) `def forward(self, real, imag, mask)`
+  - `__init__` (method, line 530) `def __init__(self, config)`
+  - `_init_weights` (method, line 554) `def _init_weights(self)`
+  - `forward` (method, line 564) `def forward(self, x, mask)`
+  - `get_thermodynamic_state` (method, line 584) `def get_thermodynamic_state(self)`
+  - `get_complex_weight_statistics` (method, line 610) `def get_complex_weight_statistics(self)`
+  - `create` (method, line 655) `def create(modulus, train_fraction)`
+  - `train_epoch` (method, line 690) `def train_epoch(model, train_x, train_y, optimizer, config, device)`
+  - `evaluate` (method, line 724) `def evaluate(model, test_x, test_y, config, device)`
+  - `__init__` (method, line 755) `def __init__(self, config)`
+  - `calculate` (method, line 758) `def calculate(self, model)`
+  - `__init__` (method, line 773) `def __init__(self, config)`
+  - `accumulate_gradient` (method, line 778) `def accumulate_gradient(self, model)`
+  - `calculate_kappa` (method, line 789) `def calculate_kappa(self)`
+  - `get_gradient_covariance` (method, line 809) `def get_gradient_covariance(self)`
+  - `get_kappa_trend` (method, line 820) `def get_kappa_trend(self)`
+  - `is_crystallizing` (method, line 830) `def is_crystallizing(self)`
+  - `reset` (method, line 836) `def reset(self)`
+  - `__init__` (method, line 842) `def __init__(self, config)`
+  - `calculate` (method, line 845) `def calculate(self, model, gradient_covariance)`
+  - `__init__` (method, line 895) `def __init__(self, config)`
+  - `calculate` (method, line 898) `def calculate(self, model, train_x, train_y, device)`
+  - `__init__` (method, line 950) `def __init__(self, config)`
+  - `_initialize_sae` (method, line 955) `def _initialize_sae(self, input_dim, device)`
+  - `calculate` (method, line 961) `def calculate(self, model)`
+  - `__init__` (method, line 989) `def __init__(self, config)`
+  - `calculate` (method, line 992) `def calculate(self, model)`
+  - `__init__` (method, line 1004) `def __init__(self, config)`
+  - `calculate` (method, line 1007) `def calculate(self, model)`
+  - `__init__` (method, line 1016) `def __init__(self, config)`
+  - `detect` (method, line 1021) `def detect(self, metrics)`
+  - `__init__` (method, line 1059) `def __init__(self, model, config, optimizer)`
+  - `step` (method, line 1074) `def step(self, metrics)`
+  - `_update_model_temperatures` (method, line 1117) `def _update_model_temperatures(self)`
+  - `_update_optimizer_weight_decay` (method, line 1121) `def _update_optimizer_weight_decay(self)`
+  - `__init__` (method, line 1131) `def __init__(self, config)`
+  - `should_stop` (method, line 1135) `def should_stop(self, epoch, metrics)`
+  - `__init__` (method, line 1170) `def __init__(self, config)`
+  - `update` (method, line 1177) `def update(self, metrics)`
+  - `__init__` (method, line 1206) `def __init__(self, config)`
+  - `save` (method, line 1212) `def save(self, state, path)`
+  - `load` (method, line 1221) `def load(self, path)`
+  - `should_checkpoint` (method, line 1228) `def should_checkpoint(self)`
+  - `get_latest_path` (method, line 1232) `def get_latest_path(self)`
+  - `prune` (method, line 1243) `def prune(model, threshold)`
+  - `discretize` (method, line 1263) `def discretize(model, tolerance)`
+  - `__init__` (method, line 1297) `def __init__(self, config)`
+  - `compute` (method, line 1300) `def compute(self, model, loss_ce, epoch)`
+  - `__init__` (method, line 1336) `def __init__(self, config)`
+  - `compute_all` (method, line 1347) `def compute_all(self, model, train_loss, test_loss, test_acc, epoch, weight_norm, grad_norm, thermo_state, scheduler, train_x, train_y, device, force_kappa, force_lc, force_sp)`
+  - `accumulate_gradient` (method, line 1432) `def accumulate_gradient(self, model)`
+  - `reset` (method, line 1435) `def reset(self)`
+  - `format_kappa` (method, line 1446) `def format_kappa(kappa, max_display)`
+  - `format_lc` (method, line 1452) `def format_lc(lc)`
+  - `__init__` (method, line 1465) `def __init__(self, config, seed)`
+  - `execute` (method, line 1469) `def execute(self, model)`
+  - `__init__` (method, line 1652) `def __init__(self, config)`
+  - `execute` (method, line 1656) `def execute(self, model)`
+  - `__init__` (method, line 1878) `def __init__(self, config)`
+  - `prospect` (method, line 1885) `def prospect(self, total_attempts, start_seed)`
+  - `__init__` (method, line 2021) `def __init__(self, config)`
+  - `_signal_handler` (method, line 2029) `def _signal_handler(self, signum, frame)`
+  - `run` (method, line 2033) `def run(self, resume_from, seed)`
+  - `__init__` (method, line 2152) `def __init__(self)`
+  - `_create_argument_parser` (method, line 2155) `def _create_argument_parser(self)`
+  - `run` (method, line 2190) `def run(self)`
+
+## install.sh
+- Layer: utility
+- Language: sh
+
+## kappa_miner.py
+- Layer: utility
+- Language: py
+- Symbols:
+  - `KappaConfig` (class, line 39) `class KappaConfig`
+  - `KappaMeter` (class, line 68) `class KappaMeter`
+  - `ArithmeticTask` (class, line 201) `class ArithmeticTask`
+  - `MinimalTransformer` (class, line 316) `class MinimalTransformer(Module)`
+  - `KappaMiner` (class, line 391) `class KappaMiner`
+  - `BatchProspector` (class, line 563) `class BatchProspector`
+  - `__init__` (method, line 75) `def __init__(self, config)`
+  - `compute_kappa` (method, line 78) `def compute_kappa(self, model, loss_fn, data_generator, n_samples, batch_size)`
+  - `predict_grokking` (method, line 168) `def predict_grokking(self, kappa)`
+  - `__init__` (method, line 214) `def __init__(self, max_digits, operations, tokenizer_vocab)`
+  - `generate_batch` (method, line 240) `def generate_batch(self, batch_size, operation)`
+  - `_encode_number` (method, line 292) `def _encode_number(self, n)`
+  - `__init__` (method, line 324) `def __init__(self, vocab_size, d_model, n_heads, n_layers, d_ff, max_seq_len, dropout)`
+  - `_init_weights` (method, line 356) `def _init_weights(self)`
+  - `forward` (method, line 362) `def forward(self, x)`
+  - `__init__` (method, line 399) `def __init__(self, model, task, config)`
+  - `prospect` (method, line 417) `def prospect(self, early_epochs, save_checkpoints, checkpoint_dir)`
+  - `__init__` (method, line 571) `def __init__(self, model_class, task, config)`
+  - `prospect_seeds` (method, line 579) `def prospect_seeds(self, n_candidates, early_epochs)`
+  - `loss_fn` (method, line 449) `def loss_fn(outputs, targets)`
+  - `data_generator` (method, line 455) `def data_generator(batch_size)`
+
+## laderman_batch_prospection.py
+- Layer: testing
+- Language: py
+- Symbols:
+  - `ProspectionConfig` (class, line 46) `class ProspectionConfig`
+  - `MatrixMultiplicationDataset` (class, line 89) `class MatrixMultiplicationDataset(Dataset)`
+  - `BilinearModel` (class, line 112) `class BilinearModel(Module)`
+  - `compute_kappa` (method, line 139) `def compute_kappa(model, batch, num_samples)`
+  - `compute_local_complexity` (method, line 178) `def compute_local_complexity(model)`
+  - `compute_effective_temperature` (method, line 190) `def compute_effective_temperature(model, batch, num_samples)`
+  - `compute_entropy` (method, line 216) `def compute_entropy(model, batch, num_samples)`
+  - `train_prospection_run` (method, line 250) `def train_prospection_run(config, batch_size)`
+  - `analyze_results` (method, line 409) `def analyze_results(results, config)`
+  - `run_prospection` (method, line 536) `def run_prospection(config)`
+  - `__post_init__` (method, line 81) `def __post_init__(self)`
+  - `__init__` (method, line 92) `def __init__(self, matrix_size, num_samples, seed)`
+  - `__len__` (method, line 105) `def __len__(self)`
+  - `__getitem__` (method, line 108) `def __getitem__(self, idx)`
+  - `__init__` (method, line 115) `def __init__(self, matrix_size, initial_slots)`
+  - `forward` (method, line 124) `def forward(self, input_a, input_b)`
+  - `compute_discretization_margin` (method, line 129) `def compute_discretization_margin(self)`
+  - `tqdm` (method, line 37) `def tqdm(iterable)`
+
+## laderman_crystallization.py
+- Layer: utility
+- Language: py
+- Symbols:
+  - `LadermanConfig` (class, line 42) `class LadermanConfig`
+  - `ThermodynamicState` (class, line 144) `class ThermodynamicState`
+  - `MetricComputerInterface` (class, line 207) `class MetricComputerInterface(ABC)`
+  - `GradientCovarianceComputer` (class, line 215) `class GradientCovarianceComputer(MetricComputerInterface)`
+  - `LocalComplexityComputer` (class, line 291) `class LocalComplexityComputer(MetricComputerInterface)`
+  - `SuperpositionComputer` (class, line 322) `class SuperpositionComputer(MetricComputerInterface)`
+  - `TemperatureComputer` (class, line 356) `class TemperatureComputer(MetricComputerInterface)`
+  - `HBarEffComputer` (class, line 432) `class HBarEffComputer(MetricComputerInterface)`
+  - `MatrixMultiplicationDataset` (class, line 469) `class MatrixMultiplicationDataset(Dataset)`
+  - `BilinearTransformerModel` (class, line 493) `class BilinearTransformerModel(Module)`
+  - `MagnitudePruning` (class, line 609) `class MagnitudePruning`
+  - `FileCheckpointManager` (class, line 658) `class FileCheckpointManager`
+  - `PhaseClassifier` (class, line 728) `class PhaseClassifier`
+  - `GrokkingDetector` (class, line 778) `class GrokkingDetector`
+  - `CrystallizationTrainer` (class, line 821) `class CrystallizationTrainer`
+  - `run_laderman_experiment` (method, line 1215) `def run_laderman_experiment(config)`
+  - `__post_init__` (method, line 114) `def __post_init__(self)`
+  - `_validate_parameters` (method, line 119) `def _validate_parameters(self)`
+  - `_ensure_directories` (method, line 133) `def _ensure_directories(self)`
+  - `to_dict` (method, line 136) `def to_dict(self)`
+  - `to_dict` (method, line 178) `def to_dict(self)`
+  - `compute` (method, line 211) `def compute(self, model, batch)`
+  - `__init__` (method, line 226) `def __init__(self, num_samples)`
+  - `compute` (method, line 229) `def compute(self, model, batch)`
+  - `_collect_gradients` (method, line 244) `def _collect_gradients(self, model, input_a, input_b, target)`
+  - `_forward_model` (method, line 261) `def _forward_model(self, model, input_a, input_b)`
+  - `_extract_bilinear_gradients` (method, line 268) `def _extract_bilinear_gradients(self, model)`
+  - `_compute_condition_number` (method, line 276) `def _compute_condition_number(self, gradients)`
+  - `__init__` (method, line 300) `def __init__(self, singular_value_threshold_ratio)`
+  - `compute` (method, line 303) `def compute(self, model, batch)`
+  - `_compute_effective_rank` (method, line 313) `def _compute_effective_rank(self, tensor)`
+  - `compute` (method, line 331) `def compute(self, model, batch)`
+  - `_compute_superposition_coefficient` (method, line 341) `def _compute_superposition_coefficient(self, u)`
+  - `_compute_effective_feature_count` (method, line 347) `def _compute_effective_feature_count(self, u)`
+  - `__init__` (method, line 365) `def __init__(self, num_samples)`
+  - `compute` (method, line 368) `def compute(self, model, batch)`
+  - `_collect_gradient_norms` (method, line 389) `def _collect_gradient_norms(self, model, input_a, input_b, target)`
+  - `_forward_model` (method, line 406) `def _forward_model(self, model, input_a, input_b)`
+  - `_compute_bilinear_grad_norm` (method, line 413) `def _compute_bilinear_grad_norm(self, model)`
+  - `_compute_entropy` (method, line 420) `def _compute_entropy(self, values)`
+  - `_compute_heat_capacity` (method, line 426) `def _compute_heat_capacity(self, values, t_eff)`
+  - `compute` (method, line 441) `def compute(self, model, batch, effective_temperature, kappa)`
+  - `_compute_weight_variance` (method, line 456) `def _compute_weight_variance(self, u, v, w)`
+  - `_estimate_crystal_h_bar` (method, line 460) `def _estimate_crystal_h_bar(self, weight_variance, kappa)`
+  - `_estimate_glass_h_bar` (method, line 465) `def _estimate_glass_h_bar(self, t_eff, weight_variance)`
+  - `__init__` (method, line 472) `def __init__(self, matrix_size, num_samples, seed)`
+  - `__len__` (method, line 486) `def __len__(self)`
+  - `__getitem__` (method, line 489) `def __getitem__(self, idx)`
+  - `__init__` (method, line 501) `def __init__(self, config)`
+  - `_init_weights` (method, line 537) `def _init_weights(self)`
+  - `forward` (method, line 546) `def forward(self, input_a, input_b, output_attentions, return_dict)`
+  - `get_bilinear_tensors` (method, line 574) `def get_bilinear_tensors(self)`
+  - `set_bilinear_tensors` (method, line 577) `def set_bilinear_tensors(self, u, v, w)`
+  - `compute_discretization_margin` (method, line 588) `def compute_discretization_margin(self)`
+  - `discretize` (method, line 593) `def discretize(self, threshold)`
+  - `get_weight_norm` (method, line 601) `def get_weight_norm(self)`
+  - `compute_gradient_norm` (method, line 604) `def compute_gradient_norm(self)`
+  - `prune` (method, line 612) `def prune(self, model, target_slots)`
+  - `_compute_importance` (method, line 640) `def _compute_importance(self, u, v, w)`
+  - `_select_top_k` (method, line 646) `def _select_top_k(self, importance, k)`
+  - `_verify_pruning` (method, line 650) `def _verify_pruning(self, model, target_slots)`
+  - `__init__` (method, line 661) `def __init__(self, config)`
+  - `should_checkpoint` (method, line 670) `def should_checkpoint(self)`
+  - `save` (method, line 674) `def save(self, model, optimizer, state, path, checkpoint_type)`
+  - `_cleanup` (method, line 719) `def _cleanup(self)`
+  - `__init__` (method, line 743) `def __init__(self, config)`
+  - `classify` (method, line 746) `def classify(self, delta, kappa, lc, t_eff, test_accuracy)`
+  - `__init__` (method, line 787) `def __init__(self, config)`
+  - `update` (method, line 794) `def update(self, test_accuracy, train_loss)`
+  - `__init__` (method, line 830) `def __init__(self, config, model, train_loader, test_loader, checkpoint_manager)`
+  - `_initialize_metric_computers` (method, line 853) `def _initialize_metric_computers(self)`
+  - `train_epoch` (method, line 866) `def train_epoch(self)`
+  - `evaluate` (method, line 915) `def evaluate(self)`
+  - `_get_model_output` (method, line 941) `def _get_model_output(self, input_a, input_b)`
+  - `compute_thermodynamic_state` (method, line 947) `def compute_thermodynamic_state(self, train_metrics, test_metrics)`
+  - `_get_sample_batch` (method, line 1010) `def _get_sample_batch(self)`
+  - `_compute_all_metrics` (method, line 1017) `def _compute_all_metrics(self, sample_batch)`
+  - `detect_confirmed_crystallization` (method, line 1034) `def detect_confirmed_crystallization(self)`
+  - `train` (method, line 1065) `def train(self, num_epochs)`
+  - `_print_training_header` (method, line 1111) `def _print_training_header(self, num_epochs)`
+  - `_update_phase_tracking` (method, line 1128) `def _update_phase_tracking(self, state, last_phase, consecutive_crystal_epochs)`
+  - `_update_progress_bar` (method, line 1140) `def _update_progress_bar(self, pbar, state, consecutive_crystal_epochs)`
+  - `_handle_grokking_event` (method, line 1163) `def _handle_grokking_event(self, epoch, state)`
+  - `_handle_crystallization_event` (method, line 1176) `def _handle_crystallization_event(self, epoch, state)`
+  - `phase2_pruning_and_discretization` (method, line 1188) `def phase2_pruning_and_discretization(self)`
+  - `tqdm` (method, line 37) `def tqdm(iterable)`
+
+## llm_kappa_miner.py
+- Layer: utility
+- Language: py
+- Symbols:
+  - `LLMKappaConfig` (class, line 42) `class LLMKappaConfig`
+  - `LLMArithmeticDataset` (class, line 80) `class LLMArithmeticDataset`
+  - `LLMKappaMeter` (class, line 146) `class LLMKappaMeter`
+  - `LLMKappaMiner` (class, line 288) `class LLMKappaMiner`
+  - `prospect_multiple_models` (method, line 554) `def prospect_multiple_models(models, config_override)`
+  - `main` (method, line 603) `def main()`
+  - `__post_init__` (method, line 71) `def __post_init__(self)`
+  - `__init__` (method, line 89) `def __init__(self, tokenizer, config)`
+  - `format_problem` (method, line 94) `def format_problem(self, a, b, op, result)`
+  - `generate_batch` (method, line 103) `def generate_batch(self, batch_size)`
+  - `generate_for_kappa` (method, line 133) `def generate_for_kappa(self, batch_size)`
+  - `__init__` (method, line 154) `def __init__(self, model, config)`
+  - `compute_kappa` (method, line 158) `def compute_kappa(self, input_ids, labels, attention_mask)`
+  - `predict_grokking` (method, line 259) `def predict_grokking(self, kappa)`
+  - `__init__` (method, line 297) `def __init__(self, config)`
+  - `train_step` (method, line 323) `def train_step(self, optimizer)`
+  - `evaluate` (method, line 346) `def evaluate(self)`
+  - `prospect` (method, line 376) `def prospect(self, early_stop, save_dir)`
+  - `test_arithmetic` (method, line 485) `def test_arithmetic(self, n_tests)`
+
+## seed_miner.py
+- Layer: data_access
+- Language: py
+- Symbols:
+  - `ExecutionMode` (class, line 63) `class ExecutionMode(Enum)`
+  - `ProspectorConfig` (class, line 69) `class ProspectorConfig`
+  - `IMetricCalculator` (class, line 160) `class IMetricCalculator(ABC)`
+  - `ILossComponent` (class, line 166) `class ILossComponent(ABC)`
+  - `ICheckpointManager` (class, line 173) `class ICheckpointManager(ABC)`
+  - `ITrainingPhase` (class, line 187) `class ITrainingPhase(ABC)`
+  - `build_leiderman_config` (method, line 193) `def build_leiderman_config(config)`
+  - `DeltaCalculator` (class, line 239) `class DeltaCalculator(IMetricCalculator)`
+  - `KappaCalculator` (class, line 257) `class KappaCalculator`
+  - `ThermodynamicMetricsCalculator` (class, line 328) `class ThermodynamicMetricsCalculator(IMetricCalculator)`
+  - `LocalComplexityCalculator` (class, line 378) `class LocalComplexityCalculator(IMetricCalculator)`
+  - `SuperpositionCalculator` (class, line 430) `class SuperpositionCalculator(IMetricCalculator)`
+  - `GravitationalConstantCalculator` (class, line 471) `class GravitationalConstantCalculator(IMetricCalculator)`
+  - `PhaseDetector` (class, line 483) `class PhaseDetector`
+  - `AdaptiveAnnealingScheduler` (class, line 518) `class AdaptiveAnnealingScheduler`
+  - `GlassDetector` (class, line 590) `class GlassDetector`
+  - `GrokkinDetector` (class, line 635) `class GrokkinDetector`
+  - `CheckpointManager` (class, line 671) `class CheckpointManager(ICheckpointManager)`
+  - `ComprehensiveMetricsAggregator` (class, line 705) `class ComprehensiveMetricsAggregator`
+  - `format_kappa` (method, line 808) `def format_kappa(kappa)`
+  - `format_lc` (method, line 814) `def format_lc(lc)`
+  - `ProspectorPhase` (class, line 822) `class ProspectorPhase(ITrainingPhase)`
+  - `LongTrainingPhase` (class, line 975) `class LongTrainingPhase(ITrainingPhase)`
+  - `SeedProspector` (class, line 1162) `class SeedProspector`
+  - `LongTrainingPipeline` (class, line 1304) `class LongTrainingPipeline`
+  - `main` (method, line 1415) `def main()`
+  - `calculate` (method, line 162) `def calculate(self)`
+  - `compute` (method, line 168) `def compute(self, model, loss_ce, epoch)`
+  - `save` (method, line 175) `def save(self, state, path)`
+  - `load` (method, line 179) `def load(self, path)`
+  - `should_checkpoint` (method, line 183) `def should_checkpoint(self)`
+  - `execute` (method, line 189) `def execute(self, model)`
+  - `calculate` (method, line 240) `def calculate(self, model)`
+  - `__init__` (method, line 258) `def __init__(self, config)`
+  - `accumulate_gradient` (method, line 265) `def accumulate_gradient(self, model)`
+  - `calculate_kappa` (method, line 276) `def calculate_kappa(self)`
+  - `get_gradient_covariance` (method, line 296) `def get_gradient_covariance(self)`
+  - `get_kappa_trend` (method, line 307) `def get_kappa_trend(self)`
+  - `is_crystallizing` (method, line 317) `def is_crystallizing(self)`
+  - `reset` (method, line 323) `def reset(self)`
+  - `__init__` (method, line 329) `def __init__(self, config)`
+  - `calculate` (method, line 332) `def calculate(self, model, gradient_covariance)`
+  - `__init__` (method, line 379) `def __init__(self, config)`
+  - `calculate` (method, line 382) `def calculate(self, model, train_x, train_y, device)`
+  - `__init__` (method, line 431) `def __init__(self, config)`
+  - `_initialize_sae` (method, line 436) `def _initialize_sae(self, input_dim, device)`
+  - `calculate` (method, line 442) `def calculate(self, model)`
+  - `calculate` (method, line 472) `def calculate(self, model)`
+  - `__init__` (method, line 484) `def __init__(self, config)`
+  - `detect` (method, line 489) `def detect(self, metrics)`
+  - `__init__` (method, line 519) `def __init__(self, model, config, optimizer)`
+  - `step` (method, line 534) `def step(self, metrics)`
+  - `_update_model_temperatures` (method, line 581) `def _update_model_temperatures(self)`
+  - `_update_optimizer_weight_decay` (method, line 585) `def _update_optimizer_weight_decay(self)`
+  - `__init__` (method, line 591) `def __init__(self, config)`
+  - `should_stop` (method, line 597) `def should_stop(self, epoch, metrics)`
+  - `__init__` (method, line 636) `def __init__(self, config)`
+  - `update` (method, line 643) `def update(self, metrics)`
+  - `__init__` (method, line 672) `def __init__(self, config)`
+  - `save` (method, line 678) `def save(self, state, path)`
+  - `load` (method, line 689) `def load(self, path)`
+  - `should_checkpoint` (method, line 696) `def should_checkpoint(self)`
+  - `get_latest_path` (method, line 700) `def get_latest_path(self)`
+  - `__init__` (method, line 706) `def __init__(self, config)`
+  - `compute_all` (method, line 716) `def compute_all(self, model, train_loss, test_loss, test_acc, epoch, weight_norm, grad_norm, thermo_state, scheduler, train_x, train_y, device, force_kappa, force_lc, force_sp)`
+  - `accumulate_gradient` (method, line 800) `def accumulate_gradient(self, model)`
+  - `reset` (method, line 803) `def reset(self)`
+  - `__init__` (method, line 823) `def __init__(self, config, seed)`
+  - `execute` (method, line 827) `def execute(self, model)`
+  - `__init__` (method, line 976) `def __init__(self, config)`
+  - `execute` (method, line 980) `def execute(self, model)`
+  - `__init__` (method, line 1163) `def __init__(self, config)`
+  - `prospect` (method, line 1170) `def prospect(self, total_attempts, start_seed)`
+  - `_set_seed` (method, line 1296) `def _set_seed(self, seed)`
+  - `__init__` (method, line 1305) `def __init__(self, config)`
+  - `_signal_handler` (method, line 1313) `def _signal_handler(self, signum, frame)`
+  - `run` (method, line 1317) `def run(self, resume_from, seed)`
+- Depends on: `tran5.py`
+
+## superconducting_transformer.py
+- Layer: data_access
+- Language: py
+- Symbols:
+  - `ExecutionMode` (class, line 72) `class ExecutionMode(Enum)`
+  - `SuperconductorConfig` (class, line 78) `class SuperconductorConfig`
+  - `IMetricCalculator` (class, line 197) `class IMetricCalculator(ABC)`
+  - `ILossComponent` (class, line 203) `class ILossComponent(ABC)`
+  - `ICheckpointManager` (class, line 210) `class ICheckpointManager(ABC)`
+  - `ITrainingPhase` (class, line 224) `class ITrainingPhase(ABC)`
+  - `IPhaseDetector` (class, line 230) `class IPhaseDetector(ABC)`
+  - `IGlassDetector` (class, line 236) `class IGlassDetector(ABC)`
+  - `IGrokkinDetector` (class, line 242) `class IGrokkinDetector(ABC)`
+  - `IAttentionMechanism` (class, line 248) `class IAttentionMechanism(ABC)`
+  - `SeedManager` (class, line 254) `class SeedManager`
+  - `SparsemaxFunction` (class, line 266) `class SparsemaxFunction(Function)`
+  - `Sparsemax` (class, line 312) `class Sparsemax(Module)`
+  - `TopologicalGate` (class, line 321) `class TopologicalGate(Module)`
+  - `ChemicalPotentialScheduler` (class, line 369) `class ChemicalPotentialScheduler`
+  - `SuperconductingAttention` (class, line 392) `class SuperconductingAttention(Module)`
+  - `SuperconductingTransformerLayer` (class, line 480) `class SuperconductingTransformerLayer(Module)`
+  - `SuperconductingTransformer` (class, line 516) `class SuperconductingTransformer(Module)`
+  - `ModularAdditionDatasetFactory` (class, line 682) `class ModularAdditionDatasetFactory`
+  - `DeltaCalculator` (class, line 711) `class DeltaCalculator(IMetricCalculator)`
+  - `KappaCalculator` (class, line 732) `class KappaCalculator`
+  - `ThermodynamicMetricsCalculator` (class, line 801) `class ThermodynamicMetricsCalculator(IMetricCalculator)`
+  - `LocalComplexityCalculator` (class, line 854) `class LocalComplexityCalculator(IMetricCalculator)`
+  - `SuperpositionCalculator` (class, line 909) `class SuperpositionCalculator(IMetricCalculator)`
+  - `GravitationalConstantCalculator` (class, line 948) `class GravitationalConstantCalculator(IMetricCalculator)`
+  - `SuperconductivityLoss` (class, line 963) `class SuperconductivityLoss(ILossComponent)`
+  - `PhaseDetector` (class, line 1018) `class PhaseDetector(IPhaseDetector)`
+  - `AdaptiveAnnealingScheduler` (class, line 1060) `class AdaptiveAnnealingScheduler`
+  - `GlassDetector` (class, line 1128) `class GlassDetector(IGlassDetector)`
+  - `GrokkinDetector` (class, line 1163) `class GrokkinDetector(IGrokkinDetector)`
+  - `CheckpointManager` (class, line 1195) `class CheckpointManager(ICheckpointManager)`
+  - `ModelPruner` (class, line 1227) `class ModelPruner`
+  - `ModelDiscretizer` (class, line 1252) `class ModelDiscretizer`
+  - `ComprehensiveMetricsAggregator` (class, line 1273) `class ComprehensiveMetricsAggregator`
+  - `DisplayFormatter` (class, line 1386) `class DisplayFormatter`
+  - `TrainingPrimitives` (class, line 1402) `class TrainingPrimitives`
+  - `ProspectorPhase` (class, line 1429) `class ProspectorPhase(ITrainingPhase)`
+  - `LongTrainingPhase` (class, line 1619) `class LongTrainingPhase(ITrainingPhase)`
+  - `SeedProspector` (class, line 1874) `class SeedProspector`
+  - `LongTrainingPipeline` (class, line 2004) `class LongTrainingPipeline`
+  - `Application` (class, line 2136) `class Application`
+  - `main` (method, line 2236) `def main()`
+  - `calculate` (method, line 199) `def calculate(self)`
+  - `compute` (method, line 205) `def compute(self, model, loss_ce, epoch)`
+  - `save` (method, line 212) `def save(self, state, path)`
+  - `load` (method, line 216) `def load(self, path)`
+  - `should_checkpoint` (method, line 220) `def should_checkpoint(self)`
+  - `execute` (method, line 226) `def execute(self, model)`
+  - `detect` (method, line 232) `def detect(self, metrics)`
+  - `should_stop` (method, line 238) `def should_stop(self, epoch, metrics)`
+  - `update` (method, line 244) `def update(self, metrics)`
+  - `forward` (method, line 250) `def forward(self, scores)`
+  - `set_seed` (method, line 256) `def set_seed(seed, device)`
+  - `forward` (method, line 268) `def forward(ctx, input_tensor, dim)`
+  - `backward` (method, line 298) `def backward(ctx, grad_output)`
+  - `__init__` (method, line 313) `def __init__(self, dim)`
+  - `forward` (method, line 317) `def forward(self, input_tensor)`
+  - `__init__` (method, line 322) `def __init__(self, num_units, config)`
+  - `forward` (method, line 331) `def forward(self)`
+  - `get_expected_l0` (method, line 344) `def get_expected_l0(self)`
+  - `get_sparsity_ratio` (method, line 349) `def get_sparsity_ratio(self)`
+  - `get_topological_charge` (method, line 354) `def get_topological_charge(self)`
+  - `update_temperature` (method, line 360) `def update_temperature(self, epoch)`
+  - `__init__` (method, line 370) `def __init__(self, config)`
+  - `update` (method, line 374) `def update(self, test_accuracy)`
+  - `get_mu` (method, line 388) `def get_mu(self)`
+  - `__init__` (method, line 393) `def __init__(self, config)`
+  - `forward` (method, line 420) `def forward(self, x, mask)`
+  - `_update_thermodynamic_state` (method, line 454) `def _update_thermodynamic_state(self, attn_weights)`
+  - `__init__` (method, line 481) `def __init__(self, config, layer_index)`
+  - `forward` (method, line 497) `def forward(self, x, mask)`
+  - `__init__` (method, line 517) `def __init__(self, config)`
+  - `_init_weights` (method, line 535) `def _init_weights(self)`
+  - `forward` (method, line 545) `def forward(self, x, mask)`
+  - `get_thermodynamic_state` (method, line 556) `def get_thermodynamic_state(self)`
+  - `get_gate_statistics` (method, line 580) `def get_gate_statistics(self)`
+  - `get_cooper_pair_coherence` (method, line 604) `def get_cooper_pair_coherence(self)`
+  - `get_gap_energy` (method, line 652) `def get_gap_energy(self)`
+  - `get_meissner_fraction` (method, line 667) `def get_meissner_fraction(self)`
+  - `update_gate_temperatures` (method, line 676) `def update_gate_temperatures(self, epoch)`
+  - `create` (method, line 684) `def create(modulus, train_fraction)`
+  - `__init__` (method, line 712) `def __init__(self, config)`
+  - `calculate` (method, line 715) `def calculate(self, model)`
+  - `__init__` (method, line 733) `def __init__(self, config)`
+  - `accumulate_gradient` (method, line 738) `def accumulate_gradient(self, model)`
+  - `calculate_kappa` (method, line 749) `def calculate_kappa(self)`
+  - `get_gradient_covariance` (method, line 769) `def get_gradient_covariance(self)`
+  - `get_kappa_trend` (method, line 780) `def get_kappa_trend(self)`
+  - `is_crystallizing` (method, line 790) `def is_crystallizing(self)`
+  - `reset` (method, line 796) `def reset(self)`
+  - `__init__` (method, line 802) `def __init__(self, config)`
+  - `calculate` (method, line 805) `def calculate(self, model, gradient_covariance)`
+  - `__init__` (method, line 855) `def __init__(self, config)`
+  - `calculate` (method, line 858) `def calculate(self, model, train_x, train_y, device)`
+  - `__init__` (method, line 910) `def __init__(self, config)`
+  - `_initialize_sae` (method, line 915) `def _initialize_sae(self, input_dim, device)`
+  - `calculate` (method, line 921) `def calculate(self, model)`
+  - `__init__` (method, line 949) `def __init__(self, config)`
+  - `calculate` (method, line 952) `def calculate(self, model)`
+  - `__init__` (method, line 964) `def __init__(self, config, mu_scheduler)`
+  - `compute` (method, line 968) `def compute(self, model, loss_ce, epoch)`
+  - `__init__` (method, line 1019) `def __init__(self, config)`
+  - `detect` (method, line 1024) `def detect(self, metrics)`
+  - `__init__` (method, line 1061) `def __init__(self, model, config, optimizer)`
+  - `step` (method, line 1076) `def step(self, metrics)`
+  - `_update_model_temperatures` (method, line 1119) `def _update_model_temperatures(self)`
+  - `_update_optimizer_weight_decay` (method, line 1123) `def _update_optimizer_weight_decay(self)`
+  - `__init__` (method, line 1129) `def __init__(self, config)`
+  - `should_stop` (method, line 1133) `def should_stop(self, epoch, metrics)`
+  - `__init__` (method, line 1164) `def __init__(self, config)`
+  - `update` (method, line 1171) `def update(self, metrics)`
+  - `__init__` (method, line 1196) `def __init__(self, config)`
+  - `save` (method, line 1202) `def save(self, state, path)`
+  - `load` (method, line 1211) `def load(self, path)`
+  - `should_checkpoint` (method, line 1218) `def should_checkpoint(self)`
+  - `get_latest_path` (method, line 1222) `def get_latest_path(self)`
+  - `prune` (method, line 1229) `def prune(model, threshold)`
+  - `discretize` (method, line 1254) `def discretize(model, tolerance)`
+  - `__init__` (method, line 1274) `def __init__(self, config)`
+  - `compute_all` (method, line 1284) `def compute_all(self, model, train_loss, test_loss, test_acc, epoch, weight_norm, grad_norm, thermo_state, scheduler, mu_scheduler, train_x, train_y, device, force_kappa, force_lc, force_sp)`
+  - `accumulate_gradient` (method, line 1378) `def accumulate_gradient(self, model)`
+  - `reset` (method, line 1381) `def reset(self)`
+  - `format_kappa` (method, line 1388) `def format_kappa(kappa, max_display)`
+  - `format_lc` (method, line 1394) `def format_lc(lc)`
+  - `evaluate` (method, line 1405) `def evaluate(model, test_x, test_y, config, device)`
+  - `__init__` (method, line 1430) `def __init__(self, config, seed)`
+  - `execute` (method, line 1434) `def execute(self, model)`
+  - `delta_calc_fast` (method, line 1614) `def delta_calc_fast(self, model)`
+  - `__init__` (method, line 1620) `def __init__(self, config)`
+  - `execute` (method, line 1624) `def execute(self, model)`
+  - `__init__` (method, line 1875) `def __init__(self, config)`
+  - `prospect` (method, line 1882) `def prospect(self, total_attempts, start_seed)`
+  - `__init__` (method, line 2005) `def __init__(self, config)`
+  - `_signal_handler` (method, line 2013) `def _signal_handler(self, signum, frame)`
+  - `run` (method, line 2017) `def run(self, resume_from, seed)`
+  - `__init__` (method, line 2137) `def __init__(self)`
+  - `_create_argument_parser` (method, line 2140) `def _create_argument_parser(self)`
+  - `run` (method, line 2180) `def run(self)`
+
+## superconducting_transformer2.py
+- Layer: data_access
+- Language: py
+- Symbols:
+  - `ExecutionMode` (class, line 72) `class ExecutionMode(Enum)`
+  - `SuperconductorConfig` (class, line 78) `class SuperconductorConfig`
+  - `IMetricCalculator` (class, line 197) `class IMetricCalculator(ABC)`
+  - `ILossComponent` (class, line 203) `class ILossComponent(ABC)`
+  - `ICheckpointManager` (class, line 210) `class ICheckpointManager(ABC)`
+  - `ITrainingPhase` (class, line 224) `class ITrainingPhase(ABC)`
+  - `IPhaseDetector` (class, line 230) `class IPhaseDetector(ABC)`
+  - `IGlassDetector` (class, line 236) `class IGlassDetector(ABC)`
+  - `IGrokkinDetector` (class, line 242) `class IGrokkinDetector(ABC)`
+  - `IAttentionMechanism` (class, line 248) `class IAttentionMechanism(ABC)`
+  - `SeedManager` (class, line 254) `class SeedManager`
+  - `SparsemaxFunction` (class, line 266) `class SparsemaxFunction(Function)`
+  - `Sparsemax` (class, line 312) `class Sparsemax(Module)`
+  - `TopologicalGate` (class, line 321) `class TopologicalGate(Module)`
+  - `ChemicalPotentialScheduler` (class, line 369) `class ChemicalPotentialScheduler`
+  - `SuperconductingAttention` (class, line 396) `class SuperconductingAttention(Module)`
+  - `SuperconductingTransformerLayer` (class, line 484) `class SuperconductingTransformerLayer(Module)`
+  - `SuperconductingTransformer` (class, line 520) `class SuperconductingTransformer(Module)`
+  - `ModularAdditionDatasetFactory` (class, line 686) `class ModularAdditionDatasetFactory`
+  - `DeltaCalculator` (class, line 715) `class DeltaCalculator(IMetricCalculator)`
+  - `KappaCalculator` (class, line 736) `class KappaCalculator`
+  - `ThermodynamicMetricsCalculator` (class, line 805) `class ThermodynamicMetricsCalculator(IMetricCalculator)`
+  - `LocalComplexityCalculator` (class, line 858) `class LocalComplexityCalculator(IMetricCalculator)`
+  - `SuperpositionCalculator` (class, line 913) `class SuperpositionCalculator(IMetricCalculator)`
+  - `GravitationalConstantCalculator` (class, line 952) `class GravitationalConstantCalculator(IMetricCalculator)`
+  - `SuperconductivityLoss` (class, line 967) `class SuperconductivityLoss(ILossComponent)`
+  - `PhaseDetector` (class, line 1047) `class PhaseDetector(IPhaseDetector)`
+  - `AdaptiveAnnealingScheduler` (class, line 1089) `class AdaptiveAnnealingScheduler`
+  - `GlassDetector` (class, line 1157) `class GlassDetector(IGlassDetector)`
+  - `GrokkinDetector` (class, line 1192) `class GrokkinDetector(IGrokkinDetector)`
+  - `CheckpointManager` (class, line 1224) `class CheckpointManager(ICheckpointManager)`
+  - `ModelPruner` (class, line 1256) `class ModelPruner`
+  - `ModelDiscretizer` (class, line 1281) `class ModelDiscretizer`
+  - `ComprehensiveMetricsAggregator` (class, line 1302) `class ComprehensiveMetricsAggregator`
+  - `DisplayFormatter` (class, line 1415) `class DisplayFormatter`
+  - `TrainingPrimitives` (class, line 1431) `class TrainingPrimitives`
+  - `ProspectorPhase` (class, line 1458) `class ProspectorPhase(ITrainingPhase)`
+  - `LongTrainingPhase` (class, line 1634) `class LongTrainingPhase(ITrainingPhase)`
+  - `SeedProspector` (class, line 1889) `class SeedProspector`
+  - `LongTrainingPipeline` (class, line 2019) `class LongTrainingPipeline`
+  - `Application` (class, line 2151) `class Application`
+  - `main` (method, line 2251) `def main()`
+  - `calculate` (method, line 199) `def calculate(self)`
+  - `compute` (method, line 205) `def compute(self, model, loss_ce, epoch)`
+  - `save` (method, line 212) `def save(self, state, path)`
+  - `load` (method, line 216) `def load(self, path)`
+  - `should_checkpoint` (method, line 220) `def should_checkpoint(self)`
+  - `execute` (method, line 226) `def execute(self, model)`
+  - `detect` (method, line 232) `def detect(self, metrics)`
+  - `should_stop` (method, line 238) `def should_stop(self, epoch, metrics)`
+  - `update` (method, line 244) `def update(self, metrics)`
+  - `forward` (method, line 250) `def forward(self, scores)`
+  - `set_seed` (method, line 256) `def set_seed(seed, device)`
+  - `forward` (method, line 268) `def forward(ctx, input_tensor, dim)`
+  - `backward` (method, line 298) `def backward(ctx, grad_output)`
+  - `__init__` (method, line 313) `def __init__(self, dim)`
+  - `forward` (method, line 317) `def forward(self, input_tensor)`
+  - `__init__` (method, line 322) `def __init__(self, num_units, config)`
+  - `forward` (method, line 331) `def forward(self)`
+  - `get_expected_l0` (method, line 344) `def get_expected_l0(self)`
+  - `get_sparsity_ratio` (method, line 349) `def get_sparsity_ratio(self)`
+  - `get_topological_charge` (method, line 354) `def get_topological_charge(self)`
+  - `update_temperature` (method, line 360) `def update_temperature(self, epoch)`
+  - `__init__` (method, line 370) `def __init__(self, config)`
+  - `update` (method, line 374) `def update(self, test_accuracy)`
+  - `get_mu` (method, line 392) `def get_mu(self)`
+  - `__init__` (method, line 397) `def __init__(self, config)`
+  - `forward` (method, line 424) `def forward(self, x, mask)`
+  - `_update_thermodynamic_state` (method, line 458) `def _update_thermodynamic_state(self, attn_weights)`
+  - `__init__` (method, line 485) `def __init__(self, config, layer_index)`
+  - `forward` (method, line 501) `def forward(self, x, mask)`
+  - `__init__` (method, line 521) `def __init__(self, config)`
+  - `_init_weights` (method, line 539) `def _init_weights(self)`
+  - `forward` (method, line 549) `def forward(self, x, mask)`
+  - `get_thermodynamic_state` (method, line 560) `def get_thermodynamic_state(self)`
+  - `get_gate_statistics` (method, line 584) `def get_gate_statistics(self)`
+  - `get_cooper_pair_coherence` (method, line 608) `def get_cooper_pair_coherence(self)`
+  - `get_gap_energy` (method, line 656) `def get_gap_energy(self)`
+  - `get_meissner_fraction` (method, line 671) `def get_meissner_fraction(self)`
+  - `update_gate_temperatures` (method, line 680) `def update_gate_temperatures(self, epoch)`
+  - `create` (method, line 688) `def create(modulus, train_fraction)`
+  - `__init__` (method, line 716) `def __init__(self, config)`
+  - `calculate` (method, line 719) `def calculate(self, model)`
+  - `__init__` (method, line 737) `def __init__(self, config)`
+  - `accumulate_gradient` (method, line 742) `def accumulate_gradient(self, model)`
+  - `calculate_kappa` (method, line 753) `def calculate_kappa(self)`
+  - `get_gradient_covariance` (method, line 773) `def get_gradient_covariance(self)`
+  - `get_kappa_trend` (method, line 784) `def get_kappa_trend(self)`
+  - `is_crystallizing` (method, line 794) `def is_crystallizing(self)`
+  - `reset` (method, line 800) `def reset(self)`
+  - `__init__` (method, line 806) `def __init__(self, config)`
+  - `calculate` (method, line 809) `def calculate(self, model, gradient_covariance)`
+  - `__init__` (method, line 859) `def __init__(self, config)`
+  - `calculate` (method, line 862) `def calculate(self, model, train_x, train_y, device)`
+  - `__init__` (method, line 914) `def __init__(self, config)`
+  - `_initialize_sae` (method, line 919) `def _initialize_sae(self, input_dim, device)`
+  - `calculate` (method, line 925) `def calculate(self, model)`
+  - `__init__` (method, line 953) `def __init__(self, config)`
+  - `calculate` (method, line 956) `def calculate(self, model)`
+  - `__init__` (method, line 968) `def __init__(self, config, mu_scheduler)`
+  - `compute` (method, line 972) `def compute(self, model, loss_ce, epoch)`
+  - `__init__` (method, line 1048) `def __init__(self, config)`
+  - `detect` (method, line 1053) `def detect(self, metrics)`
+  - `__init__` (method, line 1090) `def __init__(self, model, config, optimizer)`
+  - `step` (method, line 1105) `def step(self, metrics)`
+  - `_update_model_temperatures` (method, line 1148) `def _update_model_temperatures(self)`
+  - `_update_optimizer_weight_decay` (method, line 1152) `def _update_optimizer_weight_decay(self)`
+  - `__init__` (method, line 1158) `def __init__(self, config)`
+  - `should_stop` (method, line 1162) `def should_stop(self, epoch, metrics)`
+  - `__init__` (method, line 1193) `def __init__(self, config)`
+  - `update` (method, line 1200) `def update(self, metrics)`
+  - `__init__` (method, line 1225) `def __init__(self, config)`
+  - `save` (method, line 1231) `def save(self, state, path)`
+  - `load` (method, line 1240) `def load(self, path)`
+  - `should_checkpoint` (method, line 1247) `def should_checkpoint(self)`
+  - `get_latest_path` (method, line 1251) `def get_latest_path(self)`
+  - `prune` (method, line 1258) `def prune(model, threshold)`
+  - `discretize` (method, line 1283) `def discretize(model, tolerance)`
+  - `__init__` (method, line 1303) `def __init__(self, config)`
+  - `compute_all` (method, line 1313) `def compute_all(self, model, train_loss, test_loss, test_acc, epoch, weight_norm, grad_norm, thermo_state, scheduler, mu_scheduler, train_x, train_y, device, force_kappa, force_lc, force_sp)`
+  - `accumulate_gradient` (method, line 1407) `def accumulate_gradient(self, model)`
+  - `reset` (method, line 1410) `def reset(self)`
+  - `format_kappa` (method, line 1417) `def format_kappa(kappa, max_display)`
+  - `format_lc` (method, line 1423) `def format_lc(lc)`
+  - `evaluate` (method, line 1434) `def evaluate(model, test_x, test_y, config, device)`
+  - `__init__` (method, line 1459) `def __init__(self, config, seed)`
+  - `execute` (method, line 1463) `def execute(self, model)`
+  - `__init__` (method, line 1635) `def __init__(self, config)`
+  - `execute` (method, line 1639) `def execute(self, model)`
+  - `__init__` (method, line 1890) `def __init__(self, config)`
+  - `prospect` (method, line 1897) `def prospect(self, total_attempts, start_seed)`
+  - `__init__` (method, line 2020) `def __init__(self, config)`
+  - `_signal_handler` (method, line 2028) `def _signal_handler(self, signum, frame)`
+  - `run` (method, line 2032) `def run(self, resume_from, seed)`
+  - `__init__` (method, line 2152) `def __init__(self)`
+  - `_create_argument_parser` (method, line 2155) `def _create_argument_parser(self)`
+  - `run` (method, line 2195) `def run(self)`
+
+## tran2.py
+- Layer: utility
+- Language: py
+- Symbols:
+  - `LadermanConfig` (class, line 44) `class LadermanConfig`
+  - `ThermodynamicState` (class, line 122) `class ThermodynamicState`
+  - `MatrixMultiplicationDataset` (class, line 169) `class MatrixMultiplicationDataset(Dataset)`
+  - `BilinearTransformerModel` (class, line 197) `class BilinearTransformerModel(Module)`
+  - `GradientCovarianceComputer` (class, line 332) `class GradientCovarianceComputer`
+  - `LocalComplexityComputer` (class, line 400) `class LocalComplexityComputer`
+  - `SuperpositionComputer` (class, line 420) `class SuperpositionComputer`
+  - `TemperatureComputer` (class, line 441) `class TemperatureComputer`
+  - `MagnitudePruning` (class, line 494) `class MagnitudePruning`
+  - `FileCheckpointManager` (class, line 547) `class FileCheckpointManager`
+  - `CrystallizationTrainer` (class, line 615) `class CrystallizationTrainer`
+  - `run_laderman_experiment` (method, line 916) `def run_laderman_experiment(config)`
+  - `__post_init__` (method, line 103) `def __post_init__(self)`
+  - `to_dict` (method, line 111) `def to_dict(self)`
+  - `to_dict` (method, line 148) `def to_dict(self)`
+  - `__init__` (method, line 172) `def __init__(self, matrix_size, num_samples, seed)`
+  - `__len__` (method, line 186) `def __len__(self)`
+  - `__getitem__` (method, line 189) `def __getitem__(self, idx)`
+  - `__init__` (method, line 203) `def __init__(self, config)`
+  - `_init_weights` (method, line 248) `def _init_weights(self)`
+  - `forward` (method, line 258) `def forward(self, input_a, input_b, output_attentions, return_dict)`
+  - `get_bilinear_tensors` (method, line 292) `def get_bilinear_tensors(self)`
+  - `set_bilinear_tensors` (method, line 295) `def set_bilinear_tensors(self, u, v, w)`
+  - `compute_discretization_margin` (method, line 308) `def compute_discretization_margin(self)`
+  - `discretize` (method, line 313) `def discretize(self, threshold)`
+  - `get_weight_norm` (method, line 321) `def get_weight_norm(self)`
+  - `compute_gradient_norm` (method, line 324) `def compute_gradient_norm(self)`
+  - `__init__` (method, line 338) `def __init__(self, num_samples)`
+  - `compute` (method, line 341) `def compute(self, model, batch)`
+  - `compute` (method, line 403) `def compute(self, model, batch)`
+  - `compute` (method, line 423) `def compute(self, model, batch)`
+  - `__init__` (method, line 444) `def __init__(self, num_samples)`
+  - `compute` (method, line 447) `def compute(self, model, batch)`
+  - `prune` (method, line 500) `def prune(self, model, target_slots)`
+  - `__init__` (method, line 550) `def __init__(self, config)`
+  - `should_checkpoint` (method, line 558) `def should_checkpoint(self)`
+  - `save` (method, line 561) `def save(self, model, optimizer, state, path, checkpoint_type)`
+  - `_cleanup` (method, line 602) `def _cleanup(self)`
+  - `__init__` (method, line 618) `def __init__(self, config, model, train_loader, test_loader, checkpoint_manager)`
+  - `train_epoch` (method, line 646) `def train_epoch(self)`
+  - `evaluate` (method, line 694) `def evaluate(self)`
+  - `compute_thermodynamic_state` (method, line 726) `def compute_thermodynamic_state(self, train_metrics, test_metrics)`
+  - `_detect_grokking` (method, line 788) `def _detect_grokking(self, current_test_accuracy)`
+  - `train` (method, line 809) `def train(self, num_epochs)`
+  - `phase2_pruning_and_discretization` (method, line 879) `def phase2_pruning_and_discretization(self)`
+  - `tqdm` (method, line 35) `def tqdm(iterable)`
+
+## tran5.py
+- Layer: utility
+- Language: py
+- Symbols:
+  - `LeidermanConfig` (class, line 19) `class LeidermanConfig`
+  - `LeiblerAttention` (class, line 70) `class LeiblerAttention(Module)`
+  - `LeiblerTransformerLayer` (class, line 167) `class LeiblerTransformerLayer(Module)`
+  - `LeiblerTransformer` (class, line 205) `class LeiblerTransformer(Module)`
+  - `AdaptiveTemperatureScheduler` (class, line 292) `class AdaptiveTemperatureScheduler`
+  - `ThermodynamicTracker` (class, line 407) `class ThermodynamicTracker`
+  - `AdaptiveTemperatureScheduler` (class, line 540) `class AdaptiveTemperatureScheduler`
+  - `create_modular_addition_dataset` (method, line 633) `def create_modular_addition_dataset(modulus, train_fraction)`
+  - `compute_kappa_from_gradient_covariance` (method, line 678) `def compute_kappa_from_gradient_covariance(model, train_x, train_y, config, device)`
+  - `compute_order_parameters` (method, line 756) `def compute_order_parameters(model)`
+  - `train_epoch` (method, line 824) `def train_epoch(model, train_x, train_y, optimizer, config, device)`
+  - `evaluate` (method, line 868) `def evaluate(model, test_x, test_y, config, device)`
+  - `prune_model` (method, line 905) `def prune_model(model, threshold)`
+  - `discretize_model` (method, line 955) `def discretize_model(model, tolerance)`
+  - `main` (method, line 998) `def main()`
+  - `__init__` (method, line 75) `def __init__(self, config)`
+  - `forward` (method, line 97) `def forward(self, x, mask)`
+  - `_update_thermodynamic_state` (method, line 140) `def _update_thermodynamic_state(self)`
+  - `__init__` (method, line 172) `def __init__(self, config)`
+  - `forward` (method, line 192) `def forward(self, x, mask)`
+  - `__init__` (method, line 210) `def __init__(self, config)`
+  - `_init_weights` (method, line 234) `def _init_weights(self)`
+  - `forward` (method, line 244) `def forward(self, x, mask)`
+  - `get_thermodynamic_state` (method, line 268) `def get_thermodynamic_state(self)`
+  - `__init__` (method, line 297) `def __init__(self, model, config)`
+  - `step` (method, line 312) `def step(self, metrics)`
+  - `_update_model_temperatures` (method, line 401) `def _update_model_temperatures(self)`
+  - `__init__` (method, line 412) `def __init__(self, config)`
+  - `update` (method, line 439) `def update(self, metrics)`
+  - `_detect_phase` (method, line 455) `def _detect_phase(self, metrics)`
+  - `_detect_grokking` (method, line 489) `def _detect_grokking(self, metrics)`
+  - `get_summary` (method, line 529) `def get_summary(self)`
+  - `__init__` (method, line 553) `def __init__(self, model, config, optimizer)`
+  - `step` (method, line 566) `def step(self, metrics)`
+  - `_update_model_temperatures` (method, line 622) `def _update_model_temperatures(self)`
+  - `_update_optimizer_weight_decay` (method, line 627) `def _update_optimizer_weight_decay(self)`
+- Imported by: `seed_miner.py`, `seed_miner.py`
