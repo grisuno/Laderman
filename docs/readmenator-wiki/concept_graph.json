@@ -1,0 +1,1734 @@
+{
+  "concepts": [
+    {
+      "name": "compute",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "llm_kappa_miner.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 64,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "kappa",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "llm_kappa_miner.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 43,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "model",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "llm_kappa_miner.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 41,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "config",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "llm_kappa_miner.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 11,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "gradient",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_crystallization.py",
+        "llm_kappa_miner.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 45,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "training",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_crystallization.py",
+        "llm_kappa_miner.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 28,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "covariance",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_crystallization.py",
+        "llm_kappa_miner.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 21,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "matrix",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 18,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "forward",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 31,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "transformer",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 31,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "temperature",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 23,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "eff",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 20,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "algorithmic",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_crystallization.py",
+        "llm_kappa_miner.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py"
+      ],
+      "mentions": 19,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "train",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "llm_kappa_miner.py",
+        "seed_miner.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 17,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "discretization",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 14,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "number",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 14,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "dataset",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "llm_kappa_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 13,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "phase",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 59,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "thermodynamic",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 50,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "get",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 41,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "effective",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py"
+      ],
+      "mentions": 23,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "weight",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 21,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "local",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py"
+      ],
+      "mentions": 20,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "checkpoint",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py"
+      ],
+      "mentions": 19,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "detect",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 15,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "metrics",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 15,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "weights",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_crystallization.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 15,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "all",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 14,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "complexity",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py"
+      ],
+      "mentions": 14,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "glass",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran5.py"
+      ],
+      "mentions": 14,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "run",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py"
+      ],
+      "mentions": 13,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "save",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py"
+      ],
+      "mentions": 12,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "condition",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py"
+      ],
+      "mentions": 10,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "entropy",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran5.py"
+      ],
+      "mentions": 10,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "evaluate",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "llm_kappa_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 10,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "framework",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "margin",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "update",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran5.py"
+      ],
+      "mentions": 36,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "attention",
+      "files": [
+        "complex_leibler_transformer.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 27,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "state",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 22,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "delta",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran5.py"
+      ],
+      "mentions": 16,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "prospect",
+      "files": [
+        "complex_leibler_transformer.py",
+        "kappa_miner.py",
+        "llm_kappa_miner.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py"
+      ],
+      "mentions": 15,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "manager",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py"
+      ],
+      "mentions": 13,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "superposition",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py"
+      ],
+      "mentions": 13,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "prune",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 11,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "bar",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "discretize",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py",
+        "tran5.py"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "strassen",
+      "files": [
+        "kappa_miner.py",
+        "laderman_batch_prospection.py",
+        "laderman_crystallization.py",
+        "llm_kappa_miner.py",
+        "seed_miner.py",
+        "tran2.py"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "psi",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "set",
+      "files": [
+        "complex_leibler_transformer.py",
+        "laderman_crystallization.py",
+        "seed_miner.py",
+        "superconducting_transformer.py",
+        "superconducting_transformer2.py",
+        "tran2.py"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "relations": [
+    {
+      "source": "algorithmic",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "attention",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "compute",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "covariance",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "dataset",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "delta",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "detect",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "discretization",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "discretize",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "eff",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "entropy",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "evaluate",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "forward",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "get",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "glass",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "gradient",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "kappa",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "matrix",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "metrics",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "model",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "number",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "phase",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "prune",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "state",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "temperature",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "thermodynamic",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "train",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "training",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "transformer",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "update",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "weight",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "algorithmic",
+      "target": "weights",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "attention",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "compute",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "covariance",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "dataset",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "delta",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "detect",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "discretization",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "discretize",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "eff",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "entropy",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "evaluate",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "forward",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "get",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "glass",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "gradient",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "kappa",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "matrix",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "metrics",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "model",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "number",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "phase",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "prune",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "state",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "temperature",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "thermodynamic",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "train",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "training",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "transformer",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "update",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "weight",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "weights",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "compute",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "covariance",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "dataset",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "delta",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "detect",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "discretization",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "discretize",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "eff",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "entropy",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "evaluate",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "forward",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "get",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "glass",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "gradient",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "kappa",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "matrix",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "metrics",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "model",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "number",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "phase",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "prune",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "state",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "temperature",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "thermodynamic",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "train",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "training",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "transformer",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "update",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "weight",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "attention",
+      "target": "weights",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "bar",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "bar",
+      "target": "attention",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    },
+    {
+      "source": "bar",
+      "target": "compute",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "seed_miner.py->tran5.py"
+      ]
+    }
+  ],
+  "dialectic": [
+    "Thesis: `algorithmic` centralizes 8 files; Antithesis: `all` pulls 7 files with 6 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `algorithmic` centralizes 8 files; Antithesis: `attention` pulls 6 files with 5 shared (Jaccard 0.56); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `algorithmic` centralizes 8 files; Antithesis: `bar` pulls 6 files with 5 shared (Jaccard 0.56); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `algorithmic` centralizes 8 files; Antithesis: `checkpoint` pulls 7 files with 7 shared (Jaccard 0.88); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `algorithmic` centralizes 8 files; Antithesis: `complexity` pulls 7 files with 6 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `algorithmic` centralizes 8 files; Antithesis: `compute` pulls 10 files with 8 shared (Jaccard 0.80); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `algorithmic` centralizes 8 files; Antithesis: `condition` pulls 7 files with 7 shared (Jaccard 0.88); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `algorithmic` centralizes 8 files; Antithesis: `config` pulls 10 files with 8 shared (Jaccard 0.80); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `algorithmic` centralizes 8 files; Antithesis: `covariance` pulls 9 files with 8 shared (Jaccard 0.89); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `algorithmic` centralizes 8 files; Antithesis: `dataset` pulls 8 files with 6 shared (Jaccard 0.60); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?"
+  ]
+}

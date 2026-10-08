@@ -1,0 +1,120 @@
+# Concepts
+
+Nouns map atomically to file sets (EXTRACTED); verbs aggregate structural edges (INFERRED).
+
+- `compute` | files=10 | mentions=64 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `llm_kappa_miner.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `kappa` | files=10 | mentions=43 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `llm_kappa_miner.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `model` | files=10 | mentions=41 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `llm_kappa_miner.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `config` | files=10 | mentions=11 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `llm_kappa_miner.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `gradient` | files=9 | mentions=45 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_crystallization.py`, `llm_kappa_miner.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `training` | files=9 | mentions=28 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_crystallization.py`, `llm_kappa_miner.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `covariance` | files=9 | mentions=21 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_crystallization.py`, `llm_kappa_miner.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `matrix` | files=9 | mentions=18 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `forward` | files=8 | mentions=31 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `transformer` | files=8 | mentions=31 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `temperature` | files=8 | mentions=23 | `complex_leibler_transformer.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `eff` | files=8 | mentions=20 | `complex_leibler_transformer.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `algorithmic` | files=8 | mentions=19 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_crystallization.py`, `llm_kappa_miner.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`
+- `train` | files=8 | mentions=17 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `llm_kappa_miner.py`, `seed_miner.py`, `tran2.py`, `tran5.py`
+- `discretization` | files=8 | mentions=14 | `complex_leibler_transformer.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `number` | files=8 | mentions=14 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `dataset` | files=8 | mentions=13 | `complex_leibler_transformer.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `llm_kappa_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `phase` | files=7 | mentions=59 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `thermodynamic` | files=7 | mentions=50 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `get` | files=7 | mentions=41 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `effective` | files=7 | mentions=23 | `complex_leibler_transformer.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`
+- `weight` | files=7 | mentions=21 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `local` | files=7 | mentions=20 | `complex_leibler_transformer.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`
+- `checkpoint` | files=7 | mentions=19 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`
+- `detect` | files=7 | mentions=15 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `metrics` | files=7 | mentions=15 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `weights` | files=7 | mentions=15 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_crystallization.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `all` | files=7 | mentions=14 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `complexity` | files=7 | mentions=14 | `complex_leibler_transformer.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`
+- `glass` | files=7 | mentions=14 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran5.py`
+- `run` | files=7 | mentions=13 | `complex_leibler_transformer.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`
+- `save` | files=7 | mentions=12 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`
+- `condition` | files=7 | mentions=10 | `complex_leibler_transformer.py`, `kappa_miner.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`
+- `entropy` | files=7 | mentions=10 | `complex_leibler_transformer.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran5.py`
+- `evaluate` | files=7 | mentions=10 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `llm_kappa_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `framework` | files=7 | mentions=9 | `complex_leibler_transformer.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`
+- `margin` | files=7 | mentions=8 | `complex_leibler_transformer.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`
+- `update` | files=6 | mentions=36 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran5.py`
+- `attention` | files=6 | mentions=27 | `complex_leibler_transformer.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `state` | files=6 | mentions=22 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `delta` | files=6 | mentions=16 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran5.py`
+- `prospect` | files=6 | mentions=15 | `complex_leibler_transformer.py`, `kappa_miner.py`, `llm_kappa_miner.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`
+- `manager` | files=6 | mentions=13 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`
+- `superposition` | files=6 | mentions=13 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`
+- `prune` | files=6 | mentions=11 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `bar` | files=6 | mentions=9 | `complex_leibler_transformer.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`
+- `discretize` | files=6 | mentions=9 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`, `tran5.py`
+- `strassen` | files=6 | mentions=9 | `kappa_miner.py`, `laderman_batch_prospection.py`, `laderman_crystallization.py`, `llm_kappa_miner.py`, `seed_miner.py`, `tran2.py`
+- `psi` | files=6 | mentions=8 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`
+- `set` | files=6 | mentions=8 | `complex_leibler_transformer.py`, `laderman_crystallization.py`, `seed_miner.py`, `superconducting_transformer.py`, `superconducting_transformer2.py`, `tran2.py`
+
+## Verb Edges
+
+- `algorithmic` --depends_on--> `all` (strength 1.00)
+- `algorithmic` --depends_on--> `attention` (strength 1.00)
+- `algorithmic` --depends_on--> `compute` (strength 1.00)
+- `algorithmic` --depends_on--> `config` (strength 1.00)
+- `algorithmic` --depends_on--> `covariance` (strength 1.00)
+- `algorithmic` --depends_on--> `dataset` (strength 1.00)
+- `algorithmic` --depends_on--> `delta` (strength 1.00)
+- `algorithmic` --depends_on--> `detect` (strength 1.00)
+- `algorithmic` --depends_on--> `discretization` (strength 1.00)
+- `algorithmic` --depends_on--> `discretize` (strength 1.00)
+- `algorithmic` --depends_on--> `eff` (strength 1.00)
+- `algorithmic` --depends_on--> `entropy` (strength 1.00)
+- `algorithmic` --depends_on--> `evaluate` (strength 1.00)
+- `algorithmic` --depends_on--> `forward` (strength 1.00)
+- `algorithmic` --depends_on--> `get` (strength 1.00)
+- `algorithmic` --depends_on--> `glass` (strength 1.00)
+- `algorithmic` --depends_on--> `gradient` (strength 1.00)
+- `algorithmic` --depends_on--> `kappa` (strength 1.00)
+- `algorithmic` --depends_on--> `matrix` (strength 1.00)
+- `algorithmic` --depends_on--> `metrics` (strength 1.00)
+- `algorithmic` --depends_on--> `model` (strength 1.00)
+- `algorithmic` --depends_on--> `number` (strength 1.00)
+- `algorithmic` --depends_on--> `phase` (strength 1.00)
+- `algorithmic` --depends_on--> `prune` (strength 1.00)
+- `algorithmic` --depends_on--> `state` (strength 1.00)
+- `algorithmic` --depends_on--> `temperature` (strength 1.00)
+- `algorithmic` --depends_on--> `thermodynamic` (strength 1.00)
+- `algorithmic` --depends_on--> `train` (strength 1.00)
+- `algorithmic` --depends_on--> `training` (strength 1.00)
+- `algorithmic` --depends_on--> `transformer` (strength 1.00)
+- `algorithmic` --depends_on--> `update` (strength 1.00)
+- `algorithmic` --depends_on--> `weight` (strength 1.00)
+- `algorithmic` --depends_on--> `weights` (strength 1.00)
+- `all` --depends_on--> `attention` (strength 1.00)
+- `all` --depends_on--> `compute` (strength 1.00)
+- `all` --depends_on--> `config` (strength 1.00)
+- `all` --depends_on--> `covariance` (strength 1.00)
+- `all` --depends_on--> `dataset` (strength 1.00)
+- `all` --depends_on--> `delta` (strength 1.00)
+- `all` --depends_on--> `detect` (strength 1.00)
+- `all` --depends_on--> `discretization` (strength 1.00)
+- `all` --depends_on--> `discretize` (strength 1.00)
+- `all` --depends_on--> `eff` (strength 1.00)
+- `all` --depends_on--> `entropy` (strength 1.00)
+- `all` --depends_on--> `evaluate` (strength 1.00)
+- `all` --depends_on--> `forward` (strength 1.00)
+- `all` --depends_on--> `get` (strength 1.00)
+- `all` --depends_on--> `glass` (strength 1.00)
+- `all` --depends_on--> `gradient` (strength 1.00)
+- `all` --depends_on--> `kappa` (strength 1.00)
+
+## Dialectic
+
+- Thesis: `algorithmic` centralizes 8 files; Antithesis: `all` pulls 7 files with 6 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
+- Thesis: `algorithmic` centralizes 8 files; Antithesis: `attention` pulls 6 files with 5 shared (Jaccard 0.56); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
+- Thesis: `algorithmic` centralizes 8 files; Antithesis: `bar` pulls 6 files with 5 shared (Jaccard 0.56); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `algorithmic` centralizes 8 files; Antithesis: `checkpoint` pulls 7 files with 7 shared (Jaccard 0.88); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `algorithmic` centralizes 8 files; Antithesis: `complexity` pulls 7 files with 6 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `algorithmic` centralizes 8 files; Antithesis: `compute` pulls 10 files with 8 shared (Jaccard 0.80); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
+- Thesis: `algorithmic` centralizes 8 files; Antithesis: `condition` pulls 7 files with 7 shared (Jaccard 0.88); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
+- Thesis: `algorithmic` centralizes 8 files; Antithesis: `config` pulls 10 files with 8 shared (Jaccard 0.80); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
+- Thesis: `algorithmic` centralizes 8 files; Antithesis: `covariance` pulls 9 files with 8 shared (Jaccard 0.89); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?
+- Thesis: `algorithmic` centralizes 8 files; Antithesis: `dataset` pulls 8 files with 6 shared (Jaccard 0.60); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?

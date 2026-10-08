@@ -1,0 +1,463 @@
+# API
+
+## complex_leibler_transformer.py
+- `IMetricCalculator.calculate` (method) `complex_leibler_transformer.py:199` `def calculate(self)`
+- `ILossComponent.compute` (method) `complex_leibler_transformer.py:205` `def compute(self, model, loss_ce, epoch)`
+- `ICheckpointManager.save` (method) `complex_leibler_transformer.py:212` `def save(self, state, path)`
+- `ICheckpointManager.load` (method) `complex_leibler_transformer.py:216` `def load(self, path)`
+- `ICheckpointManager.should_checkpoint` (method) `complex_leibler_transformer.py:220` `def should_checkpoint(self)`
+- `ITrainingPhase.execute` (method) `complex_leibler_transformer.py:226` `def execute(self, model)`
+- `IPhaseDetector.detect` (method) `complex_leibler_transformer.py:232` `def detect(self, metrics)`
+- `IGlassDetector.should_stop` (method) `complex_leibler_transformer.py:238` `def should_stop(self, epoch, metrics)`
+- `IGrokkinDetector.update` (method) `complex_leibler_transformer.py:244` `def update(self, metrics)`
+- `SeedManager.set_seed` (method) `complex_leibler_transformer.py:254` `def set_seed(seed, device)`
+- `ComplexOperations.complex_linear` (method) `complex_leibler_transformer.py:271` `def complex_linear(input_real, input_imag, weight_real, weight_imag, bias_real, bias_imag)`
+- `ComplexOperations.complex_gelu` (method) `complex_leibler_transformer.py:288` `def complex_gelu(real, imag)`
+- `ComplexOperations.complex_layer_norm` (method) `complex_leibler_transformer.py:295` `def complex_layer_norm(real, imag, weight, bias, eps)`
+- `ComplexOperations.compute_phase` (method) `complex_leibler_transformer.py:311` `def compute_phase(real, imag)`
+- `ComplexOperations.compute_magnitude` (method) `complex_leibler_transformer.py:315` `def compute_magnitude(real, imag)`
+- `ComplexOperations.complex_softmax` (method) `complex_leibler_transformer.py:319` `def complex_softmax(real, imag, temperature, dim)`
+- `ComplexLinear.__init__` (method) `complex_leibler_transformer.py:338` `def __init__(self, in_features, out_features, bias, init_std)`
+- `ComplexLinear.forward` (method) `complex_leibler_transformer.py:352` `def forward(self, real, imag)`
+- `ComplexLayerNorm.__init__` (method) `complex_leibler_transformer.py:365` `def __init__(self, normalized_shape, eps)`
+- `ComplexLayerNorm.forward` (method) `complex_leibler_transformer.py:371` `def forward(self, real, imag)`
+- `ComplexLeiblerAttention.__init__` (method) `complex_leibler_transformer.py:380` `def __init__(self, config)`
+- `ComplexLeiblerAttention.forward` (method) `complex_leibler_transformer.py:404` `def forward(self, real, imag, mask)`
+- `ComplexLeiblerTransformerLayer.__init__` (method) `complex_leibler_transformer.py:486` `def __init__(self, config)`
+- `ComplexLeiblerTransformerLayer.forward` (method) `complex_leibler_transformer.py:498` `def forward(self, real, imag, mask)`
+- `ComplexLeiblerTransformer.__init__` (method) `complex_leibler_transformer.py:530` `def __init__(self, config)`
+- `ComplexLeiblerTransformer.forward` (method) `complex_leibler_transformer.py:564` `def forward(self, x, mask)`
+- `ComplexLeiblerTransformer.get_thermodynamic_state` (method) `complex_leibler_transformer.py:584` `def get_thermodynamic_state(self)`
+- `ComplexLeiblerTransformer.get_complex_weight_statistics` (method) `complex_leibler_transformer.py:610` `def get_complex_weight_statistics(self)`
+- `ModularAdditionDatasetFactory.create` (method) `complex_leibler_transformer.py:655` `def create(modulus, train_fraction)`
+- `TrainingPrimitives.train_epoch` (method) `complex_leibler_transformer.py:690` `def train_epoch(model, train_x, train_y, optimizer, config, device)`
+- `TrainingPrimitives.evaluate` (method) `complex_leibler_transformer.py:724` `def evaluate(model, test_x, test_y, config, device)`
+- `DeltaCalculator.__init__` (method) `complex_leibler_transformer.py:755` `def __init__(self, config)`
+- `DeltaCalculator.calculate` (method) `complex_leibler_transformer.py:758` `def calculate(self, model)`
+- `KappaCalculator.__init__` (method) `complex_leibler_transformer.py:773` `def __init__(self, config)`
+- `KappaCalculator.accumulate_gradient` (method) `complex_leibler_transformer.py:778` `def accumulate_gradient(self, model)`
+- `KappaCalculator.calculate_kappa` (method) `complex_leibler_transformer.py:789` `def calculate_kappa(self)`
+- `KappaCalculator.get_gradient_covariance` (method) `complex_leibler_transformer.py:809` `def get_gradient_covariance(self)`
+- `KappaCalculator.get_kappa_trend` (method) `complex_leibler_transformer.py:820` `def get_kappa_trend(self)`
+- `KappaCalculator.is_crystallizing` (method) `complex_leibler_transformer.py:830` `def is_crystallizing(self)`
+- `KappaCalculator.reset` (method) `complex_leibler_transformer.py:836` `def reset(self)`
+- `ThermodynamicMetricsCalculator.__init__` (method) `complex_leibler_transformer.py:842` `def __init__(self, config)`
+- `ThermodynamicMetricsCalculator.calculate` (method) `complex_leibler_transformer.py:845` `def calculate(self, model, gradient_covariance)`
+- `LocalComplexityCalculator.__init__` (method) `complex_leibler_transformer.py:895` `def __init__(self, config)`
+- `LocalComplexityCalculator.calculate` (method) `complex_leibler_transformer.py:898` `def calculate(self, model, train_x, train_y, device)`
+- `SuperpositionCalculator.__init__` (method) `complex_leibler_transformer.py:950` `def __init__(self, config)`
+- `SuperpositionCalculator.calculate` (method) `complex_leibler_transformer.py:961` `def calculate(self, model)`
+- `GravitationalConstantCalculator.__init__` (method) `complex_leibler_transformer.py:989` `def __init__(self, config)`
+- `GravitationalConstantCalculator.calculate` (method) `complex_leibler_transformer.py:992` `def calculate(self, model)`
+- `ComplexPhaseMetricsCalculator.__init__` (method) `complex_leibler_transformer.py:1004` `def __init__(self, config)`
+- `ComplexPhaseMetricsCalculator.calculate` (method) `complex_leibler_transformer.py:1007` `def calculate(self, model)`
+- `PhaseDetector.__init__` (method) `complex_leibler_transformer.py:1016` `def __init__(self, config)`
+- `PhaseDetector.detect` (method) `complex_leibler_transformer.py:1021` `def detect(self, metrics)`
+- `AdaptiveAnnealingScheduler.__init__` (method) `complex_leibler_transformer.py:1059` `def __init__(self, model, config, optimizer)`
+- `AdaptiveAnnealingScheduler.step` (method) `complex_leibler_transformer.py:1074` `def step(self, metrics)`
+- `GlassDetector.__init__` (method) `complex_leibler_transformer.py:1131` `def __init__(self, config)`
+- `GlassDetector.should_stop` (method) `complex_leibler_transformer.py:1135` `def should_stop(self, epoch, metrics)`
+- `GrokkinDetector.__init__` (method) `complex_leibler_transformer.py:1170` `def __init__(self, config)`
+- `GrokkinDetector.update` (method) `complex_leibler_transformer.py:1177` `def update(self, metrics)`
+- `CheckpointManager.__init__` (method) `complex_leibler_transformer.py:1206` `def __init__(self, config)`
+- `CheckpointManager.save` (method) `complex_leibler_transformer.py:1212` `def save(self, state, path)`
+- `CheckpointManager.load` (method) `complex_leibler_transformer.py:1221` `def load(self, path)`
+- `CheckpointManager.should_checkpoint` (method) `complex_leibler_transformer.py:1228` `def should_checkpoint(self)`
+- `CheckpointManager.get_latest_path` (method) `complex_leibler_transformer.py:1232` `def get_latest_path(self)`
+- `ModelPruner.prune` (method) `complex_leibler_transformer.py:1243` `def prune(model, threshold)`
+- `ModelDiscretizer.discretize` (method) `complex_leibler_transformer.py:1263` `def discretize(model, tolerance)`
+- `ComplexPhaseLoss.__init__` (method) `complex_leibler_transformer.py:1297` `def __init__(self, config)`
+- `ComplexPhaseLoss.compute` (method) `complex_leibler_transformer.py:1300` `def compute(self, model, loss_ce, epoch)`
+- `ComprehensiveMetricsAggregator.__init__` (method) `complex_leibler_transformer.py:1336` `def __init__(self, config)`
+- `ComprehensiveMetricsAggregator.compute_all` (method) `complex_leibler_transformer.py:1347` `def compute_all(self, model, train_loss, test_loss, test_acc, epoch, weight_norm, grad_norm, thermo_state...`
+- `ComprehensiveMetricsAggregator.accumulate_gradient` (method) `complex_leibler_transformer.py:1432` `def accumulate_gradient(self, model)`
+- `ComprehensiveMetricsAggregator.reset` (method) `complex_leibler_transformer.py:1435` `def reset(self)`
+- `DisplayFormatter.format_kappa` (method) `complex_leibler_transformer.py:1446` `def format_kappa(kappa, max_display)`
+- `DisplayFormatter.format_lc` (method) `complex_leibler_transformer.py:1452` `def format_lc(lc)`
+- `ProspectorPhase.__init__` (method) `complex_leibler_transformer.py:1465` `def __init__(self, config, seed)`
+- `ProspectorPhase.execute` (method) `complex_leibler_transformer.py:1469` `def execute(self, model)`
+- `LongTrainingPhase.__init__` (method) `complex_leibler_transformer.py:1652` `def __init__(self, config)`
+- `LongTrainingPhase.execute` (method) `complex_leibler_transformer.py:1656` `def execute(self, model)`
+- `SeedProspector.__init__` (method) `complex_leibler_transformer.py:1878` `def __init__(self, config)`
+- `SeedProspector.prospect` (method) `complex_leibler_transformer.py:1885` `def prospect(self, total_attempts, start_seed)`
+- `LongTrainingPipeline.__init__` (method) `complex_leibler_transformer.py:2021` `def __init__(self, config)`
+- `LongTrainingPipeline.run` (method) `complex_leibler_transformer.py:2033` `def run(self, resume_from, seed)`
+- `Application.__init__` (method) `complex_leibler_transformer.py:2152` `def __init__(self)`
+- `Application.run` (method) `complex_leibler_transformer.py:2190` `def run(self)`
+- `Application.main` (method) `complex_leibler_transformer.py:2238` `def main()`
+
+## kappa_miner.py
+- `KappaMeter.__init__` (method) `kappa_miner.py:75` `def __init__(self, config)`
+- `KappaMeter.compute_kappa` (method) `kappa_miner.py:78` `def compute_kappa(self, model, loss_fn, data_generator, n_samples, batch_size)` -- Compute gradient covariance condition number κ.
+- `KappaMeter.predict_grokking` (method) `kappa_miner.py:168` `def predict_grokking(self, kappa)` -- Predict whether model will grokk based on κ.
+- `ArithmeticTask.__init__` (method) `kappa_miner.py:214` `def __init__(self, max_digits, operations, tokenizer_vocab)` -- Args: max_digits: Maximum number of digits per operand operations: List of operations ['+', '-', '*']...
+- `ArithmeticTask.generate_batch` (method) `kappa_miner.py:240` `def generate_batch(self, batch_size, operation)` -- Generate batch of arithmetic problems.
+- `MinimalTransformer.__init__` (method) `kappa_miner.py:324` `def __init__(self, vocab_size, d_model, n_heads, n_layers, d_ff, max_seq_len, dropout)`
+- `MinimalTransformer.forward` (method) `kappa_miner.py:362` `def forward(self, x)` -- Args: x: (batch, seq_len) input tokens
+- `KappaMiner.__init__` (method) `kappa_miner.py:399` `def __init__(self, model, task, config)`
+- `KappaMiner.prospect` (method) `kappa_miner.py:417` `def prospect(self, early_epochs, save_checkpoints, checkpoint_dir)` -- Prospect for algorithmic learning using κ-mining.
+- `KappaMiner.loss_fn` (method) `kappa_miner.py:449` `def loss_fn(outputs, targets)`
+- `KappaMiner.data_generator` (method) `kappa_miner.py:455` `def data_generator(batch_size)`
+- `BatchProspector.__init__` (method) `kappa_miner.py:571` `def __init__(self, model_class, task, config)`
+- `BatchProspector.prospect_seeds` (method) `kappa_miner.py:579` `def prospect_seeds(self, n_candidates, early_epochs)` -- Prospect multiple random seeds to find crystals.
+
+## laderman_batch_prospection.py
+- `tqdm` (method) `laderman_batch_prospection.py:37` `def tqdm(iterable)`
+- `MatrixMultiplicationDataset.__init__` (method) `laderman_batch_prospection.py:92` `def __init__(self, matrix_size, num_samples, seed)`
+- `BilinearModel.__init__` (method) `laderman_batch_prospection.py:115` `def __init__(self, matrix_size, initial_slots)`
+- `BilinearModel.forward` (method) `laderman_batch_prospection.py:124` `def forward(self, input_a, input_b)`
+- `BilinearModel.compute_discretization_margin` (method) `laderman_batch_prospection.py:129` `def compute_discretization_margin(self)`
+- `BilinearModel.compute_kappa` (method) `laderman_batch_prospection.py:139` `def compute_kappa(model, batch, num_samples)` -- Computa κ (número de condición de la covarianza de gradientes).
+- `BilinearModel.compute_local_complexity` (method) `laderman_batch_prospection.py:178` `def compute_local_complexity(model)` -- Computa la complejidad local (rango efectivo de U).
+- `BilinearModel.compute_effective_temperature` (method) `laderman_batch_prospection.py:190` `def compute_effective_temperature(model, batch, num_samples)` -- Computa la temperatura efectiva T_eff.
+- `BilinearModel.compute_entropy` (method) `laderman_batch_prospection.py:216` `def compute_entropy(model, batch, num_samples)` -- Computa la entropía h_bar de los gradientes.
+- `BilinearModel.train_prospection_run` (method) `laderman_batch_prospection.py:250` `def train_prospection_run(config, batch_size)` -- Ejecuta un entrenamiento corto con un batch size específico y devuelve las métricas termodinámicas.
+- `BilinearModel.analyze_results` (method) `laderman_batch_prospection.py:409` `def analyze_results(results, config)` -- Analiza los resultados de la prospección y recomienda el batch size óptimo.
+- `BilinearModel.run_prospection` (method) `laderman_batch_prospection.py:536` `def run_prospection(config)` -- Ejecuta la prospección completa de batch size.
+
+## laderman_crystallization.py
+- `tqdm` (method) `laderman_crystallization.py:37` `def tqdm(iterable)`
+- `LadermanConfig.to_dict` (method) `laderman_crystallization.py:136` `def to_dict(self)`
+- `ThermodynamicState.to_dict` (method) `laderman_crystallization.py:178` `def to_dict(self)`
+- `MetricComputerInterface.compute` (method) `laderman_crystallization.py:211` `def compute(self, model, batch)`
+- `GradientCovarianceComputer.__init__` (method) `laderman_crystallization.py:226` `def __init__(self, num_samples)`
+- `GradientCovarianceComputer.compute` (method) `laderman_crystallization.py:229` `def compute(self, model, batch)`
+- `LocalComplexityComputer.__init__` (method) `laderman_crystallization.py:300` `def __init__(self, singular_value_threshold_ratio)`
+- `LocalComplexityComputer.compute` (method) `laderman_crystallization.py:303` `def compute(self, model, batch)`
+- `SuperpositionComputer.compute` (method) `laderman_crystallization.py:331` `def compute(self, model, batch)`
+- `TemperatureComputer.__init__` (method) `laderman_crystallization.py:365` `def __init__(self, num_samples)`
+- `TemperatureComputer.compute` (method) `laderman_crystallization.py:368` `def compute(self, model, batch)`
+- `HBarEffComputer.compute` (method) `laderman_crystallization.py:441` `def compute(self, model, batch, effective_temperature, kappa)`
+- `MatrixMultiplicationDataset.__init__` (method) `laderman_crystallization.py:472` `def __init__(self, matrix_size, num_samples, seed)`
+- `BilinearTransformerModel.__init__` (method) `laderman_crystallization.py:501` `def __init__(self, config)`
+- `BilinearTransformerModel.forward` (method) `laderman_crystallization.py:546` `def forward(self, input_a, input_b, output_attentions, return_dict)`
+- `BilinearTransformerModel.get_bilinear_tensors` (method) `laderman_crystallization.py:574` `def get_bilinear_tensors(self)`
+- `BilinearTransformerModel.set_bilinear_tensors` (method) `laderman_crystallization.py:577` `def set_bilinear_tensors(self, u, v, w)`
+- `BilinearTransformerModel.compute_discretization_margin` (method) `laderman_crystallization.py:588` `def compute_discretization_margin(self)`
+- `BilinearTransformerModel.discretize` (method) `laderman_crystallization.py:593` `def discretize(self, threshold)`
+- `BilinearTransformerModel.get_weight_norm` (method) `laderman_crystallization.py:601` `def get_weight_norm(self)`
+- `BilinearTransformerModel.compute_gradient_norm` (method) `laderman_crystallization.py:604` `def compute_gradient_norm(self)`
+- `MagnitudePruning.prune` (method) `laderman_crystallization.py:612` `def prune(self, model, target_slots)`
+- `FileCheckpointManager.__init__` (method) `laderman_crystallization.py:661` `def __init__(self, config)`
+- `FileCheckpointManager.should_checkpoint` (method) `laderman_crystallization.py:670` `def should_checkpoint(self)`
+- `FileCheckpointManager.save` (method) `laderman_crystallization.py:674` `def save(self, model, optimizer, state, path, checkpoint_type)`
+- `PhaseClassifier.__init__` (method) `laderman_crystallization.py:743` `def __init__(self, config)`
+- `PhaseClassifier.classify` (method) `laderman_crystallization.py:746` `def classify(self, delta, kappa, lc, t_eff, test_accuracy)`
+- `GrokkingDetector.__init__` (method) `laderman_crystallization.py:787` `def __init__(self, config)`
+- `GrokkingDetector.update` (method) `laderman_crystallization.py:794` `def update(self, test_accuracy, train_loss)`
+- `CrystallizationTrainer.__init__` (method) `laderman_crystallization.py:830` `def __init__(self, config, model, train_loader, test_loader, checkpoint_manager)`
+- `CrystallizationTrainer.train_epoch` (method) `laderman_crystallization.py:866` `def train_epoch(self)`
+- `CrystallizationTrainer.evaluate` (method) `laderman_crystallization.py:915` `def evaluate(self)`
+- `CrystallizationTrainer.compute_thermodynamic_state` (method) `laderman_crystallization.py:947` `def compute_thermodynamic_state(self, train_metrics, test_metrics)`
+- `CrystallizationTrainer.detect_confirmed_crystallization` (method) `laderman_crystallization.py:1034` `def detect_confirmed_crystallization(self)`
+- `CrystallizationTrainer.train` (method) `laderman_crystallization.py:1065` `def train(self, num_epochs)`
+- `CrystallizationTrainer.phase2_pruning_and_discretization` (method) `laderman_crystallization.py:1188` `def phase2_pruning_and_discretization(self)`
+- `CrystallizationTrainer.run_laderman_experiment` (method) `laderman_crystallization.py:1215` `def run_laderman_experiment(config)` -- Run complete Laderman crystallization experiment.
+
+## llm_kappa_miner.py
+- `LLMArithmeticDataset.__init__` (method) `llm_kappa_miner.py:89` `def __init__(self, tokenizer, config)`
+- `LLMArithmeticDataset.format_problem` (method) `llm_kappa_miner.py:94` `def format_problem(self, a, b, op, result)` -- Format arithmetic problem as text.
+- `LLMArithmeticDataset.generate_batch` (method) `llm_kappa_miner.py:103` `def generate_batch(self, batch_size)` -- Generate batch of tokenized arithmetic problems.
+- `LLMArithmeticDataset.generate_for_kappa` (method) `llm_kappa_miner.py:133` `def generate_for_kappa(self, batch_size)` -- Generate batch for κ measurement.
+- `LLMKappaMeter.__init__` (method) `llm_kappa_miner.py:154` `def __init__(self, model, config)`
+- `LLMKappaMeter.compute_kappa` (method) `llm_kappa_miner.py:158` `def compute_kappa(self, input_ids, labels, attention_mask)` -- Compute κ for the LLM.
+- `LLMKappaMeter.predict_grokking` (method) `llm_kappa_miner.py:259` `def predict_grokking(self, kappa)` -- Predict grokking based on κ (AUC=1.0 from Strassen paper).
+- `LLMKappaMiner.__init__` (method) `llm_kappa_miner.py:297` `def __init__(self, config)`
+- `LLMKappaMiner.train_step` (method) `llm_kappa_miner.py:323` `def train_step(self, optimizer)` -- Single training step.
+- `LLMKappaMiner.evaluate` (method) `llm_kappa_miner.py:346` `def evaluate(self)` -- Evaluate model and compute κ.
+- `LLMKappaMiner.prospect` (method) `llm_kappa_miner.py:376` `def prospect(self, early_stop, save_dir)` -- Prospect for algorithmic learning using κ.
+- `LLMKappaMiner.test_arithmetic` (method) `llm_kappa_miner.py:485` `def test_arithmetic(self, n_tests)` -- Test if the model can do arithmetic.
+- `LLMKappaMiner.prospect_multiple_models` (method) `llm_kappa_miner.py:554` `def prospect_multiple_models(models, config_override)` -- Prospect multiple LLMs for algorithmic learning.
+- `LLMKappaMiner.main` (method) `llm_kappa_miner.py:603` `def main()`
+
+## seed_miner.py
+Depends on: `tran5.py`
+- `IMetricCalculator.calculate` (method) `seed_miner.py:162` `def calculate(self)`
+- `ILossComponent.compute` (method) `seed_miner.py:168` `def compute(self, model, loss_ce, epoch)`
+- `ICheckpointManager.save` (method) `seed_miner.py:175` `def save(self, state, path)`
+- `ICheckpointManager.load` (method) `seed_miner.py:179` `def load(self, path)`
+- `ICheckpointManager.should_checkpoint` (method) `seed_miner.py:183` `def should_checkpoint(self)`
+- `ITrainingPhase.execute` (method) `seed_miner.py:189` `def execute(self, model)`
+- `ITrainingPhase.build_leiderman_config` (method) `seed_miner.py:193` `def build_leiderman_config(config)`
+- `DeltaCalculator.calculate` (method) `seed_miner.py:240` `def calculate(self, model)`
+- `KappaCalculator.__init__` (method) `seed_miner.py:258` `def __init__(self, config)`
+- `KappaCalculator.accumulate_gradient` (method) `seed_miner.py:265` `def accumulate_gradient(self, model)`
+- `KappaCalculator.calculate_kappa` (method) `seed_miner.py:276` `def calculate_kappa(self)`
+- `KappaCalculator.get_gradient_covariance` (method) `seed_miner.py:296` `def get_gradient_covariance(self)`
+- `KappaCalculator.get_kappa_trend` (method) `seed_miner.py:307` `def get_kappa_trend(self)`
+- `KappaCalculator.is_crystallizing` (method) `seed_miner.py:317` `def is_crystallizing(self)`
+- `KappaCalculator.reset` (method) `seed_miner.py:323` `def reset(self)`
+- `ThermodynamicMetricsCalculator.__init__` (method) `seed_miner.py:329` `def __init__(self, config)`
+- `ThermodynamicMetricsCalculator.calculate` (method) `seed_miner.py:332` `def calculate(self, model, gradient_covariance)`
+- `LocalComplexityCalculator.__init__` (method) `seed_miner.py:379` `def __init__(self, config)`
+- `LocalComplexityCalculator.calculate` (method) `seed_miner.py:382` `def calculate(self, model, train_x, train_y, device)`
+- `SuperpositionCalculator.__init__` (method) `seed_miner.py:431` `def __init__(self, config)`
+- `SuperpositionCalculator.calculate` (method) `seed_miner.py:442` `def calculate(self, model)`
+- `GravitationalConstantCalculator.calculate` (method) `seed_miner.py:472` `def calculate(self, model)`
+- `PhaseDetector.__init__` (method) `seed_miner.py:484` `def __init__(self, config)`
+- `PhaseDetector.detect` (method) `seed_miner.py:489` `def detect(self, metrics)`
+- `AdaptiveAnnealingScheduler.__init__` (method) `seed_miner.py:519` `def __init__(self, model, config, optimizer)`
+- `AdaptiveAnnealingScheduler.step` (method) `seed_miner.py:534` `def step(self, metrics)`
+- `GlassDetector.__init__` (method) `seed_miner.py:591` `def __init__(self, config)`
+- `GlassDetector.should_stop` (method) `seed_miner.py:597` `def should_stop(self, epoch, metrics)`
+- `GrokkinDetector.__init__` (method) `seed_miner.py:636` `def __init__(self, config)`
+- `GrokkinDetector.update` (method) `seed_miner.py:643` `def update(self, metrics)`
+- `CheckpointManager.__init__` (method) `seed_miner.py:672` `def __init__(self, config)`
+- `CheckpointManager.save` (method) `seed_miner.py:678` `def save(self, state, path)`
+- `CheckpointManager.load` (method) `seed_miner.py:689` `def load(self, path)`
+- `CheckpointManager.should_checkpoint` (method) `seed_miner.py:696` `def should_checkpoint(self)`
+- `CheckpointManager.get_latest_path` (method) `seed_miner.py:700` `def get_latest_path(self)`
+- `ComprehensiveMetricsAggregator.__init__` (method) `seed_miner.py:706` `def __init__(self, config)`
+- `ComprehensiveMetricsAggregator.compute_all` (method) `seed_miner.py:716` `def compute_all(self, model, train_loss, test_loss, test_acc, epoch, weight_norm, grad_norm, thermo_state...`
+- `ComprehensiveMetricsAggregator.accumulate_gradient` (method) `seed_miner.py:800` `def accumulate_gradient(self, model)`
+- `ComprehensiveMetricsAggregator.reset` (method) `seed_miner.py:803` `def reset(self)`
+- `ComprehensiveMetricsAggregator.format_kappa` (method) `seed_miner.py:808` `def format_kappa(kappa)`
+- `ComprehensiveMetricsAggregator.format_lc` (method) `seed_miner.py:814` `def format_lc(lc)`
+- `ProspectorPhase.__init__` (method) `seed_miner.py:823` `def __init__(self, config, seed)`
+- `ProspectorPhase.execute` (method) `seed_miner.py:827` `def execute(self, model)`
+- `LongTrainingPhase.__init__` (method) `seed_miner.py:976` `def __init__(self, config)`
+- `LongTrainingPhase.execute` (method) `seed_miner.py:980` `def execute(self, model)`
+- `SeedProspector.__init__` (method) `seed_miner.py:1163` `def __init__(self, config)`
+- `SeedProspector.prospect` (method) `seed_miner.py:1170` `def prospect(self, total_attempts, start_seed)`
+- `LongTrainingPipeline.__init__` (method) `seed_miner.py:1305` `def __init__(self, config)`
+- `LongTrainingPipeline.run` (method) `seed_miner.py:1317` `def run(self, resume_from, seed)`
+- `LongTrainingPipeline.main` (method) `seed_miner.py:1415` `def main()`
+
+## superconducting_transformer.py
+- `IMetricCalculator.calculate` (method) `superconducting_transformer.py:199` `def calculate(self)`
+- `ILossComponent.compute` (method) `superconducting_transformer.py:205` `def compute(self, model, loss_ce, epoch)`
+- `ICheckpointManager.save` (method) `superconducting_transformer.py:212` `def save(self, state, path)`
+- `ICheckpointManager.load` (method) `superconducting_transformer.py:216` `def load(self, path)`
+- `ICheckpointManager.should_checkpoint` (method) `superconducting_transformer.py:220` `def should_checkpoint(self)`
+- `ITrainingPhase.execute` (method) `superconducting_transformer.py:226` `def execute(self, model)`
+- `IPhaseDetector.detect` (method) `superconducting_transformer.py:232` `def detect(self, metrics)`
+- `IGlassDetector.should_stop` (method) `superconducting_transformer.py:238` `def should_stop(self, epoch, metrics)`
+- `IGrokkinDetector.update` (method) `superconducting_transformer.py:244` `def update(self, metrics)`
+- `IAttentionMechanism.forward` (method) `superconducting_transformer.py:250` `def forward(self, scores)`
+- `SeedManager.set_seed` (method) `superconducting_transformer.py:256` `def set_seed(seed, device)`
+- `SparsemaxFunction.forward` (method) `superconducting_transformer.py:268` `def forward(ctx, input_tensor, dim)`
+- `SparsemaxFunction.backward` (method) `superconducting_transformer.py:298` `def backward(ctx, grad_output)`
+- `Sparsemax.__init__` (method) `superconducting_transformer.py:313` `def __init__(self, dim)`
+- `Sparsemax.forward` (method) `superconducting_transformer.py:317` `def forward(self, input_tensor)`
+- `TopologicalGate.__init__` (method) `superconducting_transformer.py:322` `def __init__(self, num_units, config)`
+- `TopologicalGate.forward` (method) `superconducting_transformer.py:331` `def forward(self)`
+- `TopologicalGate.get_expected_l0` (method) `superconducting_transformer.py:344` `def get_expected_l0(self)`
+- `TopologicalGate.get_sparsity_ratio` (method) `superconducting_transformer.py:349` `def get_sparsity_ratio(self)`
+- `TopologicalGate.get_topological_charge` (method) `superconducting_transformer.py:354` `def get_topological_charge(self)`
+- `TopologicalGate.update_temperature` (method) `superconducting_transformer.py:360` `def update_temperature(self, epoch)`
+- `ChemicalPotentialScheduler.__init__` (method) `superconducting_transformer.py:370` `def __init__(self, config)`
+- `ChemicalPotentialScheduler.update` (method) `superconducting_transformer.py:374` `def update(self, test_accuracy)`
+- `ChemicalPotentialScheduler.get_mu` (method) `superconducting_transformer.py:388` `def get_mu(self)`
+- `SuperconductingAttention.__init__` (method) `superconducting_transformer.py:393` `def __init__(self, config)`
+- `SuperconductingAttention.forward` (method) `superconducting_transformer.py:420` `def forward(self, x, mask)`
+- `SuperconductingTransformerLayer.__init__` (method) `superconducting_transformer.py:481` `def __init__(self, config, layer_index)`
+- `SuperconductingTransformerLayer.forward` (method) `superconducting_transformer.py:497` `def forward(self, x, mask)`
+- `SuperconductingTransformer.__init__` (method) `superconducting_transformer.py:517` `def __init__(self, config)`
+- `SuperconductingTransformer.forward` (method) `superconducting_transformer.py:545` `def forward(self, x, mask)`
+- `SuperconductingTransformer.get_thermodynamic_state` (method) `superconducting_transformer.py:556` `def get_thermodynamic_state(self)`
+- `SuperconductingTransformer.get_gate_statistics` (method) `superconducting_transformer.py:580` `def get_gate_statistics(self)`
+- `SuperconductingTransformer.get_cooper_pair_coherence` (method) `superconducting_transformer.py:604` `def get_cooper_pair_coherence(self)`
+- `SuperconductingTransformer.get_gap_energy` (method) `superconducting_transformer.py:652` `def get_gap_energy(self)`
+- `SuperconductingTransformer.get_meissner_fraction` (method) `superconducting_transformer.py:667` `def get_meissner_fraction(self)`
+- `SuperconductingTransformer.update_gate_temperatures` (method) `superconducting_transformer.py:676` `def update_gate_temperatures(self, epoch)`
+- `ModularAdditionDatasetFactory.create` (method) `superconducting_transformer.py:684` `def create(modulus, train_fraction)`
+- `DeltaCalculator.__init__` (method) `superconducting_transformer.py:712` `def __init__(self, config)`
+- `DeltaCalculator.calculate` (method) `superconducting_transformer.py:715` `def calculate(self, model)`
+- `KappaCalculator.__init__` (method) `superconducting_transformer.py:733` `def __init__(self, config)`
+- `KappaCalculator.accumulate_gradient` (method) `superconducting_transformer.py:738` `def accumulate_gradient(self, model)`
+- `KappaCalculator.calculate_kappa` (method) `superconducting_transformer.py:749` `def calculate_kappa(self)`
+- `KappaCalculator.get_gradient_covariance` (method) `superconducting_transformer.py:769` `def get_gradient_covariance(self)`
+- `KappaCalculator.get_kappa_trend` (method) `superconducting_transformer.py:780` `def get_kappa_trend(self)`
+- `KappaCalculator.is_crystallizing` (method) `superconducting_transformer.py:790` `def is_crystallizing(self)`
+- `KappaCalculator.reset` (method) `superconducting_transformer.py:796` `def reset(self)`
+- `ThermodynamicMetricsCalculator.__init__` (method) `superconducting_transformer.py:802` `def __init__(self, config)`
+- `ThermodynamicMetricsCalculator.calculate` (method) `superconducting_transformer.py:805` `def calculate(self, model, gradient_covariance)`
+- `LocalComplexityCalculator.__init__` (method) `superconducting_transformer.py:855` `def __init__(self, config)`
+- `LocalComplexityCalculator.calculate` (method) `superconducting_transformer.py:858` `def calculate(self, model, train_x, train_y, device)`
+- `SuperpositionCalculator.__init__` (method) `superconducting_transformer.py:910` `def __init__(self, config)`
+- `SuperpositionCalculator.calculate` (method) `superconducting_transformer.py:921` `def calculate(self, model)`
+- `GravitationalConstantCalculator.__init__` (method) `superconducting_transformer.py:949` `def __init__(self, config)`
+- `GravitationalConstantCalculator.calculate` (method) `superconducting_transformer.py:952` `def calculate(self, model)`
+- `SuperconductivityLoss.__init__` (method) `superconducting_transformer.py:964` `def __init__(self, config, mu_scheduler)`
+- `SuperconductivityLoss.compute` (method) `superconducting_transformer.py:968` `def compute(self, model, loss_ce, epoch)`
+- `PhaseDetector.__init__` (method) `superconducting_transformer.py:1019` `def __init__(self, config)`
+- `PhaseDetector.detect` (method) `superconducting_transformer.py:1024` `def detect(self, metrics)`
+- `AdaptiveAnnealingScheduler.__init__` (method) `superconducting_transformer.py:1061` `def __init__(self, model, config, optimizer)`
+- `AdaptiveAnnealingScheduler.step` (method) `superconducting_transformer.py:1076` `def step(self, metrics)`
+- `GlassDetector.__init__` (method) `superconducting_transformer.py:1129` `def __init__(self, config)`
+- `GlassDetector.should_stop` (method) `superconducting_transformer.py:1133` `def should_stop(self, epoch, metrics)`
+- `GrokkinDetector.__init__` (method) `superconducting_transformer.py:1164` `def __init__(self, config)`
+- `GrokkinDetector.update` (method) `superconducting_transformer.py:1171` `def update(self, metrics)`
+- `CheckpointManager.__init__` (method) `superconducting_transformer.py:1196` `def __init__(self, config)`
+- `CheckpointManager.save` (method) `superconducting_transformer.py:1202` `def save(self, state, path)`
+- `CheckpointManager.load` (method) `superconducting_transformer.py:1211` `def load(self, path)`
+- `CheckpointManager.should_checkpoint` (method) `superconducting_transformer.py:1218` `def should_checkpoint(self)`
+- `CheckpointManager.get_latest_path` (method) `superconducting_transformer.py:1222` `def get_latest_path(self)`
+- `ModelPruner.prune` (method) `superconducting_transformer.py:1229` `def prune(model, threshold)`
+- `ModelDiscretizer.discretize` (method) `superconducting_transformer.py:1254` `def discretize(model, tolerance)`
+- `ComprehensiveMetricsAggregator.__init__` (method) `superconducting_transformer.py:1274` `def __init__(self, config)`
+- `ComprehensiveMetricsAggregator.compute_all` (method) `superconducting_transformer.py:1284` `def compute_all(self, model, train_loss, test_loss, test_acc, epoch, weight_norm, grad_norm, thermo_state...`
+- `ComprehensiveMetricsAggregator.accumulate_gradient` (method) `superconducting_transformer.py:1378` `def accumulate_gradient(self, model)`
+- `ComprehensiveMetricsAggregator.reset` (method) `superconducting_transformer.py:1381` `def reset(self)`
+- `DisplayFormatter.format_kappa` (method) `superconducting_transformer.py:1388` `def format_kappa(kappa, max_display)`
+- `DisplayFormatter.format_lc` (method) `superconducting_transformer.py:1394` `def format_lc(lc)`
+- `TrainingPrimitives.evaluate` (method) `superconducting_transformer.py:1405` `def evaluate(model, test_x, test_y, config, device)`
+- `ProspectorPhase.__init__` (method) `superconducting_transformer.py:1430` `def __init__(self, config, seed)`
+- `ProspectorPhase.execute` (method) `superconducting_transformer.py:1434` `def execute(self, model)`
+- `ProspectorPhase.delta_calc_fast` (method) `superconducting_transformer.py:1614` `def delta_calc_fast(self, model)`
+- `LongTrainingPhase.__init__` (method) `superconducting_transformer.py:1620` `def __init__(self, config)`
+- `LongTrainingPhase.execute` (method) `superconducting_transformer.py:1624` `def execute(self, model)`
+- `SeedProspector.__init__` (method) `superconducting_transformer.py:1875` `def __init__(self, config)`
+- `SeedProspector.prospect` (method) `superconducting_transformer.py:1882` `def prospect(self, total_attempts, start_seed)`
+- `LongTrainingPipeline.__init__` (method) `superconducting_transformer.py:2005` `def __init__(self, config)`
+- `LongTrainingPipeline.run` (method) `superconducting_transformer.py:2017` `def run(self, resume_from, seed)`
+- `Application.__init__` (method) `superconducting_transformer.py:2137` `def __init__(self)`
+- `Application.run` (method) `superconducting_transformer.py:2180` `def run(self)`
+- `Application.main` (method) `superconducting_transformer.py:2236` `def main()`
+
+## superconducting_transformer2.py
+- `IMetricCalculator.calculate` (method) `superconducting_transformer2.py:199` `def calculate(self)`
+- `ILossComponent.compute` (method) `superconducting_transformer2.py:205` `def compute(self, model, loss_ce, epoch)`
+- `ICheckpointManager.save` (method) `superconducting_transformer2.py:212` `def save(self, state, path)`
+- `ICheckpointManager.load` (method) `superconducting_transformer2.py:216` `def load(self, path)`
+- `ICheckpointManager.should_checkpoint` (method) `superconducting_transformer2.py:220` `def should_checkpoint(self)`
+- `ITrainingPhase.execute` (method) `superconducting_transformer2.py:226` `def execute(self, model)`
+- `IPhaseDetector.detect` (method) `superconducting_transformer2.py:232` `def detect(self, metrics)`
+- `IGlassDetector.should_stop` (method) `superconducting_transformer2.py:238` `def should_stop(self, epoch, metrics)`
+- `IGrokkinDetector.update` (method) `superconducting_transformer2.py:244` `def update(self, metrics)`
+- `IAttentionMechanism.forward` (method) `superconducting_transformer2.py:250` `def forward(self, scores)`
+- `SeedManager.set_seed` (method) `superconducting_transformer2.py:256` `def set_seed(seed, device)`
+- `SparsemaxFunction.forward` (method) `superconducting_transformer2.py:268` `def forward(ctx, input_tensor, dim)`
+- `SparsemaxFunction.backward` (method) `superconducting_transformer2.py:298` `def backward(ctx, grad_output)`
+- `Sparsemax.__init__` (method) `superconducting_transformer2.py:313` `def __init__(self, dim)`
+- `Sparsemax.forward` (method) `superconducting_transformer2.py:317` `def forward(self, input_tensor)`
+- `TopologicalGate.__init__` (method) `superconducting_transformer2.py:322` `def __init__(self, num_units, config)`
+- `TopologicalGate.forward` (method) `superconducting_transformer2.py:331` `def forward(self)`
+- `TopologicalGate.get_expected_l0` (method) `superconducting_transformer2.py:344` `def get_expected_l0(self)`
+- `TopologicalGate.get_sparsity_ratio` (method) `superconducting_transformer2.py:349` `def get_sparsity_ratio(self)`
+- `TopologicalGate.get_topological_charge` (method) `superconducting_transformer2.py:354` `def get_topological_charge(self)`
+- `TopologicalGate.update_temperature` (method) `superconducting_transformer2.py:360` `def update_temperature(self, epoch)`
+- `ChemicalPotentialScheduler.__init__` (method) `superconducting_transformer2.py:370` `def __init__(self, config)`
+- `ChemicalPotentialScheduler.update` (method) `superconducting_transformer2.py:374` `def update(self, test_accuracy)`
+- `ChemicalPotentialScheduler.get_mu` (method) `superconducting_transformer2.py:392` `def get_mu(self)`
+- `SuperconductingAttention.__init__` (method) `superconducting_transformer2.py:397` `def __init__(self, config)`
+- `SuperconductingAttention.forward` (method) `superconducting_transformer2.py:424` `def forward(self, x, mask)`
+- `SuperconductingTransformerLayer.__init__` (method) `superconducting_transformer2.py:485` `def __init__(self, config, layer_index)`
+- `SuperconductingTransformerLayer.forward` (method) `superconducting_transformer2.py:501` `def forward(self, x, mask)`
+- `SuperconductingTransformer.__init__` (method) `superconducting_transformer2.py:521` `def __init__(self, config)`
+- `SuperconductingTransformer.forward` (method) `superconducting_transformer2.py:549` `def forward(self, x, mask)`
+- `SuperconductingTransformer.get_thermodynamic_state` (method) `superconducting_transformer2.py:560` `def get_thermodynamic_state(self)`
+- `SuperconductingTransformer.get_gate_statistics` (method) `superconducting_transformer2.py:584` `def get_gate_statistics(self)`
+- `SuperconductingTransformer.get_cooper_pair_coherence` (method) `superconducting_transformer2.py:608` `def get_cooper_pair_coherence(self)`
+- `SuperconductingTransformer.get_gap_energy` (method) `superconducting_transformer2.py:656` `def get_gap_energy(self)`
+- `SuperconductingTransformer.get_meissner_fraction` (method) `superconducting_transformer2.py:671` `def get_meissner_fraction(self)`
+- `SuperconductingTransformer.update_gate_temperatures` (method) `superconducting_transformer2.py:680` `def update_gate_temperatures(self, epoch)`
+- `ModularAdditionDatasetFactory.create` (method) `superconducting_transformer2.py:688` `def create(modulus, train_fraction)`
+- `DeltaCalculator.__init__` (method) `superconducting_transformer2.py:716` `def __init__(self, config)`
+- `DeltaCalculator.calculate` (method) `superconducting_transformer2.py:719` `def calculate(self, model)`
+- `KappaCalculator.__init__` (method) `superconducting_transformer2.py:737` `def __init__(self, config)`
+- `KappaCalculator.accumulate_gradient` (method) `superconducting_transformer2.py:742` `def accumulate_gradient(self, model)`
+- `KappaCalculator.calculate_kappa` (method) `superconducting_transformer2.py:753` `def calculate_kappa(self)`
+- `KappaCalculator.get_gradient_covariance` (method) `superconducting_transformer2.py:773` `def get_gradient_covariance(self)`
+- `KappaCalculator.get_kappa_trend` (method) `superconducting_transformer2.py:784` `def get_kappa_trend(self)`
+- `KappaCalculator.is_crystallizing` (method) `superconducting_transformer2.py:794` `def is_crystallizing(self)`
+- `KappaCalculator.reset` (method) `superconducting_transformer2.py:800` `def reset(self)`
+- `ThermodynamicMetricsCalculator.__init__` (method) `superconducting_transformer2.py:806` `def __init__(self, config)`
+- `ThermodynamicMetricsCalculator.calculate` (method) `superconducting_transformer2.py:809` `def calculate(self, model, gradient_covariance)`
+- `LocalComplexityCalculator.__init__` (method) `superconducting_transformer2.py:859` `def __init__(self, config)`
+- `LocalComplexityCalculator.calculate` (method) `superconducting_transformer2.py:862` `def calculate(self, model, train_x, train_y, device)`
+- `SuperpositionCalculator.__init__` (method) `superconducting_transformer2.py:914` `def __init__(self, config)`
+- `SuperpositionCalculator.calculate` (method) `superconducting_transformer2.py:925` `def calculate(self, model)`
+- `GravitationalConstantCalculator.__init__` (method) `superconducting_transformer2.py:953` `def __init__(self, config)`
+- `GravitationalConstantCalculator.calculate` (method) `superconducting_transformer2.py:956` `def calculate(self, model)`
+- `SuperconductivityLoss.__init__` (method) `superconducting_transformer2.py:968` `def __init__(self, config, mu_scheduler)`
+- `SuperconductivityLoss.compute` (method) `superconducting_transformer2.py:972` `def compute(self, model, loss_ce, epoch)`
+- `PhaseDetector.__init__` (method) `superconducting_transformer2.py:1048` `def __init__(self, config)`
+- `PhaseDetector.detect` (method) `superconducting_transformer2.py:1053` `def detect(self, metrics)`
+- `AdaptiveAnnealingScheduler.__init__` (method) `superconducting_transformer2.py:1090` `def __init__(self, model, config, optimizer)`
+- `AdaptiveAnnealingScheduler.step` (method) `superconducting_transformer2.py:1105` `def step(self, metrics)`
+- `GlassDetector.__init__` (method) `superconducting_transformer2.py:1158` `def __init__(self, config)`
+- `GlassDetector.should_stop` (method) `superconducting_transformer2.py:1162` `def should_stop(self, epoch, metrics)`
+- `GrokkinDetector.__init__` (method) `superconducting_transformer2.py:1193` `def __init__(self, config)`
+- `GrokkinDetector.update` (method) `superconducting_transformer2.py:1200` `def update(self, metrics)`
+- `CheckpointManager.__init__` (method) `superconducting_transformer2.py:1225` `def __init__(self, config)`
+- `CheckpointManager.save` (method) `superconducting_transformer2.py:1231` `def save(self, state, path)`
+- `CheckpointManager.load` (method) `superconducting_transformer2.py:1240` `def load(self, path)`
+- `CheckpointManager.should_checkpoint` (method) `superconducting_transformer2.py:1247` `def should_checkpoint(self)`
+- `CheckpointManager.get_latest_path` (method) `superconducting_transformer2.py:1251` `def get_latest_path(self)`
+- `ModelPruner.prune` (method) `superconducting_transformer2.py:1258` `def prune(model, threshold)`
+- `ModelDiscretizer.discretize` (method) `superconducting_transformer2.py:1283` `def discretize(model, tolerance)`
+- `ComprehensiveMetricsAggregator.__init__` (method) `superconducting_transformer2.py:1303` `def __init__(self, config)`
+- `ComprehensiveMetricsAggregator.compute_all` (method) `superconducting_transformer2.py:1313` `def compute_all(self, model, train_loss, test_loss, test_acc, epoch, weight_norm, grad_norm, thermo_state...`
+- `ComprehensiveMetricsAggregator.accumulate_gradient` (method) `superconducting_transformer2.py:1407` `def accumulate_gradient(self, model)`
+- `ComprehensiveMetricsAggregator.reset` (method) `superconducting_transformer2.py:1410` `def reset(self)`
+- `DisplayFormatter.format_kappa` (method) `superconducting_transformer2.py:1417` `def format_kappa(kappa, max_display)`
+- `DisplayFormatter.format_lc` (method) `superconducting_transformer2.py:1423` `def format_lc(lc)`
+- `TrainingPrimitives.evaluate` (method) `superconducting_transformer2.py:1434` `def evaluate(model, test_x, test_y, config, device)`
+- `ProspectorPhase.__init__` (method) `superconducting_transformer2.py:1459` `def __init__(self, config, seed)`
+- `ProspectorPhase.execute` (method) `superconducting_transformer2.py:1463` `def execute(self, model)`
+- `LongTrainingPhase.__init__` (method) `superconducting_transformer2.py:1635` `def __init__(self, config)`
+- `LongTrainingPhase.execute` (method) `superconducting_transformer2.py:1639` `def execute(self, model)`
+- `SeedProspector.__init__` (method) `superconducting_transformer2.py:1890` `def __init__(self, config)`
+- `SeedProspector.prospect` (method) `superconducting_transformer2.py:1897` `def prospect(self, total_attempts, start_seed)`
+- `LongTrainingPipeline.__init__` (method) `superconducting_transformer2.py:2020` `def __init__(self, config)`
+- `LongTrainingPipeline.run` (method) `superconducting_transformer2.py:2032` `def run(self, resume_from, seed)`
+- `Application.__init__` (method) `superconducting_transformer2.py:2152` `def __init__(self)`
+- `Application.run` (method) `superconducting_transformer2.py:2195` `def run(self)`
+- `Application.main` (method) `superconducting_transformer2.py:2251` `def main()`
+
+## tran2.py
+- `tqdm` (method) `tran2.py:35` `def tqdm(iterable)`
+- `LadermanConfig.to_dict` (method) `tran2.py:111` `def to_dict(self)`
+- `ThermodynamicState.to_dict` (method) `tran2.py:148` `def to_dict(self)`
+- `MatrixMultiplicationDataset.__init__` (method) `tran2.py:172` `def __init__(self, matrix_size, num_samples, seed)`
+- `BilinearTransformerModel.__init__` (method) `tran2.py:203` `def __init__(self, config)`
+- `BilinearTransformerModel.forward` (method) `tran2.py:258` `def forward(self, input_a, input_b, output_attentions, return_dict)`
+- `BilinearTransformerModel.get_bilinear_tensors` (method) `tran2.py:292` `def get_bilinear_tensors(self)`
+- `BilinearTransformerModel.set_bilinear_tensors` (method) `tran2.py:295` `def set_bilinear_tensors(self, u, v, w)` -- Set bilinear tensors with proper size handling.
+- `BilinearTransformerModel.compute_discretization_margin` (method) `tran2.py:308` `def compute_discretization_margin(self)`
+- `BilinearTransformerModel.discretize` (method) `tran2.py:313` `def discretize(self, threshold)`
+- `BilinearTransformerModel.get_weight_norm` (method) `tran2.py:321` `def get_weight_norm(self)`
+- `BilinearTransformerModel.compute_gradient_norm` (method) `tran2.py:324` `def compute_gradient_norm(self)`
+- `GradientCovarianceComputer.__init__` (method) `tran2.py:338` `def __init__(self, num_samples)`
+- `GradientCovarianceComputer.compute` (method) `tran2.py:341` `def compute(self, model, batch)`
+- `LocalComplexityComputer.compute` (method) `tran2.py:403` `def compute(self, model, batch)`
+- `SuperpositionComputer.compute` (method) `tran2.py:423` `def compute(self, model, batch)`
+- `TemperatureComputer.__init__` (method) `tran2.py:444` `def __init__(self, num_samples)`
+- `TemperatureComputer.compute` (method) `tran2.py:447` `def compute(self, model, batch)`
+- `MagnitudePruning.prune` (method) `tran2.py:500` `def prune(self, model, target_slots)`
+- `FileCheckpointManager.__init__` (method) `tran2.py:550` `def __init__(self, config)`
+- `FileCheckpointManager.should_checkpoint` (method) `tran2.py:558` `def should_checkpoint(self)`
+- `FileCheckpointManager.save` (method) `tran2.py:561` `def save(self, model, optimizer, state, path, checkpoint_type)`
+- `CrystallizationTrainer.__init__` (method) `tran2.py:618` `def __init__(self, config, model, train_loader, test_loader, checkpoint_manager)`
+- `CrystallizationTrainer.train_epoch` (method) `tran2.py:646` `def train_epoch(self)` -- Train for one epoch with all metrics.
+- `CrystallizationTrainer.evaluate` (method) `tran2.py:694` `def evaluate(self)` -- Evaluate on test set.
+- `CrystallizationTrainer.compute_thermodynamic_state` (method) `tran2.py:726` `def compute_thermodynamic_state(self, train_metrics, test_metrics)` -- Compute complete thermodynamic state with ALL metrics.
+- `CrystallizationTrainer.train` (method) `tran2.py:809` `def train(self, num_epochs)` -- Phase 1: Extended training with thermodynamic monitoring.
+- `CrystallizationTrainer.phase2_pruning_and_discretization` (method) `tran2.py:879` `def phase2_pruning_and_discretization(self)` -- Phase 2: Prune to target rank and discretize.
+- `CrystallizationTrainer.run_laderman_experiment` (method) `tran2.py:916` `def run_laderman_experiment(config)` -- Run complete Laderman crystallization experiment.
+
+## tran5.py
+Imported by: `seed_miner.py`
+- `LeiblerAttention.__init__` (method) `tran5.py:75` `def __init__(self, config)`
+- `LeiblerAttention.forward` (method) `tran5.py:97` `def forward(self, x, mask)` -- Forward pass with thermodynamic attention
+- `LeiblerTransformerLayer.__init__` (method) `tran5.py:172` `def __init__(self, config)`
+- `LeiblerTransformerLayer.forward` (method) `tran5.py:192` `def forward(self, x, mask)` -- Forward pass with residual connections
+- `LeiblerTransformer.__init__` (method) `tran5.py:210` `def __init__(self, config)`
+- `LeiblerTransformer.forward` (method) `tran5.py:244` `def forward(self, x, mask)` -- Forward pass
+- `LeiblerTransformer.get_thermodynamic_state` (method) `tran5.py:268` `def get_thermodynamic_state(self)` -- Extract current thermodynamic state from all layers
+- `AdaptiveTemperatureScheduler.__init__` (method) `tran5.py:297` `def __init__(self, model, config)`
+- `AdaptiveTemperatureScheduler.step` (method) `tran5.py:312` `def step(self, metrics)` -- Update temperature based on training metrics with enhanced stability
+- `ThermodynamicTracker.__init__` (method) `tran5.py:412` `def __init__(self, config)`
+- `ThermodynamicTracker.update` (method) `tran5.py:439` `def update(self, metrics)` -- Update tracker with new metrics
+- `ThermodynamicTracker.get_summary` (method) `tran5.py:529` `def get_summary(self)` -- Get summary statistics
+- `AdaptiveTemperatureScheduler.__init__` (method) `tran5.py:553` `def __init__(self, model, config, optimizer)`
+- `AdaptiveTemperatureScheduler.step` (method) `tran5.py:566` `def step(self, metrics)` -- Update temperature and weight_decay based on thermodynamic phase
+- `AdaptiveTemperatureScheduler.create_modular_addition_dataset` (method) `tran5.py:633` `def create_modular_addition_dataset(modulus, train_fraction)` -- Create dataset for modular addition task
+- `AdaptiveTemperatureScheduler.compute_kappa_from_gradient_covariance` (method) `tran5.py:678` `def compute_kappa_from_gradient_covariance(model, train_x, train_y, config, device)` -- Compute κ = cond(Σ) where Σ is the gradient covariance matrix.
+- `AdaptiveTemperatureScheduler.compute_order_parameters` (method) `tran5.py:756` `def compute_order_parameters(model)` -- Compute thermodynamic order parameters per paper definitions.
+- `AdaptiveTemperatureScheduler.train_epoch` (method) `tran5.py:824` `def train_epoch(model, train_x, train_y, optimizer, config, device)` -- Train for one epoch
+- `AdaptiveTemperatureScheduler.evaluate` (method) `tran5.py:868` `def evaluate(model, test_x, test_y, config, device)` -- Evaluate model
+- `AdaptiveTemperatureScheduler.prune_model` (method) `tran5.py:905` `def prune_model(model, threshold)` -- Prune slots with low weight magnitudes
+- `AdaptiveTemperatureScheduler.discretize_model` (method) `tran5.py:955` `def discretize_model(model, tolerance)` -- Attempt to discretize model weights to integers
+- `AdaptiveTemperatureScheduler.main` (method) `tran5.py:998` `def main()`
